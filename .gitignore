@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+
+# Video build intermediates (final video, scripts, slides, and Imagine clips are kept)
+video/parts/
+video/rec/
+video/walkthrough.webm
+video/*.wav
+video/align.png
+video/check_*.jpg
+video/contact*.jpg
+video/requests.json
+video/timeline.json

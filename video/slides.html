@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+* { box-sizing: border-box; margin: 0; }
+body { width: 1920px; height: 1080px; font-family: "Inter", -apple-system, "SF Pro Display", "Segoe UI", sans-serif; color: #e8eef7; background: transparent; overflow: hidden; }
+.slide { position: absolute; inset: 0; display: none; padding: 110px 140px; }
+.slide.on { display: block; }
+.bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(3px) brightness(0.28); transform: scale(1.05); }
+.content { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 36px; }
+.kicker { font-size: 26px; letter-spacing: 0.16em; text-transform: uppercase; color: #8eb4ff; }
+h1 { font-size: 84px; line-height: 1.05; font-weight: 750; letter-spacing: -0.02em; }
+h1 em { font-style: normal; color: #f4c56d; }
+p.lede { font-size: 36px; color: #c9d4e3; max-width: 1400px; line-height: 1.35; }
+.row { display: grid; gap: 28px; }
+.cards3 { grid-template-columns: repeat(3, 1fr); }
+.cards4 { grid-template-columns: repeat(4, 1fr); }
+.card { background: rgba(19, 28, 42, 0.82); border: 1px solid rgba(186,206,232,0.18); border-radius: 26px; padding: 34px 32px; }
+.card .icon { font-size: 54px; margin-bottom: 18px; }
+.card h3 { font-size: 34px; margin-bottom: 10px; }
+.card p { font-size: 25px; color: #a9b8cc; line-height: 1.35; }
+.bad .card { border-color: rgba(224,100,90,0.45); }
+.bad .card h3 { color: #f09a92; }
+.flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.step { background: rgba(19, 28, 42, 0.85); border: 1px solid rgba(61,206,134,0.45); border-radius: 22px; padding: 28px; position: relative; }
+.step b { display: block; color: #3dce86; font-size: 22px; letter-spacing: 0.1em; margin-bottom: 8px; }
+.step h3 { font-size: 31px; margin-bottom: 8px; }
+.step p { font-size: 23px; color: #a9b8cc; line-height: 1.3; }
+.badges { display: flex; gap: 20px; flex-wrap: wrap; }
+.badge { font-size: 26px; padding: 12px 24px; border-radius: 999px; border: 1px solid rgba(185,156,255,0.6); color: #d7c6ff; background: rgba(185,156,255,0.1); }
+.center { text-align: center; align-items: center; }
+.logo { width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, #fff4df, #f0b15a 45%, #c56a2d 70%); box-shadow: 0 0 80px rgba(240,177,90,0.6); }
+.big { font-size: 150px; font-weight: 800; letter-spacing: -0.03em; }
+.stat { display: flex; gap: 60px; justify-content: center; }
+.stat div { text-align: center; }
+.stat strong { display: block; font-size: 80px; color: #3dce86; font-weight: 800; }
+.stat span { font-size: 24px; color: #a9b8cc; }
+/* overlays */
+.overlay { position: absolute; inset: 0; display: none; }
+.overlay.on { display: block; }
+.caption { position: absolute; left: 50%; bottom: 70px; transform: translateX(-50%); max-width: 1500px; text-align: center; font-size: 40px; line-height: 1.3; font-weight: 600; padding: 16px 30px; border-radius: 16px; background: rgba(5, 8, 14, 0.62); text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
+.title { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-shadow: 0 4px 30px rgba(0,0,0,0.9); }
+.title .big { font-size: 170px; }
+.title p { font-size: 44px; color: #f1e3c4; font-weight: 600; background: rgba(5,8,14,0.45); padding: 10px 28px; border-radius: 14px; }
+</style></head><body>
+
+<section class="slide" id="problem1">
+  <div class="bg" style="background-image:url(still_fleet.jpg)"></div>
+  <div class="content">
+    <p class="kicker">The problem</p>
+    <h1>Satellites are <em>critical infrastructure</em></h1>
+    <div class="row cards3">
+      <div class="card"><div class="icon">📡</div><h3>Emergency comms</h3><p>Connectivity for responders when towers are down.</p></div>
+      <div class="card"><div class="icon">🛰️</div><h3>Disaster imagery</h3><p>Damage and storm-track imaging from orbit.</p></div>
+      <div class="card"><div class="icon">🌊</div><h3>Flood maps</h3><p>Flood extents that guide rescues and evacuations.</p></div>
+    </div>
+    <p class="lede">They matter most in a crisis, exactly when space weather can strike.</p>
+  </div>
+</section>
+
+<section class="slide" id="problem2">
+  <div class="bg" style="background-image:url(still_impact.jpg)"></div>
+  <div class="content">
+    <p class="kicker">Why storms hurt</p>
+    <h1>Most satellites <em>can't defend themselves</em></h1>
+    <div class="row cards4 bad">
+      <div class="card"><div class="icon">🧠</div><h3>Small processors</h3><p>Commercial chips that radiation can disrupt.</p></div>
+      <div class="card"><div class="icon">📶</div><h3>Minutes of contact</h3><p>Ground stations only during brief passes.</p></div>
+      <div class="card"><div class="icon">⏸️</div><h3>One defense</h3><p>Shut down into safe mode, then wait.</p></div>
+      <div class="card"><div class="icon">❓</div><h3>No foresight</h3><p>Can't forecast the storm or triage services.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="solution">
+  <div class="bg" style="background-image:url(still_fleet.jpg)"></div>
+  <div class="content">
+    <p class="kicker">The solution</p>
+    <h1>Satellites that can think <em>protect the ones that can't</em></h1>
+    <div class="flow">
+      <div class="step"><b>1 · COLLECT</b><h3>Fleet telemetry</h3><p>Hubs gather radiation and error readings over crosslinks.</p></div>
+      <div class="step"><b>2 · FORECAST</b><h3>Who's exposed next</h3><p>Planned orbits × radiation measured over the poles.</p></div>
+      <div class="step"><b>3 · WARN</b><h3>Protective schedules</h3><p>Each satellite pauses before exposure, not after.</p></div>
+      <div class="step"><b>4 · PROTECT</b><h3>Hand off services</h3><p>Emergency comms move to shielded peers first.</p></div>
+    </div>
+    <div class="badges"><span class="badge">Grok API · in-flight analyst</span><span class="badge">Grok Voice · operator copilot</span><span class="badge">Real NOAA GOES-18 data</span></div>
+  </div>
+</section>
+
+<section class="slide" id="outro">
+  <div class="bg" style="background-image:url(still_flare.jpg)"></div>
+  <div class="content center">
+    <div class="logo"></div>
+    <div class="big">Lifeline</div>
+    <p class="lede">When the storm hits and the ground can't keep up, the satellites that can think protect the ones that can't.</p>
+    <div class="stat">
+      <div><strong>−96%</strong><span>missed emergency-comms deadlines</span></div>
+      <div><strong>−85%</strong><span>service downtime</span></div>
+      <div><strong>0</strong><span>hardware interlocks</span></div>
+    </div>
+    <div class="badges" style="justify-content:center"><span class="badge">Built with Cursor</span><span class="badge">Grok API</span><span class="badge">Grok Voice</span><span class="badge">Grok Imagine</span></div>
+    <p style="font-size:20px;color:#7f8ea3">What-if simulation on real NOAA GOES-18 radiation data · versus fixed-threshold protection, five storms × five seeds</p>
+  </div>
+</section>
+
+<div class="overlay" id="cap_intro1"><div class="caption" data-key="intro1"></div></div>
+<div class="overlay" id="cap_intro2"><div class="caption" data-key="intro2"></div></div>
+<div class="overlay" id="title"><div class="title"><div class="big">Lifeline</div><p>Keeping critical satellite services running through solar storms</p></div></div>
+</body></html>

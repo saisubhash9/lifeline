@@ -1,0 +1,103 @@
+[
+  {
+    "id": "may2024",
+    "label": "May 9\u201313, 2024",
+    "peakUtc": "2024-05-10T17:45:00Z",
+    "peakPfu": 403.952,
+    "maxPfu": 403.952,
+    "samples": 1440,
+    "catalog": [
+      {
+        "utc": "2024-05-10T17:45:00Z",
+        "pfu": 208,
+        "scale": "S2",
+        "extractedPfu": 403.952,
+        "extractedUtc": "2024-05-10T17:45:00Z"
+      },
+      {
+        "utc": "2024-05-11T09:10:00Z",
+        "pfu": 116,
+        "scale": "S2",
+        "extractedPfu": 109.281,
+        "extractedUtc": "2024-05-11T09:10:00Z"
+      }
+    ]
+  },
+  {
+    "id": "mar2024",
+    "label": "Mar 22\u201325, 2024",
+    "peakUtc": "2024-03-23T18:20:00Z",
+    "peakPfu": 1005.945,
+    "maxPfu": 1005.945,
+    "samples": 1152,
+    "catalog": [
+      {
+        "utc": "2024-03-23T18:20:00Z",
+        "pfu": 956,
+        "scale": "S2",
+        "extractedPfu": 1005.945,
+        "extractedUtc": "2024-03-23T18:20:00Z"
+      }
+    ]
+  },
+  {
+    "id": "jun2024",
+    "label": "Jun 7\u201310, 2024",
+    "peakUtc": "2024-06-08T08:00:00Z",
+    "peakPfu": 996.098,
+    "maxPfu": 996.098,
+    "samples": 1152,
+    "catalog": [
+      {
+        "utc": "2024-06-08T08:00:00Z",
+        "pfu": 1030,
+        "scale": "S3",
+        "extractedPfu": 996.098,
+        "extractedUtc": "2024-06-08T08:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "oct2024",
+    "label": "Oct 8\u201312, 2024",
+    "peakUtc": "2024-10-10T15:15:00Z",
+    "peakPfu": 2931.779,
+    "maxPfu": 2931.779,
+    "samples": 1440,
+    "catalog": [
+      {
+        "utc": "2024-10-10T15:15:00Z",
+        "pfu": 1810,
+        "scale": "S3",
+        "extractedPfu": 2931.779,
+        "extractedUtc": "2024-10-10T15:15:00Z"
+      }
+    ]
+  },
+  {
+    "id": "jan2026",
+    "label": "Jan 17\u201322, 2026",
+    "peakUtc": "2026-01-19T19:15:00Z",
+    "peakPfu": 42200.908,
+    "maxPfu": 42200.908,
+    "samples": 1728,
+    "catalog": [
+      {
+        "utc": "2026-01-19T19:15:00Z",
+        "pfu": 37000,
+        "scale": "S4",
+        "extractedPfu": 42200.908,
+        "extractedUtc": "2026-01-19T19:15:00Z"
+      }
+    ]
+  },
+  {
+    "id": "quiet2024",
+    "label": "Jul 18\u201322, 2024",
+    "peakUtc": "2024-07-22T20:50:00Z",
+    "peakPfu": 0.544,
+    "maxPfu": 0.544,
+    "samples": 1440,
+    "catalog": []
+  }
+]

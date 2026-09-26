@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lifeline</title>
+  <link rel="stylesheet" href="/assets/styles.css?v=2" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <strong>Lifeline</strong>
+        <span class="tagline">Keeping critical satellite services running through solar storms</span>
+      </div>
+    </div>
+    <div class="status" id="status">Loading…</div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <div>
+        <p class="kicker">The problem</p>
+        <p>Satellites carry emergency communications, disaster imagery, and flood maps, and they matter most in a crisis. Solar radiation storms disrupt them, and most satellites are poorly equipped to respond: small, radiation-sensitive processors, ground contact for a few minutes per pass, and one defense, shutting down into safe mode to wait for instructions.</p>
+      </div>
+      <div>
+        <p class="kicker">Lifeline</p>
+        <p>A few compute-capable <b>hub</b> satellites collect radiation and error telemetry from the fleet, forecast who will be exposed next from the planned orbits, and send every satellite its protective schedule before the radiation arrives. Critical services are handed to shielded peers. <b>Grok</b> acts as the in-flight analyst and briefs the operator by <b>voice</b>.</p>
+      </div>
+    </section>
+
+    <section class="mission" id="mission"></section>
+
+    <section class="controls" aria-label="Replay controls">
+      <label>Storm
+        <select id="window"></select>
+      </label>
+      <label>Crosslink delay <output id="latency-out">5 min</output>
+        <input id="latency" type="range" min="1" max="6" step="1" value="1" />
+      </label>
+      <label>Link loss <output id="loss-out">0%</output>
+        <input id="loss" type="range" min="0" max="0.5" step="0.05" value="0" />
+      </label>
+      <label>Seed
+        <input id="seed" type="number" min="1" max="99" value="7" />
+      </label>
+      <label class="check"><input id="grok-analyst" type="checkbox" /> Grok as in-flight analyst</label>
+    </section>
+
+    <section class="timeline-card">
+      <div class="transport">
+        <button type="button" id="play" class="primary">Play</button>
+        <div class="speeds" id="speeds" role="group" aria-label="Playback speed">
+          <button type="button" data-speed="6">1×</button>
+          <button type="button" data-speed="12" class="on">2×</button>
+          <button type="button" data-speed="30">5×</button>
+        </div>
+        <button type="button" id="jump-decision">Next Lifeline decision →</button>
+        <span id="clock" class="clock">—</span>
+      </div>
+      <div id="chart" class="chart" tabindex="0" role="slider" aria-label="Seek within the replay"></div>
+      <p class="legend" id="legend"></p>
+    </section>
+
+    <section class="grid-main">
+      <article class="card map-card">
+        <div class="card-head">
+          <h2>Fleet over Earth</h2>
+          <span class="muted" id="map-note"></span>
+        </div>
+        <svg id="map" viewBox="0 0 720 380" role="img" aria-label="Ground track of the five satellites with the polar caps shaded"></svg>
+        <div class="sat-legend" id="sat-legend"></div>
+      </article>
+
+      <article class="card copilot">
+        <div class="card-head">
+          <h2>Copilot</h2>
+          <div class="voice-controls">
+            <button type="button" id="voice-connect" class="primary">Connect Grok Voice</button>
+            <button type="button" id="voice-mic" disabled>Mic off</button>
+          </div>
+        </div>
+        <p class="muted small" id="voice-status">Voice is off. Connect to hear alerts and ask questions like "Why did comms move to Hub-1?" or "What if we had done nothing?"</p>
+        <label class="check small"><input id="auto-announce" type="checkbox" checked /> Announce Lifeline decisions during playback</label>
+        <div class="decision" id="decision"></div>
+        <div class="transcript" id="transcript" aria-live="polite"></div>
+        <form id="ask" class="ask">
+          <input id="ask-text" type="text" placeholder="Type a question for the copilot…" autocomplete="off" />
+          <button type="submit">Ask</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="fleets" id="fleets" aria-label="Four fleets, same storm"></section>
+
+    <section class="card eval">
+      <div class="card-head">
+        <h2>Every storm, five seeds each</h2>
+        <span class="muted small" id="eval-note">Same storms, orbits, noise, link losses, and faults for every strategy.</span>
+      </div>
+      <div id="headline" class="tiles"></div>
+      <div id="eval-table" class="table-wrap">Running the comparison…</div>
+    </section>
+
+    <section class="card debrief">
+      <div class="card-head">
+        <h2>Morning-after debrief</h2>
+        <button type="button" id="debrief-button">Write with Grok</button>
+      </div>
+      <p class="muted small">Grok writes a short report on this replay from the simulator's scores and Lifeline's decision log. Every number comes from the simulator.</p>
+      <div id="debrief-text"></div>
+    </section>
+
+    <footer class="footer" id="footer"></footer>
+  </main>
+
+  <script src="/assets/voice.js?v=1"></script>
+  <script src="/assets/app.js?v=4"></script>
+</body>
+</html>
