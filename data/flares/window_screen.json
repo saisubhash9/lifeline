@@ -1,0 +1,2246 @@
+{
+ "jan2026": [
+  {
+   "flare_id": 202601171019,
+   "peakUtc": "2026-01-17T10:29:00Z",
+   "startUtc": "2026-01-17T10:19:00Z",
+   "class": "M2.1",
+   "lon": -33.51,
+   "lat": -4.3,
+   "riseMinutes": 10.0,
+   "fluence": 0.0072,
+   "p": 0.0006,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202601172346,
+   "peakUtc": "2026-01-17T23:51:00Z",
+   "startUtc": "2026-01-17T23:46:00Z",
+   "class": "M1.1",
+   "lon": -28.68,
+   "lat": -8.88,
+   "riseMinutes": 5.0,
+   "fluence": 0.0048,
+   "p": 0.0001,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202601181727,
+   "peakUtc": "2026-01-18T18:09:00Z",
+   "startUtc": "2026-01-18T17:27:00Z",
+   "class": "X1.9",
+   "lon": -20.04,
+   "lat": -11.7,
+   "riseMinutes": 42.0,
+   "fluence": 0.2363,
+   "p": 0.2832,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 1
+  },
+  {
+   "flare_id": 202601191109,
+   "peakUtc": "2026-01-19T11:19:00Z",
+   "startUtc": "2026-01-19T11:09:00Z",
+   "class": "M1.1",
+   "lon": -15.98,
+   "lat": -14.43,
+   "riseMinutes": 10.0,
+   "fluence": 0.0039,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202601210115,
+   "peakUtc": "2026-01-21T01:35:00Z",
+   "startUtc": "2026-01-21T01:15:00Z",
+   "class": "M1.1",
+   "lon": 4.82,
+   "lat": -15.17,
+   "riseMinutes": 20.0,
+   "fluence": 0.01,
+   "p": 0.002,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202601210654,
+   "peakUtc": "2026-01-21T07:12:00Z",
+   "startUtc": "2026-01-21T06:54:00Z",
+   "class": "M3.4",
+   "lon": -55.93,
+   "lat": -14.04,
+   "riseMinutes": 18.0,
+   "fluence": 0.0168,
+   "p": 0.0041,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  }
+ ],
+ "jun2024": [
+  {
+   "flare_id": 202406070852,
+   "peakUtc": "2024-06-07T09:13:00Z",
+   "startUtc": "2024-06-07T08:52:00Z",
+   "class": "M4.0",
+   "lon": -79.96,
+   "lat": -7.92,
+   "riseMinutes": 21.0,
+   "fluence": 0.0344,
+   "p": 0.0137,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406071611,
+   "peakUtc": "2024-06-07T16:22:00Z",
+   "startUtc": "2024-06-07T16:11:00Z",
+   "class": "M1.2",
+   "lon": 52.72,
+   "lat": -19.12,
+   "riseMinutes": 11.0,
+   "fluence": 0.009,
+   "p": 0.0014,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406080018,
+   "peakUtc": "2024-06-08T00:28:00Z",
+   "startUtc": "2024-06-08T00:18:00Z",
+   "class": "M1.8",
+   "lon": -65.51,
+   "lat": -8.96,
+   "riseMinutes": 10.0,
+   "fluence": 0.0069,
+   "p": 0.0007,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406080039,
+   "peakUtc": "2024-06-08T00:51:00Z",
+   "startUtc": "2024-06-08T00:39:00Z",
+   "class": "M3.3",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 12.0,
+   "fluence": 0.0193,
+   "p": 0.0057,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406080123,
+   "peakUtc": "2024-06-08T01:49:00Z",
+   "startUtc": "2024-06-08T01:23:00Z",
+   "class": "M9.6",
+   "lon": 69.9,
+   "lat": -16.26,
+   "riseMinutes": 26.0,
+   "fluence": 0.1059,
+   "p": 0.1007,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 1
+  },
+  {
+   "flare_id": 202406080517,
+   "peakUtc": "2024-06-08T05:28:00Z",
+   "startUtc": "2024-06-08T05:17:00Z",
+   "class": "M1.5",
+   "lon": -10.51,
+   "lat": -12.64,
+   "riseMinutes": 11.0,
+   "fluence": 0.0083,
+   "p": 0.001,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406080834,
+   "peakUtc": "2024-06-08T08:44:00Z",
+   "startUtc": "2024-06-08T08:34:00Z",
+   "class": "M1.1",
+   "lon": -52.46,
+   "lat": -9.73,
+   "riseMinutes": 10.0,
+   "fluence": 0.0074,
+   "p": 0.0007,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406080854,
+   "peakUtc": "2024-06-08T08:58:00Z",
+   "startUtc": "2024-06-08T08:54:00Z",
+   "class": "M1.2",
+   "lon": 16.19,
+   "lat": -16.61,
+   "riseMinutes": 4.0,
+   "fluence": 0.0052,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406090649,
+   "peakUtc": "2024-06-09T07:01:00Z",
+   "startUtc": "2024-06-09T06:49:00Z",
+   "class": "M1.6",
+   "lon": 75.55,
+   "lat": -16.9,
+   "riseMinutes": 12.0,
+   "fluence": 0.0079,
+   "p": 0.0013,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406090802,
+   "peakUtc": "2024-06-09T08:19:00Z",
+   "startUtc": "2024-06-09T08:02:00Z",
+   "class": "M1.2",
+   "lon": -57.55,
+   "lat": -5.72,
+   "riseMinutes": 17.0,
+   "fluence": 0.0116,
+   "p": 0.0022,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406091950,
+   "peakUtc": "2024-06-09T20:17:00Z",
+   "startUtc": "2024-06-09T19:50:00Z",
+   "class": "M1.0",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 27.0,
+   "fluence": 0.0132,
+   "p": 0.0068,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406100558,
+   "peakUtc": "2024-06-10T06:09:00Z",
+   "startUtc": "2024-06-10T05:58:00Z",
+   "class": "M3.2",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 11.0,
+   "fluence": 0.0162,
+   "p": 0.0038,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406100939,
+   "peakUtc": "2024-06-10T10:06:00Z",
+   "startUtc": "2024-06-10T09:39:00Z",
+   "class": "M2.2",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 27.0,
+   "fluence": 0.0258,
+   "p": 0.0166,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406101018,
+   "peakUtc": "2024-06-10T10:58:00Z",
+   "startUtc": "2024-06-10T10:18:00Z",
+   "class": "M5.2",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 40.0,
+   "fluence": 0.0967,
+   "p": 0.1514,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406101103,
+   "peakUtc": "2024-06-10T11:08:00Z",
+   "startUtc": "2024-06-10T11:03:00Z",
+   "class": "X1.5",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 5.0,
+   "fluence": 0.0604,
+   "p": 0.011,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406101320,
+   "peakUtc": "2024-06-10T13:29:00Z",
+   "startUtc": "2024-06-10T13:20:00Z",
+   "class": "M1.3",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 9.0,
+   "fluence": 0.0076,
+   "p": 0.0011,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202406101811,
+   "peakUtc": "2024-06-10T18:40:00Z",
+   "startUtc": "2024-06-10T18:11:00Z",
+   "class": "M9.4",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 29.0,
+   "fluence": 0.095,
+   "p": 0.1118,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  }
+ ],
+ "mar2024": [
+  {
+   "flare_id": 202403222018,
+   "peakUtc": "2024-03-22T20:32:00Z",
+   "startUtc": "2024-03-22T20:18:00Z",
+   "class": "M4.2",
+   "lon": -17.29,
+   "lat": -11.63,
+   "riseMinutes": 14.0,
+   "fluence": 0.0245,
+   "p": 0.0049,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403230058,
+   "peakUtc": "2024-03-23T01:33:00Z",
+   "startUtc": "2024-03-23T00:58:00Z",
+   "class": "X1.0",
+   "lon": -9.91,
+   "lat": 6.65,
+   "riseMinutes": 35.0,
+   "fluence": 0.1218,
+   "p": 0.1015,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 1
+  },
+  {
+   "flare_id": 202403230647,
+   "peakUtc": "2024-03-23T06:55:00Z",
+   "startUtc": "2024-03-23T06:47:00Z",
+   "class": "M1.1",
+   "lon": -4.72,
+   "lat": -14.75,
+   "riseMinutes": 8.0,
+   "fluence": 0.0053,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403230701,
+   "peakUtc": "2024-03-23T07:09:00Z",
+   "startUtc": "2024-03-23T07:01:00Z",
+   "class": "M2.4",
+   "lon": -10.74,
+   "lat": -11.86,
+   "riseMinutes": 8.0,
+   "fluence": 0.0134,
+   "p": 0.0011,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403230726,
+   "peakUtc": "2024-03-23T07:38:00Z",
+   "startUtc": "2024-03-23T07:26:00Z",
+   "class": "M3.0",
+   "lon": -10.69,
+   "lat": -13.23,
+   "riseMinutes": 12.0,
+   "fluence": 0.0249,
+   "p": 0.0042,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231122,
+   "peakUtc": "2024-03-23T11:29:00Z",
+   "startUtc": "2024-03-23T11:22:00Z",
+   "class": "M1.0",
+   "lon": -8.4,
+   "lat": -13.65,
+   "riseMinutes": 7.0,
+   "fluence": 0.0056,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231236,
+   "peakUtc": "2024-03-23T12:47:00Z",
+   "startUtc": "2024-03-23T12:36:00Z",
+   "class": "M1.3",
+   "lon": -7.99,
+   "lat": -13.5,
+   "riseMinutes": 11.0,
+   "fluence": 0.0073,
+   "p": 0.0007,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231304,
+   "peakUtc": "2024-03-23T13:11:00Z",
+   "startUtc": "2024-03-23T13:04:00Z",
+   "class": "M1.1",
+   "lon": -13.73,
+   "lat": -9.3,
+   "riseMinutes": 7.0,
+   "fluence": 0.0063,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231331,
+   "peakUtc": "2024-03-23T13:37:00Z",
+   "startUtc": "2024-03-23T13:31:00Z",
+   "class": "M1.9",
+   "lon": -9.29,
+   "lat": -11.28,
+   "riseMinutes": 6.0,
+   "fluence": 0.0081,
+   "p": 0.0004,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231351,
+   "peakUtc": "2024-03-23T13:52:00Z",
+   "startUtc": "2024-03-23T13:51:00Z",
+   "class": "M5.1",
+   "lon": -4.44,
+   "lat": -10.87,
+   "riseMinutes": 1.0,
+   "fluence": 0.0142,
+   "p": 0.0001,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231449,
+   "peakUtc": "2024-03-23T14:53:00Z",
+   "startUtc": "2024-03-23T14:49:00Z",
+   "class": "M1.5",
+   "lon": -2.75,
+   "lat": -12.24,
+   "riseMinutes": 4.0,
+   "fluence": 0.0059,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231501,
+   "peakUtc": "2024-03-23T15:13:00Z",
+   "startUtc": "2024-03-23T15:01:00Z",
+   "class": "M3.7",
+   "lon": -5.11,
+   "lat": -12.3,
+   "riseMinutes": 12.0,
+   "fluence": 0.0246,
+   "p": 0.0041,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231517,
+   "peakUtc": "2024-03-23T15:22:00Z",
+   "startUtc": "2024-03-23T15:17:00Z",
+   "class": "M3.7",
+   "lon": -3.59,
+   "lat": -13.14,
+   "riseMinutes": 5.0,
+   "fluence": 0.02,
+   "p": 0.0011,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403231622,
+   "peakUtc": "2024-03-23T16:51:00Z",
+   "startUtc": "2024-03-23T16:22:00Z",
+   "class": "M2.7",
+   "lon": -7.88,
+   "lat": -12.09,
+   "riseMinutes": 29.0,
+   "fluence": 0.0385,
+   "p": 0.0188,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403232330,
+   "peakUtc": "2024-03-23T23:49:00Z",
+   "startUtc": "2024-03-23T23:30:00Z",
+   "class": "M2.4",
+   "lon": 0.45,
+   "lat": -11.26,
+   "riseMinutes": 19.0,
+   "fluence": 0.0181,
+   "p": 0.0044,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403240111,
+   "peakUtc": "2024-03-24T01:25:00Z",
+   "startUtc": "2024-03-24T01:11:00Z",
+   "class": "M1.4",
+   "lon": -1.64,
+   "lat": -14.78,
+   "riseMinutes": 14.0,
+   "fluence": 0.0127,
+   "p": 0.002,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403240143,
+   "peakUtc": "2024-03-24T01:54:00Z",
+   "startUtc": "2024-03-24T01:43:00Z",
+   "class": "M2.1",
+   "lon": 0.41,
+   "lat": -12.92,
+   "riseMinutes": 11.0,
+   "fluence": 0.0128,
+   "p": 0.0016,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403240157,
+   "peakUtc": "2024-03-24T02:05:00Z",
+   "startUtc": "2024-03-24T01:57:00Z",
+   "class": "M2.3",
+   "lon": -0.21,
+   "lat": -12.82,
+   "riseMinutes": 8.0,
+   "fluence": 0.0162,
+   "p": 0.0014,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403240209,
+   "peakUtc": "2024-03-24T02:18:00Z",
+   "startUtc": "2024-03-24T02:09:00Z",
+   "class": "M2.6",
+   "lon": -0.72,
+   "lat": -13.74,
+   "riseMinutes": 9.0,
+   "fluence": 0.0199,
+   "p": 0.0022,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403240559,
+   "peakUtc": "2024-03-24T06:06:00Z",
+   "startUtc": "2024-03-24T05:59:00Z",
+   "class": "M2.2",
+   "lon": 4.4,
+   "lat": -12.64,
+   "riseMinutes": 7.0,
+   "fluence": 0.0059,
+   "p": 0.0004,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403240736,
+   "peakUtc": "2024-03-24T07:51:00Z",
+   "startUtc": "2024-03-24T07:36:00Z",
+   "class": "M1.3",
+   "lon": 1.13,
+   "lat": -13.37,
+   "riseMinutes": 15.0,
+   "fluence": 0.0124,
+   "p": 0.002,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403241210,
+   "peakUtc": "2024-03-24T12:18:00Z",
+   "startUtc": "2024-03-24T12:10:00Z",
+   "class": "M1.1",
+   "lon": 8.1,
+   "lat": -14.09,
+   "riseMinutes": 8.0,
+   "fluence": 0.0055,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403241227,
+   "peakUtc": "2024-03-24T12:34:00Z",
+   "startUtc": "2024-03-24T12:27:00Z",
+   "class": "M1.0",
+   "lon": 4.92,
+   "lat": -13.26,
+   "riseMinutes": 7.0,
+   "fluence": 0.0055,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403241300,
+   "peakUtc": "2024-03-24T13:14:00Z",
+   "startUtc": "2024-03-24T13:00:00Z",
+   "class": "M1.2",
+   "lon": 2.66,
+   "lat": -12.64,
+   "riseMinutes": 14.0,
+   "fluence": 0.0093,
+   "p": 0.0013,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202403250637,
+   "peakUtc": "2024-03-25T06:44:00Z",
+   "startUtc": "2024-03-25T06:37:00Z",
+   "class": "M4.4",
+   "lon": 24.28,
+   "lat": -10.53,
+   "riseMinutes": 7.0,
+   "fluence": 0.0078,
+   "p": 0.0006,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  }
+ ],
+ "may2024": [
+  {
+   "flare_id": 202405090307,
+   "peakUtc": "2024-05-09T03:17:00Z",
+   "startUtc": "2024-05-09T03:07:00Z",
+   "class": "M3.9",
+   "lon": 23.68,
+   "lat": -19.38,
+   "riseMinutes": 10.0,
+   "fluence": 0.0167,
+   "p": 0.0027,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405090323,
+   "peakUtc": "2024-05-09T03:32:00Z",
+   "startUtc": "2024-05-09T03:23:00Z",
+   "class": "M4.5",
+   "lon": 23.72,
+   "lat": -20.27,
+   "riseMinutes": 9.0,
+   "fluence": 0.0293,
+   "p": 0.0047,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405090444,
+   "peakUtc": "2024-05-09T04:49:00Z",
+   "startUtc": "2024-05-09T04:44:00Z",
+   "class": "M1.7",
+   "lon": 27.65,
+   "lat": -18.1,
+   "riseMinutes": 5.0,
+   "fluence": 0.0071,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405090603,
+   "peakUtc": "2024-05-09T06:13:00Z",
+   "startUtc": "2024-05-09T06:03:00Z",
+   "class": "M2.3",
+   "lon": 29.11,
+   "lat": -21.08,
+   "riseMinutes": 10.0,
+   "fluence": 0.0142,
+   "p": 0.0021,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405090624,
+   "peakUtc": "2024-05-09T06:27:00Z",
+   "startUtc": "2024-05-09T06:24:00Z",
+   "class": "M2.4",
+   "lon": 25.58,
+   "lat": -23.06,
+   "riseMinutes": 3.0,
+   "fluence": 0.009,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405090830,
+   "peakUtc": "2024-05-09T08:40:00Z",
+   "startUtc": "2024-05-09T08:30:00Z",
+   "class": "M2.0",
+   "lon": 34.22,
+   "lat": -2.91,
+   "riseMinutes": 10.0,
+   "fluence": 0.0142,
+   "p": 0.0015,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405090845,
+   "peakUtc": "2024-05-09T09:13:00Z",
+   "startUtc": "2024-05-09T08:45:00Z",
+   "class": "X2.1",
+   "lon": 24.17,
+   "lat": -18.58,
+   "riseMinutes": 28.0,
+   "fluence": 0.2372,
+   "p": 0.231,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405091152,
+   "peakUtc": "2024-05-09T11:56:00Z",
+   "startUtc": "2024-05-09T11:52:00Z",
+   "class": "M3.0",
+   "lon": 40.06,
+   "lat": -14.12,
+   "riseMinutes": 4.0,
+   "fluence": 0.0106,
+   "p": 0.0005,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405091205,
+   "peakUtc": "2024-05-09T12:12:00Z",
+   "startUtc": "2024-05-09T12:05:00Z",
+   "class": "M2.9",
+   "lon": 33.67,
+   "lat": -11.2,
+   "riseMinutes": 7.0,
+   "fluence": 0.0167,
+   "p": 0.0015,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405091316,
+   "peakUtc": "2024-05-09T13:23:00Z",
+   "startUtc": "2024-05-09T13:16:00Z",
+   "class": "M3.7",
+   "lon": 31.94,
+   "lat": -16.13,
+   "riseMinutes": 7.0,
+   "fluence": 0.0148,
+   "p": 0.0014,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405091723,
+   "peakUtc": "2024-05-09T17:44:00Z",
+   "startUtc": "2024-05-09T17:23:00Z",
+   "class": "X1.0",
+   "lon": 28.87,
+   "lat": -15.79,
+   "riseMinutes": 21.0,
+   "fluence": 0.0951,
+   "p": 0.0555,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405092224,
+   "peakUtc": "2024-05-09T22:41:00Z",
+   "startUtc": "2024-05-09T22:24:00Z",
+   "class": "M2.6",
+   "lon": 42.24,
+   "lat": -10.85,
+   "riseMinutes": 17.0,
+   "fluence": 0.0204,
+   "p": 0.0057,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405092304,
+   "peakUtc": "2024-05-09T23:08:00Z",
+   "startUtc": "2024-05-09T23:04:00Z",
+   "class": "M1.2",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 4.0,
+   "fluence": 0.0054,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405092344,
+   "peakUtc": "2024-05-09T23:51:00Z",
+   "startUtc": "2024-05-09T23:44:00Z",
+   "class": "M1.5",
+   "lon": 35.03,
+   "lat": -20.66,
+   "riseMinutes": 7.0,
+   "fluence": 0.0068,
+   "p": 0.0005,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405100010,
+   "peakUtc": "2024-05-10T00:13:00Z",
+   "startUtc": "2024-05-10T00:10:00Z",
+   "class": "M1.3",
+   "lon": 29.45,
+   "lat": -19.89,
+   "riseMinutes": 3.0,
+   "fluence": 0.005,
+   "p": 0.0001,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405100315,
+   "peakUtc": "2024-05-10T03:29:00Z",
+   "startUtc": "2024-05-10T03:15:00Z",
+   "class": "M1.4",
+   "lon": -65.97,
+   "lat": -13.12,
+   "riseMinutes": 14.0,
+   "fluence": 0.0116,
+   "p": 0.0017,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405100614,
+   "peakUtc": "2024-05-10T06:24:00Z",
+   "startUtc": "2024-05-10T06:14:00Z",
+   "class": "M1.3",
+   "lon": 37.37,
+   "lat": -18.02,
+   "riseMinutes": 10.0,
+   "fluence": 0.0087,
+   "p": 0.001,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405100627,
+   "peakUtc": "2024-05-10T06:54:00Z",
+   "startUtc": "2024-05-10T06:27:00Z",
+   "class": "X3.8",
+   "lon": 36.85,
+   "lat": -14.41,
+   "riseMinutes": 27.0,
+   "fluence": 0.2968,
+   "p": 0.2925,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 1
+  },
+  {
+   "flare_id": 202405101010,
+   "peakUtc": "2024-05-10T10:14:00Z",
+   "startUtc": "2024-05-10T10:10:00Z",
+   "class": "M2.2",
+   "lon": 44.39,
+   "lat": -18.2,
+   "riseMinutes": 4.0,
+   "fluence": 0.0082,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405101358,
+   "peakUtc": "2024-05-10T14:11:00Z",
+   "startUtc": "2024-05-10T13:58:00Z",
+   "class": "M5.8",
+   "lon": 40.31,
+   "lat": -15.88,
+   "riseMinutes": 13.0,
+   "fluence": 0.0347,
+   "p": 0.0093,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405101826,
+   "peakUtc": "2024-05-10T18:32:00Z",
+   "startUtc": "2024-05-10T18:26:00Z",
+   "class": "M1.1",
+   "lon": 51.82,
+   "lat": -21.2,
+   "riseMinutes": 6.0,
+   "fluence": 0.006,
+   "p": 0.0004,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405101838,
+   "peakUtc": "2024-05-10T18:48:00Z",
+   "startUtc": "2024-05-10T18:38:00Z",
+   "class": "M1.7",
+   "lon": 48.54,
+   "lat": -18.79,
+   "riseMinutes": 10.0,
+   "fluence": 0.0124,
+   "p": 0.0018,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405101857,
+   "peakUtc": "2024-05-10T19:05:00Z",
+   "startUtc": "2024-05-10T18:57:00Z",
+   "class": "M2.0",
+   "lon": 44.88,
+   "lat": -18.6,
+   "riseMinutes": 8.0,
+   "fluence": 0.0131,
+   "p": 0.0014,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405101935,
+   "peakUtc": "2024-05-10T19:53:00Z",
+   "startUtc": "2024-05-10T19:35:00Z",
+   "class": "M1.1",
+   "lon": 41.17,
+   "lat": -17.47,
+   "riseMinutes": 18.0,
+   "fluence": 0.0133,
+   "p": 0.0034,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405101956,
+   "peakUtc": "2024-05-10T20:03:00Z",
+   "startUtc": "2024-05-10T19:56:00Z",
+   "class": "M1.9",
+   "lon": 48.92,
+   "lat": -18.39,
+   "riseMinutes": 7.0,
+   "fluence": 0.0102,
+   "p": 0.0009,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405102059,
+   "peakUtc": "2024-05-10T21:08:00Z",
+   "startUtc": "2024-05-10T20:59:00Z",
+   "class": "M3.7",
+   "lon": 46.22,
+   "lat": -15.13,
+   "riseMinutes": 9.0,
+   "fluence": 0.0164,
+   "p": 0.0024,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405110110,
+   "peakUtc": "2024-05-11T01:23:00Z",
+   "startUtc": "2024-05-11T01:10:00Z",
+   "class": "X5.7",
+   "lon": 45.55,
+   "lat": -14.3,
+   "riseMinutes": 13.0,
+   "fluence": 0.3292,
+   "p": 0.1661,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 1
+  },
+  {
+   "flare_id": 202405111003,
+   "peakUtc": "2024-05-11T10:18:00Z",
+   "startUtc": "2024-05-11T10:03:00Z",
+   "class": "M3.0",
+   "lon": 59.08,
+   "lat": -19.54,
+   "riseMinutes": 15.0,
+   "fluence": 0.0259,
+   "p": 0.008,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405111053,
+   "peakUtc": "2024-05-11T10:56:00Z",
+   "startUtc": "2024-05-11T10:53:00Z",
+   "class": "M1.6",
+   "lon": 53.73,
+   "lat": -11.97,
+   "riseMinutes": 3.0,
+   "fluence": 0.0055,
+   "p": 0.0001,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405111115,
+   "peakUtc": "2024-05-11T11:44:00Z",
+   "startUtc": "2024-05-11T11:15:00Z",
+   "class": "X1.4",
+   "lon": 62.28,
+   "lat": -17.47,
+   "riseMinutes": 29.0,
+   "fluence": 0.1408,
+   "p": 0.15,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405111345,
+   "peakUtc": "2024-05-11T13:49:00Z",
+   "startUtc": "2024-05-11T13:45:00Z",
+   "class": "M1.7",
+   "lon": 58.17,
+   "lat": -18.42,
+   "riseMinutes": 4.0,
+   "fluence": 0.0066,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405111446,
+   "peakUtc": "2024-05-11T15:25:00Z",
+   "startUtc": "2024-05-11T14:46:00Z",
+   "class": "M8.7",
+   "lon": 50.57,
+   "lat": -15.42,
+   "riseMinutes": 39.0,
+   "fluence": 0.1135,
+   "p": 0.1438,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405112032,
+   "peakUtc": "2024-05-11T20:41:00Z",
+   "startUtc": "2024-05-11T20:32:00Z",
+   "class": "M1.2",
+   "lon": 65.86,
+   "lat": -19.3,
+   "riseMinutes": 9.0,
+   "fluence": 0.0064,
+   "p": 0.0007,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405120041,
+   "peakUtc": "2024-05-12T00:45:00Z",
+   "startUtc": "2024-05-12T00:41:00Z",
+   "class": "M3.2",
+   "lon": 68.22,
+   "lat": -17.73,
+   "riseMinutes": 4.0,
+   "fluence": 0.0112,
+   "p": 0.0005,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405120537,
+   "peakUtc": "2024-05-12T05:52:00Z",
+   "startUtc": "2024-05-12T05:37:00Z",
+   "class": "M2.3",
+   "lon": -65.55,
+   "lat": 18.96,
+   "riseMinutes": 15.0,
+   "fluence": 0.018,
+   "p": 0.0038,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405121227,
+   "peakUtc": "2024-05-12T12:41:00Z",
+   "startUtc": "2024-05-12T12:27:00Z",
+   "class": "M1.6",
+   "lon": 71.67,
+   "lat": -18.01,
+   "riseMinutes": 14.0,
+   "fluence": 0.0114,
+   "p": 0.0024,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405121340,
+   "peakUtc": "2024-05-12T13:47:00Z",
+   "startUtc": "2024-05-12T13:40:00Z",
+   "class": "M1.0",
+   "lon": -41.95,
+   "lat": -10.24,
+   "riseMinutes": 7.0,
+   "fluence": 0.0047,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405121349,
+   "peakUtc": "2024-05-12T13:56:00Z",
+   "startUtc": "2024-05-12T13:49:00Z",
+   "class": "M1.5",
+   "lon": 42.03,
+   "lat": -19.06,
+   "riseMinutes": 7.0,
+   "fluence": 0.0086,
+   "p": 0.0007,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405121611,
+   "peakUtc": "2024-05-12T16:26:00Z",
+   "startUtc": "2024-05-12T16:11:00Z",
+   "class": "M9.9",
+   "lon": 78.73,
+   "lat": -17.82,
+   "riseMinutes": 15.0,
+   "fluence": 0.0594,
+   "p": 0.0236,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405122017,
+   "peakUtc": "2024-05-12T20:32:00Z",
+   "startUtc": "2024-05-12T20:17:00Z",
+   "class": "M4.8",
+   "lon": 80.48,
+   "lat": -18.24,
+   "riseMinutes": 15.0,
+   "fluence": 0.029,
+   "p": 0.009,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405122201,
+   "peakUtc": "2024-05-12T22:06:00Z",
+   "startUtc": "2024-05-12T22:01:00Z",
+   "class": "M1.1",
+   "lon": 72.45,
+   "lat": -17.44,
+   "riseMinutes": 5.0,
+   "fluence": 0.0051,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405122214,
+   "peakUtc": "2024-05-12T22:18:00Z",
+   "startUtc": "2024-05-12T22:14:00Z",
+   "class": "M1.1",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 4.0,
+   "fluence": 0.0047,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405130123,
+   "peakUtc": "2024-05-13T01:33:00Z",
+   "startUtc": "2024-05-13T01:23:00Z",
+   "class": "M1.2",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 10.0,
+   "fluence": 0.0077,
+   "p": 0.001,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405130806,
+   "peakUtc": "2024-05-13T08:20:00Z",
+   "startUtc": "2024-05-13T08:06:00Z",
+   "class": "M1.2",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 14.0,
+   "fluence": 0.01,
+   "p": 0.0021,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405130823,
+   "peakUtc": "2024-05-13T08:29:00Z",
+   "startUtc": "2024-05-13T08:23:00Z",
+   "class": "M1.4",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 6.0,
+   "fluence": 0.0081,
+   "p": 0.0006,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405130847,
+   "peakUtc": "2024-05-13T09:33:00Z",
+   "startUtc": "2024-05-13T08:47:00Z",
+   "class": "M4.8",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 46.0,
+   "fluence": 0.0729,
+   "p": 0.1156,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405130936,
+   "peakUtc": "2024-05-13T09:44:00Z",
+   "startUtc": "2024-05-13T09:36:00Z",
+   "class": "M6.5",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 8.0,
+   "fluence": 0.0396,
+   "p": 0.0077,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405131256,
+   "peakUtc": "2024-05-13T13:11:00Z",
+   "startUtc": "2024-05-13T12:56:00Z",
+   "class": "M3.6",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 15.0,
+   "fluence": 0.0303,
+   "p": 0.0107,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405131732,
+   "peakUtc": "2024-05-13T17:47:00Z",
+   "startUtc": "2024-05-13T17:32:00Z",
+   "class": "M1.0",
+   "lon": -50.74,
+   "lat": -8.61,
+   "riseMinutes": 15.0,
+   "fluence": 0.0101,
+   "p": 0.0014,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202405132148,
+   "peakUtc": "2024-05-13T21:59:00Z",
+   "startUtc": "2024-05-13T21:48:00Z",
+   "class": "M1.5",
+   "lon": 78.28,
+   "lat": -14.7,
+   "riseMinutes": 11.0,
+   "fluence": 0.0086,
+   "p": 0.0011,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  }
+ ],
+ "oct2024": [
+  {
+   "flare_id": 202410090125,
+   "peakUtc": "2024-10-09T01:56:00Z",
+   "startUtc": "2024-10-09T01:25:00Z",
+   "class": "X1.7",
+   "lon": 8.2,
+   "lat": 13.8,
+   "riseMinutes": 31.0,
+   "fluence": 0.1582,
+   "p": 0.1395,
+   "warn": true,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 1
+  },
+  {
+   "flare_id": 202410090541,
+   "peakUtc": "2024-10-09T05:46:00Z",
+   "startUtc": "2024-10-09T05:41:00Z",
+   "class": "M1.6",
+   "lon": -13.52,
+   "lat": -9.73,
+   "riseMinutes": 5.0,
+   "fluence": 0.008,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410091544,
+   "peakUtc": "2024-10-09T15:47:00Z",
+   "startUtc": "2024-10-09T15:44:00Z",
+   "class": "X1.3",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 3.0,
+   "fluence": 0.0423,
+   "p": 0.0023,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410092259,
+   "peakUtc": "2024-10-09T23:12:00Z",
+   "startUtc": "2024-10-09T22:59:00Z",
+   "class": "M7.6",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 13.0,
+   "fluence": 0.0354,
+   "p": 0.012,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410101147,
+   "peakUtc": "2024-10-10T12:00:00Z",
+   "startUtc": "2024-10-10T11:47:00Z",
+   "class": "M1.3",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 13.0,
+   "fluence": 0.0094,
+   "p": 0.0018,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410101210,
+   "peakUtc": "2024-10-10T12:19:00Z",
+   "startUtc": "2024-10-10T12:10:00Z",
+   "class": "M1.1",
+   "lon": 58.37,
+   "lat": -9.63,
+   "riseMinutes": 9.0,
+   "fluence": 0.0088,
+   "p": 0.0008,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410101652,
+   "peakUtc": "2024-10-10T17:00:00Z",
+   "startUtc": "2024-10-10T16:52:00Z",
+   "class": "M1.0",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 8.0,
+   "fluence": 0.0054,
+   "p": 0.0005,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410102153,
+   "peakUtc": "2024-10-10T22:30:00Z",
+   "startUtc": "2024-10-10T21:53:00Z",
+   "class": "M2.9",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 37.0,
+   "fluence": 0.0441,
+   "p": 0.0468,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410111548,
+   "peakUtc": "2024-10-11T16:04:00Z",
+   "startUtc": "2024-10-11T15:48:00Z",
+   "class": "M1.4",
+   "lon": -23.65,
+   "lat": -7.18,
+   "riseMinutes": 16.0,
+   "fluence": 0.0103,
+   "p": 0.0016,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202410111607,
+   "peakUtc": "2024-10-11T16:32:00Z",
+   "startUtc": "2024-10-11T16:07:00Z",
+   "class": "M2.1",
+   "lon": -24.8,
+   "lat": -7.99,
+   "riseMinutes": 25.0,
+   "fluence": 0.0327,
+   "p": 0.0119,
+   "warn": true,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  }
+ ],
+ "quiet2024": [
+  {
+   "flare_id": 202407181004,
+   "peakUtc": "2024-07-18T10:14:00Z",
+   "startUtc": "2024-07-18T10:04:00Z",
+   "class": "M2.2",
+   "lon": -20.75,
+   "lat": -5.55,
+   "riseMinutes": 10.0,
+   "fluence": 0.009,
+   "p": 0.001,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407181020,
+   "peakUtc": "2024-07-18T10:27:00Z",
+   "startUtc": "2024-07-18T10:20:00Z",
+   "class": "M2.0",
+   "lon": -23.68,
+   "lat": -7.06,
+   "riseMinutes": 7.0,
+   "fluence": 0.0123,
+   "p": 0.0009,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407190813,
+   "peakUtc": "2024-07-19T08:23:00Z",
+   "startUtc": "2024-07-19T08:13:00Z",
+   "class": "M3.1",
+   "lon": 71.72,
+   "lat": 11.67,
+   "riseMinutes": 10.0,
+   "fluence": 0.0149,
+   "p": 0.0023,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407191753,
+   "peakUtc": "2024-07-19T18:06:00Z",
+   "startUtc": "2024-07-19T17:53:00Z",
+   "class": "M2.0",
+   "lon": -3.35,
+   "lat": -8.82,
+   "riseMinutes": 13.0,
+   "fluence": 0.0089,
+   "p": 0.0013,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407192244,
+   "peakUtc": "2024-07-19T22:51:00Z",
+   "startUtc": "2024-07-19T22:44:00Z",
+   "class": "M1.0",
+   "lon": 67.36,
+   "lat": -7.19,
+   "riseMinutes": 7.0,
+   "fluence": 0.0059,
+   "p": 0.0004,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407200710,
+   "peakUtc": "2024-07-20T07:20:00Z",
+   "startUtc": "2024-07-20T07:10:00Z",
+   "class": "M1.8",
+   "lon": 3.0,
+   "lat": -6.78,
+   "riseMinutes": 10.0,
+   "fluence": 0.0062,
+   "p": 0.0006,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407201836,
+   "peakUtc": "2024-07-20T18:49:00Z",
+   "startUtc": "2024-07-20T18:36:00Z",
+   "class": "M1.5",
+   "lon": 73.12,
+   "lat": 13.88,
+   "riseMinutes": 13.0,
+   "fluence": 0.0099,
+   "p": 0.0018,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407210346,
+   "peakUtc": "2024-07-21T03:55:00Z",
+   "startUtc": "2024-07-21T03:46:00Z",
+   "class": "M1.4",
+   "lon": 73.98,
+   "lat": 14.62,
+   "riseMinutes": 9.0,
+   "fluence": 0.0064,
+   "p": 0.0007,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407210828,
+   "peakUtc": "2024-07-21T08:34:00Z",
+   "startUtc": "2024-07-21T08:28:00Z",
+   "class": "M1.4",
+   "lon": 20.93,
+   "lat": -9.77,
+   "riseMinutes": 6.0,
+   "fluence": 0.0055,
+   "p": 0.0003,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407211618,
+   "peakUtc": "2024-07-21T16:31:00Z",
+   "startUtc": "2024-07-21T16:18:00Z",
+   "class": "M1.0",
+   "lon": -27.26,
+   "lat": 13.46,
+   "riseMinutes": 13.0,
+   "fluence": 0.0075,
+   "p": 0.0009,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407212321,
+   "peakUtc": "2024-07-21T23:28:00Z",
+   "startUtc": "2024-07-21T23:21:00Z",
+   "class": "M3.2",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 7.0,
+   "fluence": 0.0092,
+   "p": 0.0011,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407220326,
+   "peakUtc": "2024-07-22T03:33:00Z",
+   "startUtc": "2024-07-22T03:26:00Z",
+   "class": "M1.3",
+   "lon": -51.63,
+   "lat": -10.71,
+   "riseMinutes": 7.0,
+   "fluence": 0.0038,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407220355,
+   "peakUtc": "2024-07-22T04:04:00Z",
+   "startUtc": "2024-07-22T03:55:00Z",
+   "class": "M3.9",
+   "lon": -49.26,
+   "lat": -9.47,
+   "riseMinutes": 9.0,
+   "fluence": 0.0078,
+   "p": 0.0009,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407220414,
+   "peakUtc": "2024-07-22T04:34:00Z",
+   "startUtc": "2024-07-22T04:14:00Z",
+   "class": "M1.9",
+   "lon": -51.09,
+   "lat": -11.1,
+   "riseMinutes": 20.0,
+   "fluence": 0.0136,
+   "p": 0.0037,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407220931,
+   "peakUtc": "2024-07-22T09:35:00Z",
+   "startUtc": "2024-07-22T09:31:00Z",
+   "class": "M1.4",
+   "lon": 59.12,
+   "lat": 13.8,
+   "riseMinutes": 4.0,
+   "fluence": 0.0049,
+   "p": 0.0002,
+   "warn": false,
+   "onsetHours": [
+    0.73,
+    1.29,
+    23.71
+   ],
+   "sep": 0
+  },
+  {
+   "flare_id": 202407221247,
+   "peakUtc": "2024-07-22T13:00:00Z",
+   "startUtc": "2024-07-22T12:47:00Z",
+   "class": "M1.5",
+   "lon": null,
+   "lat": null,
+   "riseMinutes": 13.0,
+   "fluence": 0.0093,
+   "p": 0.0021,
+   "warn": false,
+   "onsetHours": [
+    2.76,
+    6.7,
+    45.45
+   ],
+   "sep": 0
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "jan2026": {
+  "regions": [
+   {
+    "position": "south-east quadrant, on disk",
+    "hemisphere": "east",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "near disk center",
+    "hemisphere": "center",
+    "complexity": "simple",
+    "flare_risk": "low"
+   },
+   {
+    "position": "eastern limb",
+    "hemisphere": "east",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   }
+  ],
+  "outlook": "watch",
+  "earthConnectedRisk": "low",
+  "flareProbability": 25,
+  "briefing": "Two moderately complex regions sit in the eastern hemisphere and at the east limb, with only a simple region near disk center. The western, Earth-connected half is comparatively quiet, so proton-storm risk to the fleet is low over the next 48 hours, though an isolated M-class flare from the eastern regions cannot be ruled out. A broad coronal hole across the central disk may raise solar-wind speeds later, so maintain normal monitoring for minor geomagnetic effects.",
+  "model": "grok-4.7",
+  "latencyMs": 27621.9,
+  "utc": "2026-01-17T06:00:00Z"
+ },
+ "jun2024": {
+  "regions": [
+   {
+    "position": "S20, southwest quadrant, west of disk center",
+    "hemisphere": "west",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "S10 near central meridian, slightly east",
+    "hemisphere": "center",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "eastern limb, mid-latitudes",
+    "hemisphere": "east",
+    "complexity": "moderate",
+    "flare_risk": "low"
+   }
+  ],
+  "outlook": "watch",
+  "earthConnectedRisk": "moderate",
+  "flareProbability": 30,
+  "briefing": "Several bipolar active regions are visible, with the most relevant mixed-polarity group in the southwest quadrant and another near central meridian. No obvious large delta-class complex is apparent, but western-hemisphere flux keeps Earth proton connectivity non-negligible. Expect possible C-class and isolated low-M flares over 48 hours; operators should maintain watch for radio blackouts and modest SEP risk rather than assume quiet conditions.",
+  "model": "grok-4.7",
+  "latencyMs": 24507.5,
+  "utc": "2024-06-07T06:00:00Z"
+ },
+ "mar2024": {
+  "regions": [
+   {
+    "position": "S20, east of disk center",
+    "hemisphere": "east",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "N10, just east of disk center",
+    "hemisphere": "east",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "near western limb, mid-latitudes",
+    "hemisphere": "west",
+    "complexity": "simple",
+    "flare_risk": "low"
+   }
+  ],
+  "outlook": "watch",
+  "earthConnectedRisk": "low",
+  "flareProbability": 25,
+  "briefing": "Two moderately complex bipolar regions are visible on the eastern half, with the brightest coronal loops in the southeast; neither shows extreme magnetic mixing. Western-limb activity is simpler, so Earth magnetic connectivity for proton events is limited over the next 48 hours. Expect possible C-class to isolated low-M flares, with a modest chance of an M5-or-stronger event; no warning-level storm is indicated from the visible disk.",
+  "model": "grok-4.7",
+  "latencyMs": 26220.1,
+  "utc": "2024-03-22T06:00:00Z"
+ },
+ "may2024": {
+  "regions": [
+   {
+    "position": "S20, west of disk center",
+    "hemisphere": "west",
+    "complexity": "complex",
+    "flare_risk": "high"
+   },
+   {
+    "position": "near eastern limb, mid-latitudes",
+    "hemisphere": "east",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "N15, northwest quadrant",
+    "hemisphere": "west",
+    "complexity": "simple",
+    "flare_risk": "low"
+   }
+  ],
+  "outlook": "watch",
+  "earthConnectedRisk": "high",
+  "flareProbability": 35,
+  "briefing": "A magnetically complex active region in the southern western hemisphere is the primary concern, with mixed polarities and bright coronal loops well connected to Earth. An additional region near the eastern limb is developing but is not yet favorably connected. Satellite operators should expect elevated flare and proton-storm risk over the next 48 hours and prepare for possible comms and drag impacts.",
+  "model": "grok-4.7",
+  "latencyMs": 22025.1,
+  "utc": "2024-05-09T06:00:00Z"
+ },
+ "oct2024": {
+  "regions": [
+   {
+    "position": "N15 just east of disk center",
+    "hemisphere": "center",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "mid-latitude western limb",
+    "hemisphere": "west",
+    "complexity": "simple",
+    "flare_risk": "low"
+   },
+   {
+    "position": "eastern limb, mid-latitudes",
+    "hemisphere": "east",
+    "complexity": "simple",
+    "flare_risk": "low"
+   }
+  ],
+  "outlook": "watch",
+  "earthConnectedRisk": "low",
+  "flareProbability": 25,
+  "briefing": "The main concern is a moderate bipolar region near disk center; western-limb flux looks simpler, so prompt proton connectivity is limited. A northern coronal hole is on the disk and may raise solar-wind speed over the next few days. Treat the next 48 hours as a watch: isolated M-class flaring is possible, but an M5-or-stronger event is not the most likely outcome.",
+  "model": "grok-4.7",
+  "latencyMs": 42496.7,
+  "utc": "2024-10-08T06:00:00Z"
+ },
+ "quiet2024": {
+  "regions": [
+   {
+    "position": "S15 near central meridian",
+    "hemisphere": "center",
+    "complexity": "complex",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "southwest quadrant, west of central meridian",
+    "hemisphere": "west",
+    "complexity": "moderate",
+    "flare_risk": "moderate"
+   },
+   {
+    "position": "southeast quadrant approaching the limb",
+    "hemisphere": "east",
+    "complexity": "moderate",
+    "flare_risk": "low"
+   }
+  ],
+  "outlook": "watch",
+  "earthConnectedRisk": "moderate",
+  "flareProbability": 40,
+  "briefing": "Several active regions are on the disk, led by a magnetically mixed south-central region and additional bipolar groups in the southwest and southeast. An M5-or-stronger flare is possible but not likely over the next 48 hours, and western-hemisphere regions give moderate Earth connectivity for any associated proton event. Satellite operators should keep heightened monitoring; no region shows an extreme configuration that warrants a warning.",
+  "model": "grok-4.7",
+  "latencyMs": 25219.4,
+  "utc": "2024-07-18T06:00:00Z"
+ }
+}

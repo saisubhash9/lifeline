@@ -14,9 +14,9 @@ from playwright.sync_api import sync_playwright
 HERE = Path(__file__).resolve().parent
 SCRIPT = json.loads((HERE / "script.json").read_text())
 DUR = json.loads((HERE / "durations.json").read_text())
-TEMPO = 1.15  # narration is sped up slightly in the final mix
-URL = "http://127.0.0.1:8010/#t=330"
-QUESTION = "Why did emergency comms move to Hub-1? Answer in two short sentences."
+TEMPO = 1.1  # narration is sped up slightly in the final mix
+URL = "http://127.0.0.1:8010/#t=300"
+QUESTION = "What happened to emergency comms during this storm, and why? Two short sentences."
 
 HELPERS = """
 (() => {
@@ -123,85 +123,99 @@ def main():
                 page.wait_for_timeout(int(remaining * 1000))
             caption("")
 
-        # w1: mission banner
+        # w1: people first
         def w1():
             scroll("body", "top")
-            glow("#mission")
-            move("#mission", 0.3, 0.3)
-            page.wait_for_timeout(2500)
-            move("#mission", 0.2, 0.75)
-        segment("w1", w1)
-        glow("#mission", False)
-
-        # w2: timeline and map
-        def w2():
-            scroll(".timeline-card", offset=-60)
-            move("#chart", 0.35, 0.5)
+            move(".intro", 0.25, 0.4)
             page.wait_for_timeout(2600)
-            move("#chart", 0.55, 0.3)
+            scroll("#people", offset=-240)
+            glow("#people")
+            move("#people", 0.18, 0.6)
             page.wait_for_timeout(2400)
-            move("#map", 0.5, 0.12)
-            page.wait_for_timeout(1800)
-            move("#sat-legend", 0.3, 0.5)
+            move("#people", 0.5, 0.6)
+        segment("w1", w1)
+        glow("#people", False)
+
+        # w2: Grok Sun watch
+        def w2():
+            scroll("#sunwatch", offset=-60)
+            move("#sunwatch", 0.12, 0.35)
+            page.wait_for_timeout(1500)
+            move("#sunwatch", 0.6, 0.3)
         segment("w2", w2)
 
-        # w3: next decision -> storm detected, then the first handoff
+        # w3: X-ray timeline
         def w3():
-            click("#jump-decision")
-            page.wait_for_timeout(2600)
-            click("#jump-decision")
-            page.wait_for_timeout(700)
-            glow("#decision")
-            move("#decision", 0.5, 0.35)
-            page.wait_for_timeout(2500)
-            move("#decision table", 0.3, 0.8)
+            scroll(".timeline-card", offset=-60)
+            move("#chart", 0.35, 0.55)
+            page.wait_for_timeout(1800)
+            move("#chart", 0.2, 0.2)
         segment("w3", w3)
+
+        # w4: ML flare warning
+        def w4():
+            click("#jump-decision")
+            scroll(".timeline-card", offset=-40)
+            glow("#decision")
+            move("#decision", 0.5, 0.3)
+        segment("w4", w4)
         glow("#decision", False)
 
-        # w4: play the storm
-        def w4():
+        # w5: Grok verification with the coronagraph panel
+        def w5():
+            click("#jump-decision")
+            scroll(".grid-main", offset=-60)
+            glow("#decision")
+            move("#decision", 0.5, 0.2)
+            page.wait_for_timeout(3500)
+            move(".verify-panel", 0.7, 0.75)
+        segment("w5", w5)
+        glow("#decision", False)
+
+        # w6: play the storm
+        def w6():
+            scroll(".timeline-card", offset=-60)
             click('#speeds button[data-speed="30"]')
             click("#play")
             move("#map", 0.45, 0.45)
-        segment("w4", w4)
+        segment("w6", w6)
         click("#play")
 
-        # w5: four fleets
-        def w5():
+        # w7: five fleets
+        def w7():
             scroll("#fleets", offset=-40)
-            for i, dx in enumerate((0.12, 0.37, 0.62, 0.87)):
-                move("#fleets", dx, 0.25)
-                page.wait_for_timeout(1900 if i < 3 else 1200)
-            glow("#fleets .fleet.lifeline")
-            move("#fleets", 0.87, 0.85)
-        segment("w5", w5)
-        glow("#fleets .fleet.lifeline", False)
+            for i, dx in enumerate((0.1, 0.3, 0.5, 0.7, 0.9)):
+                move("#fleets", dx, 0.8)
+                page.wait_for_timeout(700)
+            glow("#fleets .fleet.lifeline_ew")
+        segment("w7", w7)
+        glow("#fleets .fleet.lifeline_ew", False)
 
-        # w6: Grok Voice copilot
-        def w6():
+        # w8: Grok Voice
+        def w8():
             scroll(".grid-main", offset=-50)
             click("#voice-connect")
             move(".copilot", 0.5, 0.55)
-        segment("w6", w6)
+        segment("w8", w8)
         idle_from = now()
-        page.wait_for_function("document.querySelectorAll('#transcript .bubble.grok').length > 0", timeout=30000)
-        page.wait_for_function("state.voice && state.voice.assistantText === ''", timeout=30000)
+        page.wait_for_function("document.querySelectorAll('#transcript .bubble.grok').length > 0", timeout=45000)
+        page.wait_for_function("state.voice && state.voice.assistantText === ''", timeout=45000)
         page.wait_for_timeout(600)
         events.append({"key": "_cut", "from": idle_from + 1.2, "to": now() - 0.2})
         before = page.evaluate("document.querySelectorAll('#transcript .bubble.grok').length")
         click("#ask-text")
-        page.locator("#ask-text").type(QUESTION, delay=28)
+        page.locator("#ask-text").type(QUESTION, delay=24)
         click("#ask button")
         wait_from = now()
-        page.wait_for_function(f"document.querySelectorAll('#transcript .bubble.grok').length > {before}", timeout=45000)
+        page.wait_for_function(f"document.querySelectorAll('#transcript .bubble.grok').length > {before}", timeout=60000)
         answer_t = now()
         events.append({"key": "_cut", "from": wait_from + 0.6, "to": answer_t - 0.2})
         last, stable = "", 0
-        for _ in range(120):
-            text = page.evaluate("[...document.querySelectorAll('#transcript .bubble.grok')].pop().textContent")
-            stable = stable + 1 if text == last else 0
-            last = text
+        for _ in range(160):
+            bubbles = page.evaluate("[...document.querySelectorAll('#transcript .bubble.grok')].slice(%d).map(b => b.textContent).join(' ')" % before)
             speaking = page.evaluate("state.voice && state.voice.assistantText !== ''")
+            stable = stable + 1 if bubbles == last else 0
+            last = bubbles
             if stable >= 10 and not speaking:
                 break
             page.wait_for_timeout(250)
@@ -209,48 +223,32 @@ def main():
         events.append({"key": "_answer", "t": answer_t, "text": last})
         page.wait_for_timeout(int(hold * 1000))
 
-        # w7: evaluation across storms
-        def w7():
+        # w9: held-out ML results
+        def w9():
             page.evaluate("state.voice && state.voice.disconnect()")
+            scroll("#model-card", offset=-40)
+            glow("#model-card")
+            move("#model-card", 0.3, 0.55)
+            page.wait_for_timeout(3000)
+            move("#model-card", 0.8, 0.35)
+        segment("w9", w9)
+        glow("#model-card", False)
+
+        # w10: evaluation
+        def w10():
             scroll(".eval", offset=-40)
             glow("#headline")
             move("#headline", 0.1, 0.5)
-            page.wait_for_timeout(2600)
-            move("#headline", 0.5, 0.5)
-            page.wait_for_timeout(2000)
-            move("#eval-table", 0.9, 0.2)
-        segment("w7", w7)
+        segment("w10", w10)
         glow("#headline", False)
 
-        # w8: Grok as in-flight analyst, and stress controls
-        def w8():
-            scroll(".controls", offset=-90)
-            click("#grok-analyst")
-            page.wait_for_timeout(2500)
-            move("#latency", 0.5, 0.5)
-            page.wait_for_timeout(1500)
-            move("#loss", 0.5, 0.5)
-        segment("w8", w8)
-        wait_from = now()
-        page.wait_for_function("document.getElementById('status').textContent.startsWith('Grok analyst')", timeout=90000)
-        events.append({"key": "_cut", "from": wait_from + 0.3, "to": now() - 0.3})
-        click("#jump-decision")
-        page.wait_for_timeout(700)
-        click("#jump-decision")
-        page.wait_for_timeout(500)
-        glow("#decision")
-        move("#decision", 0.4, 0.3)
-        page.wait_for_timeout(2600)
-        glow("#decision", False)
-        events.append({"key": "_grok_card", "t": now()})
-
-        # w9: debrief
-        def w9():
+        # w11: debrief
+        def w11():
             scroll(".debrief", offset=-200)
             click("#debrief-button")
-        segment("w9", w9)
+        segment("w11", w11)
         wait_from = now()
-        page.wait_for_function("document.querySelectorAll('#debrief-text p').length > 1", timeout=90000)
+        page.wait_for_function("document.querySelectorAll('#debrief-text p').length > 1", timeout=120000)
         events.append({"key": "_cut", "from": wait_from + 0.3, "to": now() - 0.3})
         page.wait_for_timeout(300)
         scroll(".debrief", offset=-80)

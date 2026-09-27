@@ -2,7 +2,11 @@
 
 from fastapi.testclient import TestClient
 
-from backend import grok, sim
+import csv
+import json
+from pathlib import Path
+
+from backend import earlywarning, grok, sim
 from backend.app import app
 from backend.fleet import HUBS, ORBITS, SIMPLE
 from backend.sim import Scenario, aggregate, simulate
@@ -110,7 +114,9 @@ def test_api_default_run_is_milton():
     assert events["events"][0]["id"] == "oct2024"
     body = client.post("/api/run", json={}).json()
     assert "Milton" in body["mission"]["title"]
-    assert set(body["summary"]) == {"ground", "threshold", "local", "lifeline"}
+    assert set(body["summary"]) == {"ground", "threshold", "local", "lifeline", "lifeline_ml", "lifeline_ew"}
+    assert body["primary"] == "lifeline_ew"
+    assert len(body["xray"]) == body["ticks"]
     frame = body["frames"][100]
     assert set(frame["sats"]) == {"H1", "H2", "S1", "S2", "S3"}
     assert "fleets" in frame and "links" in frame
@@ -133,4 +139,77 @@ def test_debrief_facts_match_the_run(monkeypatch):
     body = client.post("/api/debrief", json={}).json()
     assert body["text"] == "ok"
     run = client.post("/api/run", json={}).json()
-    assert captured["scores"]["Lifeline"]["missedEmergencyCommsDeadlines"] == run["summary"]["lifeline"]["criticalMissed"]
+    for key, name in run["strategies"].items():
+        assert captured["scores"][name]["missedEmergencyCommsDeadlines"] == run["summary"][key]["criticalMissed"]
+    assert any("Flare warning" in event for event in captured["lifelineEvents"])
+
+
+def test_screener_runtime_matches_training_export():
+    spec = earlywarning.model()
+    rows = {row["peak_utc"]: row for row in csv.DictReader(Path("data/flares/training.csv").open())}
+    warnings = json.loads(Path("data/flares/test_warnings.json").read_text())
+    assert len(warnings) >= 50
+    for event in warnings[:40]:
+        row = rows[event["peakUtc"]]
+        has = int(row["has_location"])
+        values = earlywarning.features(
+            10 ** float(row["log_peak"]), 10 ** float(row["log_fluence"]), 10 ** float(row["log_rise_min"]),
+            10 ** float(row["log_background"]), float(row["lon"]) if has else None, float(row["lat"]) if has else None,
+        )
+        assert abs(earlywarning.probability(values) - event["p"]) < 1e-3
+        assert event["p"] >= spec["threshold"]
+    assert spec["metrics"]["stage1"]["tp"] == spec["metrics"]["testStorms"]
+
+
+def test_flare_warnings_never_precede_the_xray_peak():
+    result = simulate(Scenario("oct2024", 7), keep_frames=False)
+    utc = sim.load_series("oct2024")["utc"]
+    warnings = [item for item in result["decisions"] if item["kind"] == "flare-warning"]
+    assert warnings
+    for item in warnings:
+        flare = next(f for f in result["flares"] if f["t"] == item["t"])
+        assert utc[item["t"]] >= flare["peakUtc"]
+
+
+def test_quiet_control_has_no_flare_warnings():
+    result = simulate(Scenario("quiet2024", 1), keep_frames=False)
+    assert not [item for item in result["decisions"] if item["kind"] == "flare-warning"]
+
+
+def _fake_flare(utc, verification=None):
+    return [{"flare_id": 1, "peakUtc": utc[200], "class": "X2.0", "lon": 40.0, "lat": 10.0, "p": 0.3, "warn": True, "sep": 0,
+             "onsetHours": [1.0, 3.0, 6.0], "t": 200, "onsetSteps": [12, 36, 72], "verification": verification}]
+
+
+def test_unverified_false_alarm_stands_down_and_comms_returns_home(monkeypatch):
+    utc = sim.load_series("quiet2024")["utc"]
+    monkeypatch.setattr(earlywarning, "warnings_for", lambda window, utc_list: _fake_flare(utc))
+    result = simulate(Scenario("quiet2024", 1), keep_frames=False)
+    kinds = [item["kind"] for item in result["decisions"]]
+    assert "flare-warning" in kinds and "stand-down" in kinds
+    handoffs = [item for item in result["decisions"] if item["kind"] == "handoff"]
+    assert handoffs and handoffs[0]["service"] == "Emergency comms"
+    assert "return" in kinds
+    assert result["summary"]["lifeline_ew"]["criticalMissed"] == 0
+
+
+def test_grok_rejection_prevents_pre_positioning(monkeypatch):
+    utc = sim.load_series("quiet2024")["utc"]
+    reject = {"verdict": "reject", "probability": 3, "threshold": 20, "reason": "No coherent CME front.", "cmeVisible": "no", "cmeExtent": "none", "model": "test"}
+    monkeypatch.setattr(earlywarning, "warnings_for", lambda window, utc_list: _fake_flare(utc, reject))
+    result = simulate(Scenario("quiet2024", 1), keep_frames=False)
+    kinds = [item["kind"] for item in result["decisions"]]
+    assert "grok-verification" in kinds
+    verification = next(item for item in result["decisions"] if item["kind"] == "grok-verification")
+    assert verification["t"] == 200 + earlywarning.VERIFY_DELAY_STEPS and verification["verdict"] == "reject"
+    assert "handoff" not in kinds
+    assert result["summary"]["lifeline_ew"]["handoffs"] == 0
+    assert result["summary"]["lifeline_ml"]["handoffs"] > 0
+
+
+def test_sun_watch_is_served_from_cache_without_a_key(monkeypatch):
+    monkeypatch.delenv("XAI_API_KEY", raising=False)
+    body = client.post("/api/sun", json={"window": "oct2024", "refresh": True}).json()
+    assert body["images"]["watch"]["aia193"].endswith(".jpg")
+    assert body["assessment"]["outlook"] in ("quiet", "watch", "warning")
+    assert body["warning"]

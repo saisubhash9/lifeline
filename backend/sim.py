@@ -26,11 +26,12 @@ import math
 import random
 from dataclasses import dataclass, field
 
-from backend import analyst
+from backend import analyst, earlywarning
 from backend.fleet import (
     ANALYST_LOAD,
     CAUTIOUS,
     CAUTIOUS_CHECKPOINT_EVERY,
+    READY_CHECKPOINT_EVERY,
     CHECKPOINT_STEPS,
     CLEAR,
     FALLBACK_AFTER,
@@ -54,13 +55,16 @@ from backend.fleet import (
 )
 from backend.space import MISSIONS, STEP_MINUTES, load_series, mission, pfu_to_risk, track, window_ids
 
-STRATEGIES = ("ground", "threshold", "local", "lifeline")
+STRATEGIES = ("ground", "threshold", "local", "lifeline", "lifeline_ml", "lifeline_ew")
 STRATEGY_NAMES = {
     "ground": "Ground-dependent",
     "threshold": "Fixed-threshold",
     "local": "Hubs only, no sharing",
-    "lifeline": "Lifeline",
+    "lifeline": "Lifeline, protons only",
+    "lifeline_ml": "Lifeline + ML warning only",
+    "lifeline_ew": "Lifeline + ML → Grok verified",
 }
+PROVISIONAL_RISK = 0.62  # expected polar-cap level assumed after a warning, until protons are measured
 ACTIVE = ("normal", "cautious", "checkpointing")
 COMPUTING = ("normal", "cautious")
 HELD = ("protected", "recovering")
@@ -95,6 +99,7 @@ class Env:
     link: list[dict[tuple[str, str], float]]
     observed_low: list[dict[str, int]]
     fused_low: list[dict[str, int]]
+    flares: list[dict] = field(default_factory=list)
 
 
 def _poisson(rng: random.Random, lam: float) -> int:
@@ -151,7 +156,8 @@ def build_env(scenario: Scenario) -> Env:
         fused.append(row_fused)
         shock.append(row_shock)
         link.append({pair: links.random() for pair in pairs})
-    return Env(ticks, series, ephemeris, true, observed, confidence, errors, fused, shock, link, _streaks(observed), _streaks(fused))
+    flares = earlywarning.warnings_for(scenario.window, series["utc"])
+    return Env(ticks, series, ephemeris, true, observed, confidence, errors, fused, shock, link, _streaks(observed), _streaks(fused), flares)
 
 
 # ---------------------------------------------------------------------------
@@ -184,6 +190,8 @@ class Job:
     migrate_to: str | None = None
     migrate_left: int = 0
     down_since: int | None = None
+    storm_steps: int = 0
+    storm_up: int = 0
 
     @property
     def essential(self) -> bool:
@@ -208,6 +216,7 @@ class Node:
     uncorrectable: int = 0
     locked: bool = False
     heard_t: int = -10_000
+    ready_until: int = -1
     windows: list[list[int]] = field(default_factory=list)
     pending: list[tuple[str, str]] = field(default_factory=list)
 
@@ -237,6 +246,8 @@ class World:
     telemetry: dict[str, list[tuple[int, float, int]]] = field(default_factory=dict)
     log: list[dict] = field(default_factory=list)
     analysts: set[str] = field(default_factory=set)
+    warning_mode: str | None = None
+    warning: dict | None = None
 
 
 def new_world(name: str) -> World:
@@ -253,6 +264,7 @@ def new_world(name: str) -> World:
         name,
         nodes,
         jobs,
+        warning_mode={"lifeline_ml": "ml", "lifeline_ew": "cascade"}.get(name),
         memory={hub: analyst.HubMemory() for hub in HUBS},
         telemetry={sat: [] for sat in SAT_IDS},
     )
@@ -325,6 +337,8 @@ def deliver(world: World, t: int) -> list[dict]:
         node.heard_t = t
         if kind == "schedule":
             node.windows = [list(span) for span in msg["windows"]]
+        elif kind == "readiness":
+            node.ready_until = msg["until"]
         elif kind in ("handoff", "return"):
             node.pending = [item for item in node.pending if item[0] != msg["job"]] + [(msg["job"], msg["target"])]
     return arrived
@@ -438,6 +452,9 @@ def smart_control(world: World, env: Env, scenario: Scenario, t: int, share: boo
             if is_planned:
                 planned.add(hub)
 
+    if share and world.warning_mode:
+        decisions += _flare_watch(world, env, scenario, t)
+
     if share:
         for hub in HUBS:
             if _is_analyst(world, hub, t):
@@ -489,6 +506,124 @@ def smart_control(world: World, env: Env, scenario: Scenario, t: int, share: boo
     return {"actions": actions, "planned": planned, "migrations": migrations, "decisions": decisions}
 
 
+def _readiness(world: World, env: Env, scenario: Scenario, t: int, hub: str, until: int) -> None:
+    """Readiness (more frequent checkpoints) only for satellites whose orbits would be exposed
+    if the storm arrives; shielded satellites keep their normal rhythm."""
+    expected = analyst.Ambient(PROVISIONAL_RISK, "X-ray flare forecast", t)
+    for sat in SAT_IDS:
+        exposed = analyst.peak(expected, env.ephemeris, sat, t) >= HOLD
+        value = until if exposed or until <= t else -1
+        if sat in HUBS:
+            world.nodes[sat].ready_until = value
+        else:
+            send(world, env, scenario, t, {"kind": "readiness", "sender": hub, "receiver": sat, "until": value})
+
+
+def _flare_watch(world: World, env: Env, scenario: Scenario, t: int) -> list[dict]:
+    """Hubs carry an X-ray photometer: a flare is seen at its peak, before any protons.
+
+    "ml" mode acts on the stage-1 screener alone. "cascade" mode goes to readiness on the
+    screener, then waits for Grok's verification (peak + 90 min) before pre-positioning; a
+    rejection stands the fleet down early. A missing verification falls back to the screener.
+    """
+    decisions = []
+    watching = [hub for hub in HUBS if world.nodes[hub].mode not in HELD]
+    if not watching:
+        return decisions
+    hub = watching[0]
+    storm = any(
+        world.memory[h].ambient is not None and world.memory[h].ambient.value >= analyst.STORM_LEVEL for h in HUBS
+    )
+    cascade = world.warning_mode == "cascade"
+    for flare in env.flares:
+        if not flare["warn"]:
+            continue
+        verification = flare.get("verification") if cascade else None
+        side = "" if flare["lon"] is None else (f"W{abs(flare['lon']):.0f}" if flare["lon"] > 0 else f"E{abs(flare['lon']):.0f}")
+        where = f" at {side}" if side else ""
+        if flare["t"] == t:
+            until = t + flare["onsetSteps"][2]
+            previous = world.warning if world.warning and world.warning["until"] >= t else None
+            confirmed = not verification or bool(previous and previous.get("confirmed"))
+            world.warning = {**flare, "until": max(until, (previous or {}).get("until", -1)), "hub": hub, "confirmed": confirmed}
+            if previous and "lead" in previous:
+                world.warning["lead"] = previous["lead"]
+            _readiness(world, env, scenario, t, hub, world.warning["until"])
+            onset = [env.series["utc"][min(env.ticks - 1, t + step)] for step in flare["onsetSteps"]]
+            if storm:
+                action = "A storm is already under way; readiness extended."
+            elif verification:
+                action = "The fleet goes to readiness. Grok will verify the flare with coronagraph images 90 minutes after the peak before critical services move."
+            else:
+                action = "The fleet goes to readiness and critical services are pre-positioned on shielded peers."
+            decisions.append(
+                {
+                    "t": t,
+                    "kind": "flare-warning",
+                    "hub": hub,
+                    "title": f"Flare warning: {flare['class']} flare{where}",
+                    "text": (
+                        f"{hub}'s X-ray photometer saw a {flare['class']} flare peak. The screening model gives a "
+                        f"{flare['p'] * 100:.1f}% chance of a proton storm, above its high-recall threshold of "
+                        f"{earlywarning.model()['threshold'] * 100:.1f}%. Protons typically arrive "
+                        f"{flare['onsetHours'][0]:.0f}-{flare['onsetHours'][2]:.0f} h after the flare. {action}"
+                    ),
+                    "probability": flare["p"],
+                    "flareClass": flare["class"],
+                    "lon": flare["lon"],
+                    "onsetUtc": onset,
+                    "sep": flare["sep"],
+                }
+            )
+        if verification and flare["t"] + earlywarning.VERIFY_DELAY_STEPS == t:
+            confirm = verification.get("verdict", "confirm") == "confirm"
+            active = world.warning if world.warning and world.warning["t"] == flare["t"] else None
+            if active is not None:
+                if confirm:
+                    active["confirmed"] = True
+                elif "lead" not in active and not storm:
+                    world.warning = None
+                    _readiness(world, env, scenario, t, hub, t)
+            if confirm:
+                effect = "Critical services move to shielded peers now." if active is not None and not storm else "Readiness continues."
+            else:
+                effect = "No sign of an eruption, so the fleet stands down early." if active is not None and not storm else "A storm is already being tracked from measured protons."
+            decisions.append(
+                {
+                    "t": t,
+                    "kind": "grok-verification",
+                    "hub": hub,
+                    "title": f"Grok {'confirms' if confirm else 'rejects'} the {flare['class']} warning",
+                    "text": f"{verification['reason']} {effect}",
+                    "verdict": verification.get("verdict", "confirm"),
+                    "probability": verification.get("probability"),
+                    "threshold": verification.get("threshold"),
+                    "cmeVisible": verification.get("cmeVisible"),
+                    "cmeExtent": verification.get("cmeExtent"),
+                    "eruptionSigns": verification.get("eruptionSigns", []),
+                    "panel": verification.get("panel"),
+                    "flareClass": flare["class"],
+                    "flareUtc": flare["peakUtc"],
+                    "sep": flare["sep"],
+                    "source": verification.get("model", "grok"),
+                }
+            )
+    warning = world.warning
+    if warning and t == warning["until"] + 1:
+        if "lead" not in warning:
+            decisions.append(
+                {
+                    "t": t,
+                    "kind": "stand-down",
+                    "hub": hub,
+                    "title": "Stand down: no protons arrived",
+                    "text": f"No proton storm within {warning['onsetHours'][2]:.0f} h of the {warning['class']} flare. Readiness ends and pre-positioned services return home.",
+                }
+            )
+        world.warning = None
+    return decisions
+
+
 def _handoff(world: World, node: Node, actions: dict, migrations: list) -> bool:
     """Carry out a pending handoff: checkpoint first, then transfer."""
     while node.pending:
@@ -522,6 +657,20 @@ def _analyze(world: World, env: Env, scenario: Scenario, t: int, hub: str, advis
     ambient = memory.ambient
     reports = memory.reports
     decisions = []
+    real_storm = ambient is not None and ambient.value >= analyst.STORM_LEVEL
+    warning = world.warning if world.warning and t <= world.warning["until"] else None
+    confirmed = warning is not None and warning.get("confirmed", True)
+    if warning and real_storm and "lead" not in warning:
+        # Protons are now measured: schedule-based protection takes over, readiness ends.
+        warning["lead"] = t - warning["t"]
+        for sat in SAT_IDS:
+            if sat in HUBS:
+                world.nodes[sat].ready_until = t
+            else:
+                send(world, env, scenario, t, {"kind": "readiness", "sender": hub, "receiver": sat, "until": t})
+    planning = ambient
+    if warning and confirmed and not real_storm:
+        planning = analyst.Ambient(PROVISIONAL_RISK, "X-ray flare forecast", t)
     modes = {sat: report_["mode"] for sat, report_ in reports.items()}
     loads = {sat: report_["load"] for sat, report_ in reports.items()}
     placement = {service: sat for sat, report_ in reports.items() for service in report_["services"]}
@@ -571,7 +720,8 @@ def _analyze(world: World, env: Env, scenario: Scenario, t: int, hub: str, advis
         if pending:
             continue
         storm = ambient is not None and ambient.value >= analyst.STORM_LEVEL
-        if host != spec["home"]:
+        provisional = warning is not None and confirmed and not storm
+        if host != spec["home"] and not provisional:
             home = spec["home"]
             home_ok = (
                 ambient is not None
@@ -598,12 +748,20 @@ def _analyze(world: World, env: Env, scenario: Scenario, t: int, hub: str, advis
                     }
                 )
                 continue
-        if not storm or not analyst.windows(ambient, env.ephemeris, host, t):
+        if provisional and (spec["tier"] != "critical" or host != spec["home"]):
             continue
-        options = analyst.candidates(service, host, t, ambient, env.ephemeris, loads, modes)
+        if not (storm or provisional) or not analyst.windows(planning, env.ephemeris, host, t):
+            continue
+        options = analyst.candidates(service, host, t, planning, env.ephemeris, loads, modes)
         chosen = analyst.choose(options, host)
         source = "analyst"
-        reason = analyst.explain(service, host, chosen, options, ambient)
+        reason = analyst.explain(service, host, chosen, options, planning)
+        if provisional:
+            reason = (
+                f"Pre-positioning before the protons arrive: the flare warning (p = {warning['p']:.2f}) "
+                f"expects a storm within {warning['onsetHours'][2]:.0f} h, and {host} crosses the polar caps every orbit. "
+                + reason
+            )
         moves = [option for option in options if option["id"].startswith("move:")]
         if advisor and moves and state["advisor_calls"] < 3 and chosen["id"].startswith("move:"):
             state["advisor_calls"] += 1
@@ -842,7 +1000,12 @@ def execute(world: World, env: Env, t: int) -> None:
         for job in sorted(active, key=_priority):
             budget -= _work(job, budget, t)
         node.since_checkpoint += 1
-        every = CAUTIOUS_CHECKPOINT_EVERY if node.mode == "cautious" else NORMAL_CHECKPOINT_EVERY
+        if node.mode == "cautious":
+            every = CAUTIOUS_CHECKPOINT_EVERY
+        elif node.ready_until >= t:
+            every = READY_CHECKPOINT_EVERY
+        else:
+            every = NORMAL_CHECKPOINT_EVERY
         if node.since_checkpoint >= every and unsaved(world, sat) > 1e-6:
             node.resume_mode, node.mode = node.mode, "checkpointing"
             node.checkpoint_left, node.hold_after = CHECKPOINT_STEPS, False
@@ -851,6 +1014,9 @@ def execute(world: World, env: Env, t: int) -> None:
         if not job.essential:
             continue
         up = job.status == "running" and world.nodes[job.node].mode in ACTIVE
+        if env.series["stormStart"] <= t < env.series["stormEnd"]:
+            job.storm_steps += 1
+            job.storm_up += int(up)
         metrics.up_den += 1
         if up:
             metrics.up += 1
@@ -884,6 +1050,26 @@ def scores(world: World, t: int) -> dict:
         "overhead": metrics.overhead,
         "handoffs": metrics.handoffs,
         "archive": round(sum(job.work_done for job in world.jobs if not job.essential), 1),
+        **people(world),
+    }
+
+
+def people(world: World) -> dict:
+    """The same results in terms of what responders get: hours of emergency comms during the
+    storm (from the first to the last >= 10 pfu sample) and deliveries made on time."""
+    by_id = {job.id: job for job in world.jobs}
+    comms, imagery, flood = by_id["comms"], by_id["imagery"], by_id["floodmap"]
+    hours = STEP_MINUTES / 60
+    return {
+        "commsStormHours": round(comms.storm_steps * hours, 1),
+        "commsOutageHours": round((comms.storm_steps - comms.storm_up) * hours, 1),
+        "commsAvailability": round(comms.storm_up / comms.storm_steps, 4) if comms.storm_steps else 1.0,
+        "commsRelaysOnTime": comms.met,
+        "commsRelaysDue": comms.met + comms.missed,
+        "imageryOnTime": imagery.met,
+        "imageryDue": imagery.met + imagery.missed,
+        "floodMapsOnTime": flood.met,
+        "floodMapsDue": flood.met + flood.missed,
     }
 
 
@@ -945,29 +1131,37 @@ def _frame(worlds: dict[str, World], env: Env, t: int, arrivals: list[dict]) -> 
     }
 
 
+PRIMARY = "lifeline_ew"
+
+
 def simulate(scenario: Scenario, advisor=None, keep_frames: bool = True) -> dict:
     env = build_env(scenario)
     worlds = {name: new_world(name) for name in STRATEGIES}
-    state = {"advisor_calls": 0, "advisor_latency": None}
-    frames, decisions = [], []
+    states = {name: {"advisor_calls": 0, "advisor_latency": None} for name in ("local", "lifeline", "lifeline_ml", "lifeline_ew")}
+    frames = []
+    decisions = {"lifeline": [], "lifeline_ew": []}
     for t in range(env.ticks):
         arrivals = {name: deliver(world, t) for name, world in worlds.items()}
         intents = {
             "ground": ground_control(worlds["ground"], env, t),
             "threshold": threshold_control(worlds["threshold"], env, t),
-            "local": smart_control(worlds["local"], env, scenario, t, False, None, state),
-            "lifeline": smart_control(worlds["lifeline"], env, scenario, t, True, advisor, state),
+            "local": smart_control(worlds["local"], env, scenario, t, False, None, states["local"]),
+            "lifeline": smart_control(worlds["lifeline"], env, scenario, t, True, advisor, states["lifeline"]),
+            "lifeline_ml": smart_control(worlds["lifeline_ml"], env, scenario, t, True, None, states["lifeline_ml"]),
+            "lifeline_ew": smart_control(worlds["lifeline_ew"], env, scenario, t, True, advisor, states["lifeline_ew"]),
         }
-        for item in intents["lifeline"].get("decisions", []):
-            item["utc"] = env.series["utc"][t]
-            decisions.append(item)
+        for name in decisions:
+            for item in intents[name].get("decisions", []):
+                item["utc"] = env.series["utc"][t]
+                decisions[name].append(item)
         for name, world in worlds.items():
             apply(world, t, intents[name])
             interlock(world, env, t)
             execute(world, env, t)
         if keep_frames or t == env.ticks - 1:
-            frames.append(_frame(worlds, env, t, arrivals["lifeline"]))
+            frames.append(_frame(worlds, env, t, arrivals[PRIMARY]))
     series = env.series
+    primary = states[PRIMARY]
     return {
         "window": scenario.window,
         "mission": mission(scenario.window),
@@ -977,7 +1171,12 @@ def simulate(scenario: Scenario, advisor=None, keep_frames: bool = True) -> dict
         "stormEnd": series["stormEnd"],
         "peak": series["peak"],
         "frames": frames,
-        "decisions": decisions,
+        "primary": PRIMARY,
+        "decisions": decisions[PRIMARY],
+        "decisionsProtonsOnly": decisions["lifeline"],
+        "xray": series["xray"],
+        "flares": env.flares,
+        "earlyWarning": earlywarning.summary(),
         "logs": {name: world.log[-400:] for name, world in worlds.items()},
         "summary": {name: frames[-1]["fleets"][name]["scores"] for name in STRATEGIES},
         "strategies": STRATEGY_NAMES,
@@ -986,8 +1185,8 @@ def simulate(scenario: Scenario, advisor=None, keep_frames: bool = True) -> dict
             for sat, spec in SATELLITES.items()
         },
         "services": [{key: spec[key] for key in ("id", "name", "label", "tier", "home")} for spec in SERVICES],
-        "advisorCalls": state["advisor_calls"],
-        "advisorLatencyMs": state["advisor_latency"],
+        "advisorCalls": primary["advisor_calls"],
+        "advisorLatencyMs": primary["advisor_latency"],
         "messages": {name: {"sent": world.metrics.messages, "dropped": world.metrics.dropped} for name, world in worlds.items()},
     }
 
@@ -995,8 +1194,11 @@ def simulate(scenario: Scenario, advisor=None, keep_frames: bool = True) -> dict
 # ---------------------------------------------------------------------------
 # Evaluation across storms and seeds
 
-SCORE_KEYS = ("criticalMissed", "missed", "lost", "downtime", "recovery", "availability", "interlocks", "exposed", "handoffs", "archive")
-HEADLINE_KEYS = ("criticalMissed", "missed", "lost", "downtime", "interlocks")
+SCORE_KEYS = (
+    "criticalMissed", "missed", "lost", "downtime", "recovery", "availability", "interlocks", "exposed", "handoffs", "archive",
+    "commsStormHours", "commsOutageHours", "commsAvailability", "imageryOnTime", "imageryDue", "floodMapsOnTime", "floodMapsDue",
+)
+HEADLINE_KEYS = ("criticalMissed", "missed", "lost", "downtime", "interlocks", "commsOutageHours", "commsStormHours")
 
 
 def aggregate(results: list[dict]) -> dict:
@@ -1015,12 +1217,14 @@ def headline(rows: list[dict], skip: tuple[str, ...] = ("quiet2024",)) -> dict:
         for name in STRATEGIES:
             for key in HEADLINE_KEYS:
                 totals[name][key] += row["scores"][name][key]
+    def pct(target: str, base: str, key: str):
+        if totals[base][key] == 0:
+            return None
+        return round(100 * (totals[target][key] - totals[base][key]) / totals[base][key], 1)
+
     change = {
-        base: {
-            key: None if totals[base][key] == 0 else round(100 * (totals["lifeline"][key] - totals[base][key]) / totals[base][key], 1)
-            for key in HEADLINE_KEYS
-        }
-        for base in ("ground", "threshold", "local")
+        target: {base: {key: pct(target, base, key) for key in HEADLINE_KEYS} for base in STRATEGIES if base != target}
+        for target in ("lifeline", "lifeline_ml", "lifeline_ew")
     }
     return {"totals": {name: {k: round(v, 1) for k, v in row.items()} for name, row in totals.items()}, "change": change}
 

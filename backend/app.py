@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import threading
 from contextlib import asynccontextmanager
@@ -49,6 +50,13 @@ async def lifespan(_app: FastAPI):
 app = FastAPI(title="Lifeline", lifespan=lifespan)
 app.add_middleware(GZipMiddleware, minimum_size=2048)
 app.mount("/assets", StaticFiles(directory=WEB), name="assets")
+SUN = ROOT / "data" / "sun"
+if SUN.exists():
+    app.mount("/sun", StaticFiles(directory=SUN), name="sun")
+VERIFY = ROOT / "data" / "verify"
+if VERIFY.exists():
+    app.mount("/verify", StaticFiles(directory=VERIFY), name="verify")
+_sun_live: dict[str, dict] = {}
 
 
 class RunRequest(BaseModel):
@@ -105,6 +113,38 @@ def evaluate_runs(body: RunRequest) -> dict:
     return _cached_eval(body.latency, round(body.loss, 2))
 
 
+class SunRequest(BaseModel):
+    window: str = "oct2024"
+    refresh: bool = False
+
+
+def _read_json(path: Path) -> dict:
+    return json.loads(path.read_text()) if path.exists() else {}
+
+
+@app.post("/api/sun")
+def sun(body: SunRequest) -> dict:
+    """Grok's Sun watch for a storm window: real SDO images plus a cached (or live) briefing."""
+    images = _read_json(SUN / "images.json").get(body.window)
+    if images is None:
+        raise HTTPException(404, "no solar images for this window")
+    assessment = _sun_live.get(body.window) or _read_json(SUN / "assessments.json").get(body.window)
+    warning = None
+    if body.refresh:
+        if not grok.available():
+            warning = "No XAI_API_KEY is set; showing the cached briefing."
+        else:
+            fresh = grok.sun_watch(
+                [("SDO AIA 193 corona", SUN / images["watch"]["aia193"]), ("SDO HMI magnetogram", SUN / images["watch"]["hmi"])],
+                images["watchUtc"],
+            )
+            if fresh:
+                assessment = _sun_live[body.window] = {**fresh, "utc": images["watchUtc"], "live": True}
+            else:
+                warning = "Grok did not return a briefing; showing the cached one."
+    return {"images": images, "assessment": assessment, "evaluation": _read_json(SUN / "eval.json").get("summary"), "warning": warning}
+
+
 @app.post("/api/voice/session")
 def voice_session() -> dict:
     session = grok.voice_session()
@@ -121,7 +161,7 @@ def debrief_facts(result: dict) -> dict:
     moves = [
         f"{item['utc']}: {item['title']}"
         for item in result["decisions"]
-        if item["kind"] in ("handoff", "return", "storm", "takeover", "clear")
+        if item["kind"] in ("flare-warning", "grok-verification", "stand-down", "handoff", "return", "storm", "takeover", "clear")
     ][:12]
     scores = {}
     for name, value in result["summary"].items():
@@ -133,6 +173,10 @@ def debrief_facts(result: dict) -> dict:
             "hardwareInterlocks": value["interlocks"],
             "lostWorkUnits": value["lost"],
             "serviceHandoffs": value["handoffs"],
+            "emergencyCommsAvailableDuringStormPct": round(value["commsAvailability"] * 100),
+            "emergencyCommsOutageHoursDuringStorm": value["commsOutageHours"],
+            "imageryDeliveredOnTime": f"{value['imageryOnTime']} of {value['imageryDue']}",
+            "floodMapsDeliveredOnTime": f"{value['floodMapsOnTime']} of {value['floodMapsDue']}",
         }
     return {
         "event": result["mission"],
@@ -140,6 +184,12 @@ def debrief_facts(result: dict) -> dict:
         "fleet": {sat: f"{spec['name']}: {spec['about']}" for sat, spec in SATELLITES.items()},
         "services": [f"{spec['label']} ({spec['tier']}), home {spec['home']}" for spec in SERVICES],
         "lifelineEvents": moves,
+        "earlyWarningCascade": {
+            "stage1": result["earlyWarning"]["model"],
+            "stage1HeldOutAuc": result["earlyWarning"]["metrics"]["testAuc"],
+            "stage2": "Grok vision checks SDO and LASCO coronagraph images for a wide CME",
+            "cascadeHeldOut": (result["earlyWarning"].get("cascade") or {}).get("cascade"),
+        },
         "scores": scores,
         "note": "All outcomes are simulator outputs; faults, workloads, and satellites are simulated.",
     }

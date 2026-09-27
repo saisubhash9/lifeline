@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lifeline</title>
-  <link rel="stylesheet" href="/assets/styles.css?v=2" />
+  <link rel="stylesheet" href="/assets/styles.css?v=5" />
 </head>
 <body>
   <header class="topbar">
@@ -12,7 +12,7 @@
       <span class="logo" aria-hidden="true"></span>
       <div>
         <strong>Lifeline</strong>
-        <span class="tagline">Keeping critical satellite services running through solar storms</span>
+        <span class="tagline">Keeping disaster-response satellites working for people through solar storms</span>
       </div>
     </div>
     <div class="status" id="status">Loading…</div>
@@ -21,16 +21,21 @@
   <main class="wrap">
     <section class="intro">
       <div>
-        <p class="kicker">The problem</p>
-        <p>Satellites carry emergency communications, disaster imagery, and flood maps, and they matter most in a crisis. Solar radiation storms disrupt them, and most satellites are poorly equipped to respond: small, radiation-sensitive processors, ground contact for a few minutes per pass, and one defense, shutting down into safe mode to wait for instructions.</p>
+        <p class="kicker">Who this is for</p>
+        <p>When a hurricane knocks out cell towers, responders and families lean on satellites for <b>emergency communications</b>, <b>damage imagery</b>, and <b>flood maps</b>. Those satellites face a hazard of their own: solar radiation storms, which are more frequent near solar maximum. Most small satellites can only shut down and wait for instructions, so services go dark exactly when people need them.</p>
       </div>
       <div>
-        <p class="kicker">Lifeline</p>
-        <p>A few compute-capable <b>hub</b> satellites collect radiation and error telemetry from the fleet, forecast who will be exposed next from the planned orbits, and send every satellite its protective schedule before the radiation arrives. Critical services are handed to shielded peers. <b>Grok</b> acts as the in-flight analyst and briefs the operator by <b>voice</b>.</p>
+        <p class="kicker">What Lifeline does</p>
+        <p>A few compute-capable <b>hub</b> satellites forecast who will be exposed next and protect the rest of the fleet before the radiation arrives, moving critical services to shielded peers. An <b>early-warning cascade</b> looks further ahead: an <b>ML screener</b> flags risky solar flares, and <b>Grok vision</b> verifies each warning against real solar and coronagraph images. Operators get a <b>Grok Voice</b> copilot. The same protection applies to satellites that watch energy infrastructure, such as methane-leak and grid monitoring.</p>
       </div>
     </section>
 
     <section class="mission" id="mission"></section>
+
+    <section class="card people" id="people" aria-label="What this means for people"></section>
+
+    <section class="card sunwatch" id="sunwatch" aria-label="Sun watch"><p class="muted">Loading the Sun watch…</p></section>
+    <button type="button" id="sun-refresh" hidden>Re-run Sun watch</button>
 
     <section class="controls" aria-label="Replay controls">
       <label>Storm
@@ -94,6 +99,8 @@
 
     <section class="fleets" id="fleets" aria-label="Four fleets, same storm"></section>
 
+    <section class="card model" id="model-card" aria-label="Flare early-warning model"></section>
+
     <section class="card eval">
       <div class="card-head">
         <h2>Every storm, five seeds each</h2>
@@ -116,6 +123,6 @@
   </main>
 
   <script src="/assets/voice.js?v=1"></script>
-  <script src="/assets/app.js?v=4"></script>
+  <script src="/assets/app.js?v=9"></script>
 </body>
 </html>

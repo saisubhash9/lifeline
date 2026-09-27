@@ -204,7 +204,7 @@ MISSIONS = {
 def _load() -> dict[str, dict]:
     found = {}
     for path in DATA.glob("*.json"):
-        if path.name == "manifest.json":
+        if path.name == "manifest.json" or path.parent.name == "xray":
             continue
         record = json.loads(path.read_text())
         found[record["id"]] = record
@@ -240,6 +240,11 @@ def load_series(window_id: str) -> dict:
         held.append(last)
         degraded = sample.get("dtc") or sample.get("oob") or int(sample.get("valid") or 0) < 30
         quality.append("degraded" if degraded else "ok")
+    xray_path = DATA / "xray" / f"{window_id}.json"
+    xray = [None] * len(utc)
+    if xray_path.exists():
+        lookup = {item["t"]: item["xrsb"] for item in json.loads(xray_path.read_text())["samples"]}
+        xray = [lookup.get(stamp) for stamp in utc]
     hot = [i for i, value in enumerate(measured) if value is not None and value >= 10]
     peak = max(range(len(held)), key=lambda i: held[i])
     return {
@@ -248,6 +253,7 @@ def load_series(window_id: str) -> dict:
         "measured": measured,
         "held": held,
         "quality": quality,
+        "xray": xray,
         "peak": peak,
         "stormStart": hot[0] if hot else len(held),
         "stormEnd": hot[-1] + 1 if hot else len(held),

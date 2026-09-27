@@ -1,0 +1,303 @@
+{
+ "summary": {
+  "days": 39,
+  "xFlareDays": 19,
+  "quietDays": 20,
+  "auc": 0.691,
+  "outlookAuc": 0.5,
+  "meanProbabilityXDays": 27.9,
+  "meanProbabilityQuietDays": 24.5,
+  "warningHitRate": 0.0,
+  "warningFalseAlarmRate": 0.0,
+  "watchOrWarningOnXDays": 1.0,
+  "quietCalledOnQuietDays": 0.0,
+  "outlookCounts": {
+   "xFlareDays": {
+    "quiet": 0,
+    "watch": 19,
+    "warning": 0
+   },
+   "quietDays": {
+    "quiet": 0,
+    "watch": 20,
+    "warning": 0
+   }
+  },
+  "method": "20 days followed by an X-class flare within 48 h vs 20 days with no flare >= M5, 2023-2025, fixed seed; images at 00:00 UTC."
+ },
+ "rows": [
+  {
+   "date": "2025-09-29",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-08-07",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2025-03-21",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 20,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-10-08",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-08-04",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 20,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-02-05",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-01-10",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-01-13",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-07-28",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-05-03",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2023-07-29",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 35,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-11-14",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-10-26",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2025-01-25",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-02-15",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-12-02",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 15,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2024-09-03",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-07-11",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2023-12-10",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 20,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2023-01-09",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-03-28",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-02-22",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2024-03-04",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 20,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2024-06-09",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-08-16",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 15,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2023-06-20",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-08-01",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 20,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-06-19",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 35,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-10-09",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-09-14",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-07-08",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2023-09-13",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-11-25",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-06-02",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 20,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-02-22",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2024-02-16",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2025-02-18",
+   "xFlareWithin48h": 0,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "moderate"
+  },
+  {
+   "date": "2024-10-07",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 25,
+   "earthConnectedRisk": "low"
+  },
+  {
+   "date": "2024-12-07",
+   "xFlareWithin48h": 1,
+   "outlook": "watch",
+   "flareProbability": 30,
+   "earthConnectedRisk": "moderate"
+  }
+ ]
+}

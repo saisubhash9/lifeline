@@ -1,0 +1,138 @@
+{
+ "threshold": 4,
+ "thresholdRule": "highest Grok probability that keeps >= 90% of calibration storms (training period only)",
+ "calibration": {
+  "flares": 40,
+  "storms": 12,
+  "grokAuc": 0.702
+ },
+ "test": {
+  "verified": 211,
+  "warnings": 216
+ },
+ "stage1": {
+  "storms": 11,
+  "falseAlarms": 200,
+  "warnings": 211,
+  "warningsPerMonth": 7.9
+ },
+ "cascade": {
+  "stormsConfirmed": 10,
+  "storms": 11,
+  "falseAlarmsKept": 124,
+  "falseAlarmsRemoved": 76,
+  "warnings": 134,
+  "warningsPerMonth": 5.0,
+  "precision": 0.075
+ },
+ "grokAucAmongWarnings": 0.801,
+ "meanProbabilityStorms": 15.0,
+ "meanProbabilityFalseAlarms": 6.1,
+ "storms": [
+  {
+   "peakUtc": "2024-09-14T15:29:00Z",
+   "class": "X4.4",
+   "probability": 5,
+   "verdict": "confirm",
+   "cmeVisible": "no",
+   "cmeExtent": "none",
+   "reason": "LASCO difference shows only radial streamer streaks and noise, not a coherent wide or halo front, and the AIA difference lacks dimming or a wave. With the source at E53 poorly connected to Earth, probability stays near the flagged base rate."
+  },
+  {
+   "peakUtc": "2024-10-09T01:56:00Z",
+   "class": "X1.7",
+   "probability": 30,
+   "verdict": "confirm",
+   "cmeVisible": "yes",
+   "cmeExtent": "partial halo",
+   "reason": "The X1.7 flare near central meridian has dimming plus a broad northern partial-halo CME, which lifts the >=10 pfu risk well above the ~5% flagged-flare base rate, but W8 connectivity and the lack of a full halo keep a storm only moderately likely."
+  },
+  {
+   "peakUtc": "2024-10-26T07:17:00Z",
+   "class": "X1.8",
+   "probability": 3,
+   "verdict": "reject",
+   "cmeVisible": "no",
+   "cmeExtent": "none",
+   "reason": "By +75 min a fast wide CME would be obvious in LASCO, but no coherent wide front is present and the only bright feature is on the west limb, opposite this eastern flare. With no wide-CME evidence and poor Earth connectivity at E60, the probability stays near the ~1-in-80 base rate."
+  },
+  {
+   "peakUtc": "2025-02-24T23:02:00Z",
+   "class": "M3.8",
+   "probability": 32,
+   "verdict": "confirm",
+   "cmeVisible": "yes",
+   "cmeExtent": "partial halo",
+   "reason": "A bright, wide partial-halo CME is already in the LASCO C2 field by +75 min and originates from the well-connected western limb, which raises the odds well above the flagged-flare base rate. The moderate M3.8 class and slow 72-minute rise keep the probability from being high."
+  },
+  {
+   "peakUtc": "2025-03-28T15:20:00Z",
+   "class": "X1.1",
+   "probability": 5,
+   "verdict": "confirm",
+   "cmeVisible": "no",
+   "cmeExtent": "none",
+   "reason": "AIA 193 shows no clear dimming or sweeping wave, and the LASCO difference has only streamer-like streaks and a narrow northward feature rather than a halo or partial-halo front. Without wide-CME evidence, the probability stays near the flagged-flare base rate of about 5%."
+  },
+  {
+   "peakUtc": "2025-05-31T00:05:00Z",
+   "class": "M8.1",
+   "probability": 6,
+   "verdict": "confirm",
+   "cmeVisible": "yes",
+   "cmeExtent": "narrow",
+   "reason": "The 193 difference shows only localized dimming near the flare, and the LASCO C2 difference has no coherent wide or halo front\u2014only a confined west-limb feature plus ordinary streamer streaks. Without a fast, wide CME, the chance stays near the flagged-flare base rate."
+  },
+  {
+   "peakUtc": "2025-11-10T09:19:00Z",
+   "class": "X1.2",
+   "probability": 5,
+   "verdict": "confirm",
+   "cmeVisible": "unclear",
+   "cmeExtent": "unknown",
+   "reason": "No coherent halo or partial-halo CME front is visible by +75 min, and the disk difference lacks large dimming or a wave, so this lacks the usual proton-storm driver and the probability stays near the ~5% flagged-flare base rate."
+  },
+  {
+   "peakUtc": "2025-11-11T10:04:00Z",
+   "class": "X5.1",
+   "probability": 30,
+   "verdict": "confirm",
+   "cmeVisible": "yes",
+   "cmeExtent": "partial halo",
+   "reason": "The X5.1 flare at W28 has large coronal dimming and a wide asymmetric CME spanning a large position angle, consistent with a partial halo rather than a narrow jet. That raises the >=10 pfu risk well above the base rate, but the front is not a clear full halo, so the probability stays moderate."
+  },
+  {
+   "peakUtc": "2025-11-14T08:30:00Z",
+   "class": "X4.0",
+   "probability": 35,
+   "verdict": "confirm",
+   "cmeVisible": "yes",
+   "cmeExtent": "partial halo",
+   "reason": "The X4.0 flare at magnetically well-connected W71 shows a coherent bright western front in the LASCO C2 difference consistent with a wide partial-halo CME, which lifts the storm probability well above the base rate, though the front does not encircle the occulter as a full halo."
+  },
+  {
+   "peakUtc": "2026-01-18T18:09:00Z",
+   "class": "X1.9",
+   "probability": 8,
+   "verdict": "confirm",
+   "cmeVisible": "yes",
+   "cmeExtent": "narrow",
+   "reason": "LASCO C2 shows only a one-sided eastern outflow rather than a coherent wide or halo front, and the E20 source is poorly connected to Earth. Without a fast, wide CME the storm risk stays near the flagged-flare base rate."
+  },
+  {
+   "peakUtc": "2026-07-30T17:00:00Z",
+   "class": "M1.9",
+   "probability": 6,
+   "verdict": "confirm",
+   "cmeVisible": "unclear",
+   "cmeExtent": "unknown",
+   "reason": "LASCO C2 panels have no data, and the EUV difference shows only the expected flare brightening at the west limb without a wide dimming or wave front, so there is no clear fast wide-CME evidence and the probability stays near the flagged base rate."
+  }
+ ],
+ "informationAmongWarnings": {
+  "screenerAuc": 0.928,
+  "grokAuc": 0.801,
+  "combinedRankAuc": 0.926,
+  "note": "ROC-AUC for separating real storms from false alarms among flares the screener already flagged (held-out test)."
+ }
+}

@@ -1,0 +1,5001 @@
+{
+ "202307172337": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-limb flare brightening only",
+   "no large coronal dimming or EUV wave in AIA 193 difference",
+   "localized west-limb LASCO brightening rather than a wide front"
+  ],
+  "reason": "The M5.6 flare is well connected at W72, but LASCO shows only a narrow west-limb feature and AIA shows no large dimming or sweeping wave, so there is no fast wide-CME driver and the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 32521.9,
+  "peakUtc": "2023-07-18T00:06:00Z",
+  "class": "M5.6",
+  "sep": 1,
+  "screen": 0.0453,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202307281539": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "confined bright west-limb outflow in LASCO C2, not a wide front"
+  ],
+  "reason": "LASCO shows only a narrow west-limb bright feature, with no halo or partial-halo front and no clear on-disk dimming or wave. Without a fast, wide CME, the proton-storm chance stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 38407.8,
+  "peakUtc": "2023-07-28T15:58:00Z",
+  "class": "M4.0",
+  "sep": 1,
+  "screen": 0.0098,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202309010326": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Western-limb brightening in AIA 131 consistent with the W69 flare",
+   "No large-scale coronal dimming or disk-sweeping EUV wave in the AIA 193 difference",
+   "Localized bright west/southwest feature in the LASCO C2 difference, without a wide front or halo ring"
+  ],
+  "reason": "A western M1.2 flare with only a narrow LASCO feature is magnetically well connected but lacks a fast, wide CME, so the chance of a >=10 pfu proton storm stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 45123.7,
+  "peakUtc": "2023-09-01T03:52:00Z",
+  "class": "M1.2",
+  "sep": 1,
+  "screen": 0.0087,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202308072030": {
+  "probability": 20,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "west-limb X-class flare brightening in AIA 131",
+   "coherent bright front north of the LASCO occulter in the C2 difference",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "A west-limb X1.4 flare with a real, coherent CME front is a plausible SEP source, but the ejection is concentrated to the north and is not a clear wide halo, and AIA shows no widespread dimming or wave, so the probability stays only modestly above the low flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 56670.5,
+  "peakUtc": "2023-08-07T20:46:00Z",
+  "class": "X1.4",
+  "sep": 1,
+  "screen": 0.0217,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202305072253": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized brightness beside the LASCO occulter",
+   "busy AIA 193 difference without a clear large dimming or sweeping wave"
+  ],
+  "reason": "LASCO shows only a localized feature plus ordinary streamer streaks, not a coherent wide or halo front, so there is no clear fast wide-CME evidence and the probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 57810.5,
+  "peakUtc": "2023-05-07T23:23:00Z",
+  "class": "M1.6",
+  "sep": 1,
+  "screen": 0.0117,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202312312136": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "bright eastern-limb flare in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only localized eastern LASCO brightening, not a wide coherent front"
+  ],
+  "reason": "The X4.8 flare is far east and poorly connected, and neither the EUV difference nor LASCO shows a clear fast, wide CME or halo. Without that evidence the storm probability stays near the ~1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 21915.7,
+  "peakUtc": "2023-12-31T21:55:00Z",
+  "class": "X4.8",
+  "sep": 1,
+  "screen": 0.1009,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202302251840": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare kernel on the western disk near W44",
+   "no large-scale coronal dimming in the AIA 193 difference",
+   "no sweeping EUV wave front across the disk"
+  ],
+  "reason": "LASCO shows a coherent but narrow bright feature west of the occulter, consistent with the W44 source, not a halo or wide partial halo, and the on-disk difference lacks large dimming or a wave. Narrow CMEs rarely drive >=10 pfu storms, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 68455.2,
+  "peakUtc": "2023-02-25T19:44:00Z",
+  "class": "M6.2",
+  "sep": 1,
+  "screen": 0.0368,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202401290354": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening only",
+   "no large coronal dimming",
+   "no sweeping EUV wave"
+  ],
+  "reason": "LASCO difference shows only ordinary streamer streaks and noise, not a coherent wide or halo front, and AIA 193 shows no large dimming or wave. Without a fast wide CME the storm chance stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 35982.5,
+  "peakUtc": "2024-01-29T04:38:00Z",
+  "class": "M6.7",
+  "sep": 1,
+  "screen": 0.1225,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202403280616": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "M7 flare brightening on the western limb in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO shows only a localized west-limb brightening with radial streaks, not a wide expanding front"
+  ],
+  "reason": "No coherent wide or halo CME is visible; the coronagraph features look like a narrow jet or streamer change plus noise. Without clear wide-CME evidence the storm probability stays near the few-percent base rate despite the western location.",
+  "model": "grok-4.7",
+  "latencyMs": 22319.9,
+  "peakUtc": "2024-03-28T06:29:00Z",
+  "class": "M7.0",
+  "sep": 0,
+  "screen": 0.0161,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202403230058": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized dark coronal dimming beside the flare core in the AIA 193 difference",
+   "bright but sector-limited outflow on the east side of the LASCO C2 difference, without a ring around the occulter"
+  ],
+  "reason": "Dimming and a coherent eastern LASCO feature indicate an eruption, but it is narrow rather than a fast wide or halo CME. Without that driver, the chance of a >=10 pfu proton storm stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 52492.3,
+  "panel": "mar2024_202403230058.jpg",
+  "peakUtc": "2024-03-23T01:33:00Z",
+  "class": "X1.0",
+  "sep": 1,
+  "screen": 0.1034,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405100627": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "on-disk X-class brightening in the southwest",
+   "LASCO brightness mainly on the east side, opposite the W37 source",
+   "no clear large-scale AIA 193 dimming or sweeping EUV wave",
+   "no coherent halo or wide front ringing the occulter in the LASCO difference"
+  ],
+  "reason": "The only conspicuous LASCO emission is on the east flank, inconsistent with a wide CME from this western flare, and the difference frames show streamer streaks rather than a fast partial-halo front. Without clear wide-CME evidence, the storm probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 80951.0,
+  "panel": "may2024_202405100627.jpg",
+  "peakUtc": "2024-05-10T06:54:00Z",
+  "class": "X3.8",
+  "sep": 1,
+  "screen": 0.2176,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202406190615": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-limb brightening in AIA 131 at W72",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "localized bright ejecta on the west side of the LASCO C2 occulter, not a ring"
+  ],
+  "reason": "A real but confined western CME is visible about 75 min after peak, with no halo or wide front and no clear on-disk dimming or wave. Without wide-CME evidence the storm risk stays near the flagged base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 36431.6,
+  "peakUtc": "2024-06-19T06:38:00Z",
+  "class": "M1.1",
+  "sep": 0,
+  "screen": 0.0102,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202406220422": {
+  "probability": 10,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright southwest outflow in LASCO C2 at +75 min",
+   "coherent bright/dark front in the C2 difference confined to the southwest",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "A real CME is present, but its coherent front is limited to the southwest and does not form a halo or partial-halo ring, and the disk image shows no clear dimming wave. For a modest M1.2 flare without a fast, wide CME, the storm probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 61974.6,
+  "peakUtc": "2024-06-22T04:38:00Z",
+  "class": "M1.2",
+  "sep": 0,
+  "screen": 0.0129,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202406080123": {
+  "probability": 20,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "Bright flare on the west limb in AIA 131",
+   "AIA 193 difference shows only localized flare brightening, no large-scale coronal dimming or disk-crossing EUV wave",
+   "LASCO C2 difference shows a coherent bright front on the west and south of the occulter, not a ring"
+  ],
+  "reason": "The M9.6 flare at W70 is magnetically well connected and a real southwest CME is visible, but the front does not span a wide halo and there is no clear dimming or EUV wave, so the risk is only moderately above the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 83477.9,
+  "panel": "jun2024_202406080123.jpg",
+  "peakUtc": "2024-06-08T01:49:00Z",
+  "class": "M9.6",
+  "sep": 1,
+  "screen": 0.0934,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405110110": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright western flare kernel in AIA 131",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference, only localized flare brightening",
+   "compact bright ejecta beside the LASCO occulter without a coherent wide front"
+  ],
+  "reason": "LASCO shows a real but angularly narrow bright ejecta, not a halo or partial-halo front, and the disk difference lacks large-scale dimming or a wave. Without a fast wide CME the storm odds stay near the low base rate despite the well-connected western X5.7 flare.",
+  "model": "grok-4.7",
+  "latencyMs": 95585.7,
+  "panel": "may2024_202405110110.jpg",
+  "peakUtc": "2024-05-11T01:23:00Z",
+  "class": "X5.7",
+  "sep": 1,
+  "screen": 0.1448,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405062158": {
+  "probability": 4,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "flare brightening on the western disk only",
+   "no large-scale coronal dimming",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "LASCO C2 at +75 min shows no coherent, wide, expanding front or halo; the only bright feature lies east of the occulter, opposite the W43 flare, and is consistent with a streamer rather than a fast wide CME. With no dimming, no EUV wave, and no wide-CME evidence, the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 67956.0,
+  "peakUtc": "2024-05-06T22:27:00Z",
+  "class": "M4.2",
+  "sep": 0,
+  "screen": 0.048,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405291815": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "no large-scale coronal dimming in the AIA 193 difference",
+   "no sweeping EUV wave front",
+   "LASCO shows only a narrow west-side streak, not an expanding front"
+  ],
+  "reason": "No wide or halo CME is visible; the coronagraph difference shows only a narrow streak, and the EUV difference lacks large dimming or a wave, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 37296.5,
+  "peakUtc": "2024-05-29T18:28:00Z",
+  "class": "M2.7",
+  "sep": 0,
+  "screen": 0.0118,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405080216": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright near-disk-center flare",
+   "narrow eastward LASCO ejection",
+   "no large coronal dimming or EUV wave"
+  ],
+  "reason": "LASCO shows only a narrow east-directed ejection, not a wide or halo front, and the AIA 193 difference lacks a clear large dimming or sweeping wave, so the storm chance stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 24789.9,
+  "peakUtc": "2024-05-08T02:27:00Z",
+  "class": "M3.3",
+  "sep": 0,
+  "screen": 0.0107,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202406231251": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO bright/dark feature confined to the west limb, opposite the E67 source"
+  ],
+  "reason": "No coherent wide or halo CME is associated with this eastern flare; the only LASCO difference feature is a narrow western streamer-like change, which rarely drives proton storms, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 36871.6,
+  "peakUtc": "2024-06-23T13:01:00Z",
+  "class": "M9.2",
+  "sep": 0,
+  "screen": 0.0157,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202307220312": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "narrow bright west-limb outflow in LASCO C2",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only a localized west-limb jet rather than a halo or partial-halo front, and AIA 193 lacks clear widespread dimming or a wave, so this stays near the ~5% flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 29666.0,
+  "peakUtc": "2023-07-22T03:37:00Z",
+  "class": "M3.1",
+  "sep": 0,
+  "screen": 0.0125,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202404222300": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening only",
+   "no large coronal dimming",
+   "no EUV wave front"
+  ],
+  "reason": "AIA 193 and LASCO C2 differences show mottled streamer streaks and a confined west-side brightening, not a coherent wide or halo CME front. Without a fast wide CME, this flagged M1.0 flare stays near the roughly 1-in-20 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 60375.1,
+  "peakUtc": "2024-04-22T23:18:00Z",
+  "class": "M1.0",
+  "sep": 0,
+  "screen": 0.0108,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405030211": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "on-disk flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only localized brightening and streamer-like streaks, not a coherent wide front"
+  ],
+  "reason": "No clear wide or halo CME is visible: the coronagraph difference lacks a coherent expanding front around the occulter, and the disk difference shows no large dimming or wave. Without that evidence the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 60269.2,
+  "peakUtc": "2024-05-03T02:22:00Z",
+  "class": "X1.6",
+  "sep": 0,
+  "screen": 0.0199,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202307191704": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-limb flare brightening in AIA 131",
+   "localized bright ejecta west of the LASCO occulter",
+   "no large-scale coronal dimming",
+   "no EUV wave front"
+  ],
+  "reason": "LASCO shows only a compact western ejecta, not a wide or halo front, and AIA difference shows no large dimming or sweeping wave. Narrow events rarely produce proton storms, so the probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 51949.7,
+  "peakUtc": "2023-07-19T17:25:00Z",
+  "class": "M3.7",
+  "sep": 0,
+  "screen": 0.0094,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405081732": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Localized bright feature east of the LASCO occulter with a coherent leading edge in the difference image",
+   "AIA 193 difference shows only modest dark patches, no large-scale coronal dimming or disk-sweeping wave"
+  ],
+  "reason": "LASCO shows a confined eastern ejection rather than a wide or halo CME, and the near-disk-center flare lacks large dimming or a sweeping front, so the proton-storm chance stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 27432.5,
+  "peakUtc": "2024-05-08T17:53:00Z",
+  "class": "M7.8",
+  "sep": 0,
+  "screen": 0.0362,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405032225": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "no large coronal dimming",
+   "no sweeping EUV wave",
+   "no coherent wide CME front"
+  ],
+  "reason": "LASCO C2 at +75 min shows only narrow east-side jets and streamer streaks, not a wide or halo front from the W68 flare, and AIA 193 shows no large dimming or wave, so the chance stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 62460.9,
+  "peakUtc": "2024-05-03T22:47:00Z",
+  "class": "M1.2",
+  "sep": 0,
+  "screen": 0.0101,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202406040609": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "AIA 131 flare brightening in the southern hemisphere consistent with S19",
+   "no large coronal dimming in the AIA 193 difference",
+   "no sweeping EUV wave front",
+   "only a localized east-limb brightening in LASCO C2"
+  ],
+  "reason": "LASCO shows only a narrow east-limb brightening, not a wide or halo front, and it is on the opposite limb from the W8 source; with no dimming or EUV wave there is no clear wide-CME evidence, so the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 72729.2,
+  "peakUtc": "2024-06-04T06:31:00Z",
+  "class": "M2.4",
+  "sep": 0,
+  "screen": 0.0177,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202404230807": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "localized dark patch on the eastern disk in the AIA 193 difference, but no large-scale coronal dimming",
+   "no bright EUV wave front sweeping across the disk",
+   "LASCO C2 difference shows only narrow radial streaks and streamer changes"
+  ],
+  "reason": "At +75 min the LASCO C2 difference lacks any coherent, bright, wide expanding front or halo around the occulter, showing only narrow streaks typical of streamer drift and noise. Without clear wide-CME evidence, the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 64192.3,
+  "peakUtc": "2024-04-23T08:21:00Z",
+  "class": "M3.0",
+  "sep": 0,
+  "screen": 0.0089,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202301261253": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO C2 and its difference show only streamers, radial streaks, and localized southern brightness, not a coherent wide or halo front. Without a fast wide CME, the storm chance stays near the ~1-in-80 base rate for an M-class flare.",
+  "model": "grok-4.7",
+  "latencyMs": 37968.2,
+  "peakUtc": "2023-01-26T13:06:00Z",
+  "class": "M2.8",
+  "sep": 0,
+  "screen": 0.0101,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405090307": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "AIA 131 brightening in the southwest consistent with the W24 S19 flare",
+   "AIA 193 difference shows no large dark coronal dimming or sweeping EUV wave",
+   "LASCO C2 has a coherent bright front on the east limb, opposite the western source, while the west side is only streamer streaks and a compact knot"
+  ],
+  "reason": "The only coherent LASCO front is an east-limb ejection, not a wide or halo CME from the western flare, and there is no clear dimming or wave, so the probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 89380.5,
+  "peakUtc": "2024-05-09T03:17:00Z",
+  "class": "M3.9",
+  "sep": 0,
+  "screen": 0.0091,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202403261255": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-disk flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in AIA 193 difference",
+   "narrow western LASCO brightening without a wide expanding front"
+  ],
+  "reason": "LASCO shows only a narrow western outflow, not a halo or partial-halo front, and AIA 193 lacks large-scale dimming or a wave, so this stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 38230.2,
+  "peakUtc": "2024-03-26T13:30:00Z",
+  "class": "M1.9",
+  "sep": 0,
+  "screen": 0.0297,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202406100939": {
+  "probability": 8,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright west-limb flare in AIA 131",
+   "coherent bright ejection off the west limb in LASCO C2",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "A CME is visible at the west limb, but it is a localized limb ejection rather than a halo or partial-halo front, and the EUV difference shows no clear wide dimming or wave. For an M2.2 without a fast, wide CME the storm probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 55964.7,
+  "panel": "jun2024_202406100939.jpg",
+  "peakUtc": "2024-06-10T10:06:00Z",
+  "class": "M2.2",
+  "sep": 0,
+  "screen": 0.0311,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202401111908": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only streaky streamer noise, no coherent wide front"
+  ],
+  "reason": "This is a modest west-limb M1.2 with no clear dimming, wave, or fast wide CME. Without wide-CME evidence the proton-storm chance stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 32377.1,
+  "peakUtc": "2024-01-11T19:23:00Z",
+  "class": "M1.2",
+  "sep": 0,
+  "screen": 0.0094,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202406011824": {
+  "probability": 8,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright southeast flare in AIA 131",
+   "localized bright front east of the LASCO occulter",
+   "no clear large-scale coronal dimming or EUV wave"
+  ],
+  "reason": "LASCO shows a coherent but one-sided eastern brightening, not a wide halo or partial-halo front, and AIA 193 lacks large dimming or a sweeping wave. An eastern X1 with only a narrow CME is poorly connected for a >=10 pfu storm, so the probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 76795.5,
+  "peakUtc": "2024-06-01T18:36:00Z",
+  "class": "X1.0",
+  "sep": 0,
+  "screen": 0.0172,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202301250937": {
+  "probability": 12,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on the western limb in AIA 131",
+   "localized bright CME-like feature southwest of the LASCO C2 occulter"
+  ],
+  "reason": "A coherent CME is visible off the west limb, but it is confined to one sector rather than a wide halo or partial-halo front, so the storm probability stays only modestly above the low base rate for flagged M-class flares.",
+  "model": "grok-4.7",
+  "latencyMs": 40802.4,
+  "peakUtc": "2023-01-25T10:11:00Z",
+  "class": "M4.6",
+  "sep": 0,
+  "screen": 0.0761,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202210101605": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-disk flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only a confined bright feature plus pylon and streamer streaks, not a wide expanding front"
+  ],
+  "reason": "No clear wide or halo CME is present\u2014only a confined bright feature and ordinary streamer/noise streaks\u2014so the chance stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 37784.9,
+  "peakUtc": "2022-10-10T16:28:00Z",
+  "class": "M2.3",
+  "sep": 0,
+  "screen": 0.0133,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202305091820": {
+  "probability": 3,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare kernel on the western disk in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only sectoral west-side brightening and streak-like streamer changes, not a coherent wide or halo front, and on-disk eruption signatures are limited to the flare itself, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 64474.1,
+  "peakUtc": "2023-05-09T18:58:00Z",
+  "class": "M4.2",
+  "sep": 0,
+  "screen": 0.0229,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405090323": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "southwest flare brightening only",
+   "no large coronal dimming",
+   "no sweeping EUV wave",
+   "east-side coronagraph feature misaligned with the W24 source"
+  ],
+  "reason": "LASCO shows only a narrow east-limb outflow, not a halo or partial-halo front, and AIA 193 shows no large dimming or wave, so there is no clear fast, wide CME to drive a proton storm. Probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 59190.7,
+  "peakUtc": "2024-05-09T03:32:00Z",
+  "class": "M4.5",
+  "sep": 0,
+  "screen": 0.0164,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405130847": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb AIA 131 brightening only",
+   "no large coronal dimming or EUV wave in the 193 A difference"
+  ],
+  "reason": "At +75 min the LASCO C2 difference shows only streamer streaks and noise, not a coherent bright front or halo, so there is no fast wide CME. Without that driver the proton-storm chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 62912.8,
+  "panel": "may2024_202405130847.jpg",
+  "peakUtc": "2024-05-13T09:33:00Z",
+  "class": "M4.8",
+  "sep": 0,
+  "screen": 0.1413,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405050923": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "flare brightening in AIA 131 only",
+   "no large coronal dimming in AIA 193 difference",
+   "no EUV wave front",
+   "LASCO difference shows only narrow streamer-like streaks and noise"
+  ],
+  "reason": "No large dimming, EUV wave, or coherent wide/halo CME front is present; the LASCO features are narrow streamer changes. An eastern E23 M2.3 flare without a fast wide CME stays near the ~1-in-80 base rate for a proton storm.",
+  "model": "grok-4.7",
+  "latencyMs": 70505.1,
+  "peakUtc": "2024-05-05T09:38:00Z",
+  "class": "M2.3",
+  "sep": 0,
+  "screen": 0.0121,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202406070852": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "narrow eastward jet in LASCO C2"
+  ],
+  "reason": "LASCO shows only a narrow eastward jet rather than a wide or halo CME, and the AIA 193 difference has no clear large-scale dimming or EUV wave. An M4 at E80 is poorly connected, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 35877.5,
+  "panel": "jun2024_202406070852.jpg",
+  "peakUtc": "2024-06-07T09:13:00Z",
+  "class": "M4.0",
+  "sep": 0,
+  "screen": 0.0137,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202406101103": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "narrow eastward jet and localized west-side brightening in LASCO C2",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "no coherent wide expanding front in the LASCO difference"
+  ],
+  "reason": "LASCO shows only a narrow jet and localized brightening, not a halo or partial-halo front, and AIA shows no large-scale dimming or wave. Without a fast wide CME, the proton-storm chance stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 31155.2,
+  "panel": "jun2024_202406101103.jpg",
+  "peakUtc": "2024-06-10T11:08:00Z",
+  "class": "X1.5",
+  "sep": 0,
+  "screen": 0.011,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405080437": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "southern-disk flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO difference shows only southwest sector brightening plus streak noise, not a wide expanding front"
+  ],
+  "reason": "There is no clear fast, wide CME: EUV shows only the flare's own brightening, and the coronagraph difference lacks a halo or partial-halo front. The chance of a >=10 pfu proton storm therefore stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 59490.0,
+  "peakUtc": "2024-05-08T05:09:00Z",
+  "class": "X1.0",
+  "sep": 0,
+  "screen": 0.1396,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202406101018": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-limb flare brightening",
+   "no large coronal dimming",
+   "no sweeping EUV wave"
+  ],
+  "reason": "LASCO shows only a narrow jet-like feature and localized western brightening, not a coherent wide or halo front, and the AIA 193 difference lacks clear dimming or a wave. Without a fast, wide CME the proton-storm chance stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 43615.2,
+  "panel": "jun2024_202406101018.jpg",
+  "peakUtc": "2024-06-10T10:58:00Z",
+  "class": "M5.2",
+  "sep": 0,
+  "screen": 0.1514,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202403231622": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact bright flare core in AIA 131 near disk center",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "narrow west-limb jet or streamer brightening in LASCO C2, with only noise streaks elsewhere"
+  ],
+  "reason": "By 75 minutes there is no halo or wide expanding front, only a narrow west-limb jet, and no clear dimming or wave on disk. Narrow jets rarely drive >=10 pfu storms, so the probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 43570.8,
+  "panel": "mar2024_202403231622.jpg",
+  "peakUtc": "2024-03-23T16:51:00Z",
+  "class": "M2.7",
+  "sep": 0,
+  "screen": 0.0188,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202406101811": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening only",
+   "no large coronal dimming or EUV wave",
+   "narrow east-side jet/streamer change opposite the flare"
+  ],
+  "reason": "LASCO shows no coherent wide or halo CME from this west-limb flare, only a narrow jet-like feature and ordinary streamer streaks, and AIA 193 lacks large dimming, so the storm chance stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 47826.4,
+  "panel": "jun2024_202406101811.jpg",
+  "peakUtc": "2024-06-10T18:40:00Z",
+  "class": "M9.4",
+  "sep": 0,
+  "screen": 0.1118,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405091723": {
+  "probability": 6,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "localized dark patch near the flare site in the AIA 193 difference, without a large-scale dimming region or a sweeping EUV wave",
+   "asymmetric LASCO C2 brightness on the eastern side, not a coherent wide front and not aligned with the W29 source"
+  ],
+  "reason": "The X1.0 flare at W29 is a plausible SEP source, but AIA shows only localized dimming and LASCO C2 does not show a fast, wide CME; the difference coronagraph is missing. Without clear wide-CME evidence the probability stays near the screener base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 37055.6,
+  "panel": "may2024_202405091723.jpg",
+  "peakUtc": "2024-05-09T17:44:00Z",
+  "class": "X1.0",
+  "sep": 0,
+  "screen": 0.0555,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405101358": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright western-disk flare in AIA 131 consistent with W40 S16",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 shows only localized brightness and streamer/noise streaks, not a coherent wide front"
+  ],
+  "reason": "At +75 min a fast wide CME would already be obvious in C2, and neither the direct nor difference image shows a halo or partial-halo front. Without that driver the storm chance stays near the ~1-in-80 base rate, with only a slight western-hemisphere connectivity bump.",
+  "model": "grok-4.7",
+  "latencyMs": 41968.1,
+  "panel": "may2024_202405101358.jpg",
+  "peakUtc": "2024-05-10T14:11:00Z",
+  "class": "M5.8",
+  "sep": 0,
+  "screen": 0.0093,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405090845": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "Southwest-disk AIA 131 flare brightening consistent with W24 S19",
+   "No large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 shows only narrow east-limb brightening plus radial streamer streaks, with no coherent wide front"
+  ],
+  "reason": "The flare is bright, but neither difference image shows large-scale dimming, an EUV wave, or a wide/halo CME; the only LASCO feature is narrow and on the east limb, opposite this western source, so the probability stays near the ~1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 55565.4,
+  "panel": "may2024_202405090845.jpg",
+  "peakUtc": "2024-05-09T09:13:00Z",
+  "class": "X2.1",
+  "sep": 0,
+  "screen": 0.231,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405111446": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright M-class flare on the southwest limb in AIA 131",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only a localized west-limb brightening in LASCO C2, with no coherent wide front"
+  ],
+  "reason": "A narrow western ejecta is present, but the LASCO difference lacks any halo or partial-halo front and the EUV difference shows no widespread dimming or wave. Without a fast wide CME, the proton-storm probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 52478.9,
+  "panel": "may2024_202405111446.jpg",
+  "peakUtc": "2024-05-11T15:25:00Z",
+  "class": "M8.7",
+  "sep": 0,
+  "screen": 0.1438,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407131221": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact western-disk flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only localized radial bright streaks in LASCO C2, consistent with streamers or a narrow jet"
+  ],
+  "reason": "LASCO shows no coherent bright front spanning a wide angle or halo around the occulter, and the EUV difference lacks clear dimming or a wave, so without wide-CME evidence the proton-storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 43339.0,
+  "peakUtc": "2024-07-13T12:42:00Z",
+  "class": "M5.2",
+  "sep": 0,
+  "screen": 0.0277,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405131256": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-limb flare brightening in AIA 131",
+   "narrow jet-like feature in LASCO C2",
+   "no large coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO difference shows only a narrow outflow or streamer change, not a coherent wide or halo front, and there is no large-scale dimming or wave. Without wide-CME evidence the probability stays near the roughly 1-in-20 rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 47586.9,
+  "panel": "may2024_202405131256.jpg",
+  "peakUtc": "2024-05-13T13:11:00Z",
+  "class": "M3.6",
+  "sep": 0,
+  "screen": 0.0107,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202405111115": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "western-limb flare brightening only",
+   "no large coronal dimming",
+   "no sweeping EUV wave"
+  ],
+  "reason": "AIA 193 shows no dimming or wave front, and LASCO shows no coherent wide front from the W62 flare\u2014only a narrow feature on the opposite eastern limb\u2014so there is no fast, wide CME to drive a proton storm.",
+  "model": "grok-4.7",
+  "latencyMs": 99255.1,
+  "panel": "may2024_202405111115.jpg",
+  "peakUtc": "2024-05-11T11:44:00Z",
+  "class": "X1.4",
+  "sep": 0,
+  "screen": 0.15,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405121611": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright western-limb flare in AIA 131",
+   "no large-scale coronal dimming in the AIA 193 difference",
+   "no sweeping EUV wave across the disk",
+   "no coherent west-side CME front in LASCO C2"
+  ],
+  "reason": "The M9.9 flare is well connected on the western limb, but the EUV difference shows only flare-site change with no large dimming or wave, and the LASCO difference has no wide bright expanding front. Without a fast wide CME, the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 95583.9,
+  "panel": "may2024_202405121611.jpg",
+  "peakUtc": "2024-05-12T16:26:00Z",
+  "class": "M9.9",
+  "sep": 0,
+  "screen": 0.0236,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202405122017": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "No large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only narrow black-white streamer streaks, mostly on the east side, not at the W80 flare site"
+  ],
+  "reason": "By 75 minutes a fast wide CME would show a coherent expanding front, but LASCO shows only ordinary streamer streaks and AIA shows no clear dimming or wave. Despite the magnetically favorable western location, nothing supports raising the odds above the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 74934.6,
+  "panel": "may2024_202405122017.jpg",
+  "peakUtc": "2024-05-12T20:32:00Z",
+  "class": "M4.8",
+  "sep": 0,
+  "screen": 0.009,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407131459": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "localized AIA 131 flare brightening only",
+   "no large coronal dimming in AIA 193 difference",
+   "no sweeping EUV wave",
+   "LASCO difference shows only narrow streamer streaks"
+  ],
+  "reason": "The LASCO C2 difference has only narrow radial streaks from streamer drift and noise, not a coherent wide or halo front, and AIA 193 shows no large dimming or wave. Without wide-CME evidence the chance stays near the ~1-in-80 base rate for this modest eastern M1.8 flare.",
+  "model": "grok-4.7",
+  "latencyMs": 51698.8,
+  "peakUtc": "2024-07-13T15:30:00Z",
+  "class": "M1.8",
+  "sep": 0,
+  "screen": 0.0177,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202407132244": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on the western disk in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only streaky streamer noise plus a narrow southern feature"
+  ],
+  "reason": "No coherent wide-angle or halo CME front is visible, only a narrow southern feature and ordinary streamer streaks, and the EUV difference lacks large dimming, so the chance stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 46044.0,
+  "peakUtc": "2024-07-13T23:01:00Z",
+  "class": "M5.0",
+  "sep": 0,
+  "screen": 0.0152,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407161311": {
+  "probability": 28,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright west-limb flare in AIA 131",
+   "coherent bright expanding front west of the LASCO C2 occulter",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "An X1.9 west-limb flare with a bright, coherent partial-halo CME is better connected for protons than a typical flagged flare, but the CME does not wrap into a full halo and on-disk dimming is not clear, so the storm risk is only moderately above the screener rate.",
+  "model": "grok-4.7",
+  "latencyMs": 33424.3,
+  "peakUtc": "2024-07-16T13:26:00Z",
+  "class": "X1.9",
+  "sep": 0,
+  "screen": 0.0611,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407170926": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no large coronal dimming or EUV wave in the AIA 193 difference",
+   "LASCO shows only narrow jet-like or streamer changes, not a wide front"
+  ],
+  "reason": "The M1.2 west-limb flare lacks dimming, a wave, and any coherent wide or halo CME in LASCO; narrow jets and streamer noise rarely drive proton storms, so the chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 43920.4,
+  "peakUtc": "2024-07-17T09:45:00Z",
+  "class": "M1.2",
+  "sep": 0,
+  "screen": 0.011,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202407150921": {
+  "probability": 18,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "localized dark coronal dimming at the western limb near the flare",
+   "coherent bright outward front west of the LASCO occulter"
+  ],
+  "reason": "A real CME is present and the W37 source is reasonably well connected, but the front is only moderately wide rather than a fast full halo and on-disk dimming/wave signatures are limited, so the risk is only modestly above the ~5% flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 74013.9,
+  "peakUtc": "2024-07-15T09:37:00Z",
+  "class": "M2.6",
+  "sep": 0,
+  "screen": 0.0092,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407270513": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized flare brightening in AIA 131",
+   "narrow southern radial outflow in LASCO C2"
+  ],
+  "reason": "LASCO shows only a narrow southern feature, not a coherent wide or halo front, and the AIA 193 difference has no clear large-scale dimming or sweeping wave. Without wide-CME evidence the probability stays near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 41058.2,
+  "peakUtc": "2024-07-27T05:46:00Z",
+  "class": "M3.0",
+  "sep": 0,
+  "screen": 0.0271,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407271824": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "flare brightening on the western disk in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only a narrow radial LASCO feature, consistent with a jet or streamer change"
+  ],
+  "reason": "LASCO shows no coherent wide or halo CME front, only a narrow jet-like or streamer feature, and the EUV difference lacks large-scale dimming or a wave. Without a fast wide CME, the storm probability stays near the base rate despite the western M3.4 flare.",
+  "model": "grok-4.7",
+  "latencyMs": 32659.9,
+  "peakUtc": "2024-07-27T18:39:00Z",
+  "class": "M3.4",
+  "sep": 0,
+  "screen": 0.012,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202407231349": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright east-limb flare in AIA 131",
+   "localized darkening at the east limb in the AIA 193 difference, no disk-wide wave",
+   "coherent east-limb ejection in LASCO C2 and its difference"
+  ],
+  "reason": "A real CME leaves the east limb, but it is a localized limb ejection rather than a halo or partial-halo front, and the E82 source is poorly connected to Earth. Without a clear wide CME, the storm probability stays near the flagged base rate of about 5%.",
+  "model": "grok-4.7",
+  "latencyMs": 71567.7,
+  "peakUtc": "2024-07-23T14:28:00Z",
+  "class": "M2.4",
+  "sep": 0,
+  "screen": 0.0251,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407140223": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "western-disk flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only localized west-side brightness plus streak artifacts"
+  ],
+  "reason": "At +75 min the LASCO difference has no coherent bright front spanning a wide angle or halo, and the disk difference lacks clear dimming or a wave, so this stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 100758.5,
+  "peakUtc": "2024-07-14T02:34:00Z",
+  "class": "X1.2",
+  "sep": 0,
+  "screen": 0.0163,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202407281027": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "western-disk flare brightening in AIA 131",
+   "no large dark coronal dimming or sweeping wave front in the AIA 193 difference",
+   "LASCO C2 shows only streamers and difference streaks, not a coherent expanding front"
+  ],
+  "reason": "No fast, wide CME is evident in the LASCO images, only ordinary streamer structure and streaks, so the chance stays near the roughly 1-in-20 base rate for screener-flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 33890.6,
+  "peakUtc": "2024-07-28T10:42:00Z",
+  "class": "M7.6",
+  "sep": 0,
+  "screen": 0.021,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407280139": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact bright flare in AIA 131 near disk center-east",
+   "narrow bright radial feature east of the LASCO occulter",
+   "localized southern coronagraph brightening"
+  ],
+  "reason": "LASCO shows only a narrow eastern brightening and a localized southern feature, not a coherent wide or halo front. With an eastern source and no clear wide-CME evidence, the storm probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 34685.0,
+  "peakUtc": "2024-07-28T01:51:00Z",
+  "class": "M7.7",
+  "sep": 0,
+  "screen": 0.0089,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407291940": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright flare at eastern limb in AIA 131",
+   "bright ejecta on east and southeast flanks in LASCO C2 difference",
+   "no clear large on-disk coronal dimming or sweeping EUV wave in AIA 193 difference"
+  ],
+  "reason": "A CME is visible in the LASCO difference, but it is confined to the eastern/southeastern flank rather than a clear wide halo, and the source at E77 is poorly magnetically connected to Earth. Without a fast, wide, well-connected CME the odds stay near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 28530.4,
+  "peakUtc": "2024-07-29T19:57:00Z",
+  "class": "M6.3",
+  "sep": 0,
+  "screen": 0.0161,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407271016": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "localized flare brightening only",
+   "no large-scale coronal dimming",
+   "no EUV wave front",
+   "no wide expanding LASCO front"
+  ],
+  "reason": "AIA 193 shows no large dimming or sweeping wave, and LASCO C2 at +75 min has only narrow streamer streaks rather than a halo or wide CME. Without a fast wide CME the chance of a >=10 pfu storm stays near the ~1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 96909.4,
+  "peakUtc": "2024-07-27T10:40:00Z",
+  "class": "M2.0",
+  "sep": 0,
+  "screen": 0.0119,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407291404": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on the eastern disk in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "bright southward ejecta in LASCO C2",
+   "LASCO difference front confined to the southern sector rather than a wide ring"
+  ],
+  "reason": "A CME is present but it is a narrow southern outflow, not a halo or wide partial-halo front, and there is no clear on-disk dimming or wave. With an eastern E27 source and no wide fast-CME signature, the chance of a >=10 pfu proton storm stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 59990.1,
+  "peakUtc": "2024-07-29T14:46:00Z",
+  "class": "M4.2",
+  "sep": 0,
+  "screen": 0.0507,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407291247": {
+  "probability": 4,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western flare kernel only",
+   "no large-scale coronal dimming",
+   "no EUV wave front",
+   "no coherent wide LASCO front"
+  ],
+  "reason": "The impulsive M8.6 flare at W52 is magnetically favorable, but AIA 193 shows no large dimming or sweeping wave and LASCO C2 at +75 min shows only limited western brightening and ordinary streamer streaks, not a fast halo or partial-halo front, so the storm risk stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 88657.6,
+  "peakUtc": "2024-07-29T12:55:00Z",
+  "class": "M8.6",
+  "sep": 0,
+  "screen": 0.0092,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407310507": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "east-limb LASCO ejection that does not wrap around the occulter"
+  ],
+  "reason": "A CME is visible off the east limb, but it is narrow rather than a halo or partial halo, and the M4.7 source at E71 is poorly connected to Earth. Without a fast, wide CME, the proton-storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 61441.1,
+  "peakUtc": "2024-07-31T05:23:00Z",
+  "class": "M4.7",
+  "sep": 0,
+  "screen": 0.0099,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202407301925": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only a narrow bright LASCO outflow, not a wide front"
+  ],
+  "reason": "LASCO shows a narrow bright feature rather than a coherent halo or partial-halo front, and AIA shows no large dimming or wave. An E61 flare without a fast wide CME stays near the base rate for a proton storm.",
+  "model": "grok-4.7",
+  "latencyMs": 66138.1,
+  "peakUtc": "2024-07-30T19:38:00Z",
+  "class": "M9.4",
+  "sep": 0,
+  "screen": 0.0181,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202407311245": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "flare brightening on the eastern disk",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only localized southern LASCO change, no wide expanding front"
+  ],
+  "reason": "The AIA 193 difference lacks clear dimming or a wave, and the LASCO C2 difference shows only localized southern brightness and streak noise rather than a coherent wide or halo CME. With no wide-CME evidence and an eastern source (E47), the chance stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 44632.9,
+  "peakUtc": "2024-07-31T13:05:00Z",
+  "class": "M5.9",
+  "sep": 0,
+  "screen": 0.0219,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202407310628": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "no large coronal dimming or EUV wave in AIA 193 difference",
+   "only localized west-limb brightening in LASCO C2, not a wide front"
+  ],
+  "reason": "LASCO shows only confined west-limb brightening without a coherent wide or halo front, and AIA 193 shows no large-scale dimming or wave. Without clear wide-CME evidence the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 68403.6,
+  "peakUtc": "2024-07-31T06:46:00Z",
+  "class": "M7.6",
+  "sep": 0,
+  "screen": 0.0288,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202407311805": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "western-limb flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "no coherent wide bright front in the LASCO C2 difference"
+  ],
+  "reason": "The LASCO difference shows only streaky streamer noise and localized changes, not a halo or partial-halo CME, and AIA 193 shows no clear dimming or wave. Without a fast wide CME, the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 46260.5,
+  "peakUtc": "2024-07-31T18:37:00Z",
+  "class": "M5.3",
+  "sep": 0,
+  "screen": 0.0646,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408010623": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "AIA 131 peak frame is blank with no visible flare source",
+   "AIA 193 difference shows no large coronal dimming or sweeping EUV wave",
+   "LASCO C2 difference has only localized west-limb brightening and streak noise, not a coherent wide front"
+  ],
+  "reason": "No halo or partial-halo CME is present by 75 minutes, and the only LASCO brightening is narrow and localized. Without a fast wide CME, the proton-storm probability stays near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 40362.1,
+  "peakUtc": "2024-08-01T07:09:00Z",
+  "class": "M8.1",
+  "sep": 0,
+  "screen": 0.1694,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408011109": {
+  "probability": 15,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "coherent bright expanding front on the east side of the LASCO C2 difference",
+   "possible localized coronal dimming in the AIA 193 difference near the flare"
+  ],
+  "reason": "The LASCO difference shows a coherent bright front spanning a wide angle on the eastern flank, consistent with a partial-halo CME rather than a narrow jet. The E31 source is poorly connected to Earth along the Parker spiral, so the storm probability rises only modestly above the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 50037.1,
+  "peakUtc": "2024-08-01T11:37:00Z",
+  "class": "M4.1",
+  "sep": 0,
+  "screen": 0.0307,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408020423": {
+  "probability": 25,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright flare on the western limb in AIA 131",
+   "wide coherent bright front on the west side in the LASCO C2 difference"
+  ],
+  "reason": "The LASCO difference shows a broad, coherent bright front spanning a wide angle on the western side rather than a narrow jet, consistent with a wide CME from a magnetically well-connected west-limb M7 flare. It is not a full halo and no clear EUV dimming or wave is seen, so the proton-storm probability is elevated well above the base rate but remains moderate.",
+  "model": "grok-4.7",
+  "latencyMs": 50743.1,
+  "peakUtc": "2024-08-02T04:55:00Z",
+  "class": "M7.3",
+  "sep": 0,
+  "screen": 0.1151,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408030711": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "Panel A is blank with no usable AIA 131 flare source",
+   "No large coronal dimming or sweeping wave front in the AIA 193 difference",
+   "LASCO C2 brightening is localized to the east limb, opposite the W74 flare, and looks like streamer change rather than an expanding front"
+  ],
+  "reason": "No coherent wide or halo CME is associated with this western flare; the coronagraph difference shows only narrow east-side features and ordinary streamer streaks, so the storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 54890.4,
+  "peakUtc": "2024-08-03T07:30:00Z",
+  "class": "M1.9",
+  "sep": 0,
+  "screen": 0.0129,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202408041027": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "eastern-limb flare brightening in AIA 131",
+   "localized brightening just east of the LASCO occulter",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "At +75 min the LASCO change is confined to a limited eastern-limb sector with no coherent bright front spanning a wide angle or halo ring, and the on-disk difference shows no large dimming or wave. Without a fast, wide CME the storm probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 57707.5,
+  "peakUtc": "2024-08-04T10:50:00Z",
+  "class": "M1.9",
+  "sep": 0,
+  "screen": 0.0264,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408031917": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb AIA 131 flare brightening",
+   "localized east-side LASCO brightening",
+   "no large AIA 193 dimming or EUV wave",
+   "no wide expanding LASCO front"
+  ],
+  "reason": "LASCO shows only a narrow eastern disturbance plus ordinary streamer streaks, not a coherent wide or halo front, and AIA 193 shows no large dimming or wave. With no fast wide CME and the flare at E74, the proton-storm chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 68442.0,
+  "peakUtc": "2024-08-03T19:30:00Z",
+  "class": "M5.3",
+  "sep": 0,
+  "screen": 0.0111,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408051325": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening only",
+   "no large-scale coronal dimming or sweeping EUV wave in AIA 193 difference",
+   "narrow bright feature west of the LASCO occulter"
+  ],
+  "reason": "LASCO shows only a narrow west-limb outflow, not a coherent wide or halo front, and EUV difference lacks large dimming or a wave, so this stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 66317.4,
+  "peakUtc": "2024-08-05T13:40:00Z",
+  "class": "X1.6",
+  "sep": 0,
+  "screen": 0.0655,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408051518": {
+  "probability": 4,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized bright feature east of the LASCO occulter only",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "The source is eastern (E52), poorly connected to Earth, and the LASCO brightening is confined to the east side rather than a coherent wide halo or partial-halo front, with no clear EUV dimming or wave. Without a fast, wide CME the storm probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 59684.6,
+  "peakUtc": "2024-08-05T15:27:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0093,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408071831": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "localized bright ejecta on the eastern and southern flanks in LASCO C2"
+  ],
+  "reason": "LASCO shows only confined bright ejecta rather than a coherent wide or halo front, and the on-disk difference image lacks a clear dimming wave, so the probability stays near the roughly 1-in-20 base rate for a flagged flare.",
+  "model": "grok-4.7",
+  "latencyMs": 50489.9,
+  "peakUtc": "2024-08-07T18:54:00Z",
+  "class": "M4.9",
+  "sep": 0,
+  "screen": 0.0244,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408071330": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "on-disk western flare brightening only",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "no coherent wide expanding front in the LASCO C2 difference"
+  ],
+  "reason": "LASCO shows only localized bright patches and streak/streamer noise, not a wide or halo CME, and AIA shows no clear dimming wave, so the chance stays near the about 1-in-20 rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 71011.6,
+  "peakUtc": "2024-08-07T13:50:00Z",
+  "class": "M4.4",
+  "sep": 0,
+  "screen": 0.0129,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408081901": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "X-class flare kernel on the western disk in AIA 131",
+   "no large-scale coronal dimming or sweeping wave front in the AIA 193 difference",
+   "only localized southern brightening and streaky streamer changes in the LASCO C2 difference, not a coherent wide front"
+  ],
+  "reason": "By 75 minutes LASCO C2 shows no halo or partial-halo expanding front, only narrow southern streamer-like brightening, and AIA 193 lacks widespread dimming or a wave. Without a fast wide CME the storm chance stays near the one-in-twenty rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 43015.5,
+  "peakUtc": "2024-08-08T19:35:00Z",
+  "class": "X1.2",
+  "sep": 0,
+  "screen": 0.0902,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408092110": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Western-disk flare kernel in AIA 131, consistent with W41",
+   "No large dark coronal dimming or disk-sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only a confined western bright patch plus streak artifacts, not a coherent wide front"
+  ],
+  "reason": "No clear wide or halo CME is visible; the coronagraph difference is consistent with a narrow jet or streamer change plus noise, so the chance of a >=10 pfu proton storm stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 53965.2,
+  "peakUtc": "2024-08-09T21:23:00Z",
+  "class": "M4.5",
+  "sep": 0,
+  "screen": 0.0108,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408100214": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact bright flare core in AIA 131 near disk center",
+   "no large-scale coronal dimming or sweeping wave in the AIA 193 difference",
+   "only localized radial streaks in LASCO, not a coherent wide front"
+  ],
+  "reason": "LASCO shows only localized southern and northern streaks consistent with streamer drift or a narrow outflow, with no halo or partial-halo front. Without clear wide-CME evidence the storm probability stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 32546.8,
+  "peakUtc": "2024-08-10T02:37:00Z",
+  "class": "M5.2",
+  "sep": 0,
+  "screen": 0.0254,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202408111957": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "western-limb flare brightening only",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows radial streamer streaks and a narrow southward feature, not a wide front"
+  ],
+  "reason": "No coherent wide or halo CME is present; the coronagraph difference is consistent with streamer drift and a narrow jet, which rarely produce proton storms. Without clear wide-CME evidence the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 35780.7,
+  "peakUtc": "2024-08-11T20:17:00Z",
+  "class": "M1.6",
+  "sep": 0,
+  "screen": 0.0098,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202408140600": {
+  "probability": 28,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "X-class flare brightening near disk center in AIA 131",
+   "localized dark patches in the AIA 193 difference consistent with modest coronal dimming, no clear EUV wave",
+   "coherent bright front with a dark cavity on the west/southwest in the LASCO C2 difference"
+  ],
+  "reason": "A real, fairly wide western partial-halo CME is visible by +75 min, which raises the odds above the ~5% flagged-flare base rate, but it is not a symmetric full halo and the E1 source is poorly connected, so a >=10 pfu storm remains a minority outcome.",
+  "model": "grok-4.7",
+  "latencyMs": 49654.1,
+  "peakUtc": "2024-08-14T06:40:00Z",
+  "class": "X1.0",
+  "sep": 0,
+  "screen": 0.1004,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202408140333": {
+  "probability": 25,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright flare on the western limb in AIA 131",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "coherent bright CME front off the west side in the LASCO C2 difference"
+  ],
+  "reason": "The LASCO difference shows a coherent, bright western front spanning a wide angle, consistent with a partial-halo CME from a well-connected west-limb source, which raises the odds above the base rate. It is not a fast full halo and the flare is only M4.3, so the probability stays moderate.",
+  "model": "grok-4.7",
+  "latencyMs": 59239.6,
+  "peakUtc": "2024-08-14T04:02:00Z",
+  "class": "M4.3",
+  "sep": 0,
+  "screen": 0.0591,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202409022235": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "narrow bright western feature in LASCO C2 and its difference",
+   "no large-scale coronal dimming in AIA 193 difference",
+   "no EUV wave front sweeping the disk"
+  ],
+  "reason": "LASCO shows only a confined western brightening rather than a wide or halo CME, and the AIA difference lacks clear dimming or a sweeping wave, so this stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 49772.5,
+  "peakUtc": "2024-09-02T23:01:00Z",
+  "class": "M1.5",
+  "sep": 0,
+  "screen": 0.0123,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202408132326": {
+  "probability": 4,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact flare brightening near disk center in AIA 131",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only localized southwest brightening in LASCO, not a coherent wide front"
+  ],
+  "reason": "The LASCO C2 difference shows only a localized southwest feature plus ordinary streamer streaks, not a halo or partial-halo front, and AIA shows no clear dimming or wave. Without a fast wide CME, the proton-storm probability stays near the base rate for this M4 flare.",
+  "model": "grok-4.7",
+  "latencyMs": 80969.7,
+  "peakUtc": "2024-08-13T23:44:00Z",
+  "class": "M4.1",
+  "sep": 0,
+  "screen": 0.0143,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202409011141": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on the eastern limb in AIA 131",
+   "localized bright front in the LASCO C2 difference confined to one sector",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "The LASCO difference shows only a limited-angle front rather than a halo or wide partial-halo CME, and the AIA 193 difference lacks widespread dimming or a wave. With an eastern-limb source and no clear wide-CME evidence, the probability stays near the ~5% flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 63792.0,
+  "peakUtc": "2024-09-01T13:22:00Z",
+  "class": "M5.5",
+  "sep": 0,
+  "screen": 0.4326,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202409112349": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening at W74",
+   "narrow west-directed LASCO feature",
+   "no large coronal dimming or sweeping EUV wave in AIA 193 difference"
+  ],
+  "reason": "A coherent feature is present on the west side of the LASCO C2 difference, but it is narrow rather than a wide or halo front, and the AIA difference shows no large dimming or sweeping wave. Without clear wide-CME evidence the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 50263.6,
+  "peakUtc": "2024-09-12T00:12:00Z",
+  "class": "M4.9",
+  "sep": 0,
+  "screen": 0.0244,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202409120604": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "localized bright outflow southwest of the LASCO occulter"
+  ],
+  "reason": "LASCO shows a coherent but narrow southwest CME, not a halo or wide partial-halo front, and the AIA 193 difference lacks large coronal dimming or a sweeping wave. Without clear wide-CME evidence the storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 48026.4,
+  "peakUtc": "2024-09-12T06:18:00Z",
+  "class": "M2.7",
+  "sep": 0,
+  "screen": 0.0095,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202409141513": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening only",
+   "no large coronal dimming",
+   "no sweeping EUV wave"
+  ],
+  "reason": "LASCO difference shows only radial streamer streaks and noise, not a coherent wide or halo front, and the AIA difference lacks dimming or a wave. With the source at E53 poorly connected to Earth, probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 34307.9,
+  "peakUtc": "2024-09-14T15:29:00Z",
+  "class": "X4.4",
+  "sep": 1,
+  "screen": 0.0946,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202409302337": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized flare brightening in AIA 131",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "narrow bright outflow on the west side of the LASCO occulter rather than a wide front"
+  ],
+  "reason": "LASCO shows only a narrow western outflow, not a coherent wide or halo CME, and the disk difference lacks large dimming or a sweeping wave. Without a fast, wide CME the proton-storm odds stay near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 25941.3,
+  "peakUtc": "2024-09-30T23:59:00Z",
+  "class": "M7.5",
+  "sep": 0,
+  "screen": 0.0543,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202409222112": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on eastern limb",
+   "no large coronal dimming or EUV wave in AIA 193 difference",
+   "narrow southward LASCO brightening only"
+  ],
+  "reason": "LASCO C2 difference shows only a narrow southward feature, not a coherent wide or halo front, and AIA 193 lacks large-scale dimming or a sweeping wave. An eastern M3.7 without a fast wide CME stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 36687.0,
+  "peakUtc": "2024-09-22T21:39:00Z",
+  "class": "M3.7",
+  "sep": 0,
+  "screen": 0.0161,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202409231423": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "no coherent bright expanding front in the LASCO C2 difference"
+  ],
+  "reason": "The flare is an eastern-limb M1.3 with no clear dimming, EUV wave, or wide/halo CME; only streamer-like streaks appear in the coronagraph difference. Without a fast wide CME, the proton-storm chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 53459.4,
+  "peakUtc": "2024-09-23T14:56:00Z",
+  "class": "M1.3",
+  "sep": 0,
+  "screen": 0.0217,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202410012158": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "on-disk flare brightening in AIA 131",
+   "localized bright radial feature in the southwest LASCO C2, not a ring around the occulter",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only a narrow southwest outflow, not a halo or partial-halo front, and AIA 193 shows no widespread dimming or wave. Without a wide Earth-directed CME, the chance of a >=10 pfu storm stays near the ~1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 44162.4,
+  "peakUtc": "2024-10-01T22:20:00Z",
+  "class": "X6.9",
+  "sep": 0,
+  "screen": 0.1713,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202409121431": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb AIA 131 brightening at flare peak",
+   "localized bright/dark west-limb ejection in LASCO C2"
+  ],
+  "reason": "LASCO shows a coherent CME off the west limb, but it is a one-sided, limited-angle ejection rather than a halo or wide partial-halo front, and AIA 193 shows no clear large-scale dimming or sweeping wave. Narrow limb CMEs rarely drive >=10 pfu storms, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 99283.4,
+  "peakUtc": "2024-09-12T14:43:00Z",
+  "class": "M6.7",
+  "sep": 0,
+  "screen": 0.0122,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410022027": {
+  "probability": 4,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright M3.2 flare core in AIA 131 near S14",
+   "no large-scale coronal dimming in the AIA 193 difference",
+   "no EUV wave front on the disk",
+   "LASCO C2 difference shows only streamer streaks and a narrow southern brightening, not a wide front"
+  ],
+  "reason": "No halo or partial-halo CME is visible 75 minutes after peak, and the disk difference lacks widespread dimming or a sweeping wave. Without a fast, wide eruption the storm probability stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 50572.9,
+  "peakUtc": "2024-10-02T20:51:00Z",
+  "class": "M3.2",
+  "sep": 0,
+  "screen": 0.0224,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410031208": {
+  "probability": 35,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "dark coronal dimming near the flare site in the AIA 193 difference",
+   "bright coherent expanding front in LASCO C2 spanning a wide southern and western angle"
+  ],
+  "reason": "The X8.8 flare shows on-disk dimming and a bright, wide partial-halo CME already in LASCO by +75 min, well above the base rate, but the W8 source is only modestly west of central meridian so magnetic connection to Earth is not optimal.",
+  "model": "grok-4.7",
+  "latencyMs": 60817.0,
+  "peakUtc": "2024-10-03T12:18:00Z",
+  "class": "X8.8",
+  "sep": 0,
+  "screen": 0.0754,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410032009": {
+  "probability": 20,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright western-limb flare in AIA 131 consistent with the W49 source",
+   "coherent bright front in the LASCO C2 difference off the west and southwest, with adjacent dark/bright pairs indicating moving material",
+   "on-disk AIA 193 difference is complex but shows no unambiguous large-scale dimming or sweeping wave"
+  ],
+  "reason": "A coherent CME front is already in the C2 field by +75 min and spans the west to southwest, wider than a jet but not a full halo ring. The well-connected W49 origin lifts this above the ~5% flagged base rate, but the moderate apparent speed and incomplete angular span keep the proton-storm odds modest.",
+  "model": "grok-4.7",
+  "latencyMs": 52152.4,
+  "peakUtc": "2024-10-03T20:28:00Z",
+  "class": "M6.6",
+  "sep": 0,
+  "screen": 0.0315,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410062052": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on the western disk in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only a confined west/southwest LASCO feature rather than a wide front"
+  ],
+  "reason": "LASCO shows only a narrow western disturbance, not a halo or wide partial-halo CME, and AIA shows no clear dimming or wave. Without a fast, wide CME, the proton-storm chance stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 28076.9,
+  "peakUtc": "2024-10-06T21:20:00Z",
+  "class": "M1.5",
+  "sep": 0,
+  "screen": 0.0154,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202410011853": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "on-disk flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only localized LASCO brightening, consistent with a narrow outflow or streamer change"
+  ],
+  "reason": "LASCO shows only localized bright outflows rather than a coherent wide, partial-halo, or halo front, and the disk difference lacks large dimming or a wave. Without a fast wide CME, the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 87676.9,
+  "peakUtc": "2024-10-01T19:17:00Z",
+  "class": "M1.4",
+  "sep": 0,
+  "screen": 0.01,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410040435": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "narrow southward LASCO brightening without a wide expanding front"
+  ],
+  "reason": "The coronagraph shows only a narrow southward feature, not a halo or partial-halo front, and the disk difference lacks clear dimming or a wave. Without a fast wide CME, the storm chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 44008.0,
+  "peakUtc": "2024-10-04T04:55:00Z",
+  "class": "M4.0",
+  "sep": 0,
+  "screen": 0.0163,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410071803": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening only",
+   "narrow bright front off the southwest limb in LASCO C2",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only a localized southwest bright front, not a halo or partial-halo CME, and the disk difference lacks wide dimming or a wave. Narrow transients rarely drive proton storms, so the probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 38052.3,
+  "peakUtc": "2024-10-07T18:38:00Z",
+  "class": "M1.3",
+  "sep": 0,
+  "screen": 0.0205,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410071902": {
+  "probability": 8,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright X-class flare on the southwest limb in AIA 131",
+   "localized brightening near the western limb in the AIA 193 difference",
+   "no clear large-scale coronal dimming or sweeping EUV wave",
+   "bright but sector-confined outflow southwest of the LASCO occulter"
+  ],
+  "reason": "LASCO shows a bright ejection off the southwest limb, but it is angularly limited rather than a halo or partial-halo front, and the disk difference lacks wide dimming or a wave. Western connectivity and X-class size lift the odds only slightly above the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 40727.7,
+  "peakUtc": "2024-10-07T19:13:00Z",
+  "class": "X2.1",
+  "sep": 0,
+  "screen": 0.0383,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410102153": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "West-limb brightening in AIA 131 at flare peak",
+   "No large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only narrow radial streaks and streamer noise, no coherent wide front"
+  ],
+  "reason": "The coronagraph difference lacks a coherent bright expanding front or halo, and the EUV difference shows no widespread dimming or wave, so there is no evidence of a fast wide CME. Probability stays near the ~1-in-80 base rate for an M-class flare.",
+  "model": "grok-4.7",
+  "latencyMs": 44300.8,
+  "panel": "oct2024_202410102153.jpg",
+  "peakUtc": "2024-10-10T22:30:00Z",
+  "class": "M2.9",
+  "sep": 0,
+  "screen": 0.0641,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202410090125": {
+  "probability": 30,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "dark coronal dimming beside the flare in the AIA 193 difference",
+   "bright northern outflow already in the LASCO C2 field at +75 min",
+   "coherent wide bright front across the northern C2 difference"
+  ],
+  "reason": "The X1.7 flare near central meridian has dimming plus a broad northern partial-halo CME, which lifts the >=10 pfu risk well above the ~5% flagged-flare base rate, but W8 connectivity and the lack of a full halo keep a storm only moderately likely.",
+  "model": "grok-4.7",
+  "latencyMs": 69783.9,
+  "panel": "oct2024_202410090125.jpg",
+  "peakUtc": "2024-10-09T01:56:00Z",
+  "class": "X1.7",
+  "sep": 1,
+  "screen": 0.1001,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410111607": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright eastern-hemisphere flare in AIA 131",
+   "coherent bright east-limb ejection in LASCO C2",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows a coherent bright ejection, but it is confined to the east side of the occulter rather than a halo or wide partial halo, and AIA 193 shows no large dimming or wave. Without a fast, wide CME the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 51617.3,
+  "panel": "oct2024_202410111607.jpg",
+  "peakUtc": "2024-10-11T16:32:00Z",
+  "class": "M2.1",
+  "sep": 0,
+  "screen": 0.0193,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410092259": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact bright flare at the limb in AIA 131",
+   "localized bright front with adjacent dark region in the LASCO C2 difference, confined to one sector",
+   "no clear large-scale coronal dimming or sweeping EUV wave in AIA 193"
+  ],
+  "reason": "LASCO shows a coherent but localized outflow rather than a wide or halo front around the occulter, and the AIA difference lacks clear large-scale dimming, so this stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 74614.2,
+  "panel": "oct2024_202410092259.jpg",
+  "peakUtc": "2024-10-09T23:12:00Z",
+  "class": "M7.6",
+  "sep": 0,
+  "screen": 0.0222,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410160457": {
+  "probability": 8,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright western flare kernels in AIA 131",
+   "west-limb ejection in LASCO C2 at +75 min",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows a real but narrow west-limb CME, not a coherent halo or partial-halo front, and the EUV difference lacks large dimming or a wave, so despite the favorable W39 location the storm odds stay near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 67826.8,
+  "peakUtc": "2024-10-16T05:15:00Z",
+  "class": "M2.8",
+  "sep": 0,
+  "screen": 0.0087,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410240330": {
+  "probability": 3,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "bright X-class flare on the eastern limb in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO C2 has no data, so a fast wide CME cannot be confirmed, and the AIA difference shows only flare brightening rather than a dimming or wave. An E70 source is also poorly connected to Earth, so the chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 34429.4,
+  "peakUtc": "2024-10-24T03:57:00Z",
+  "class": "X3.2",
+  "sep": 0,
+  "screen": 0.1407,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202410182313": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on the western limb in AIA 131",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only localized bright streaks and dark streamer deflections, not a wide expanding front"
+  ],
+  "reason": "The coronagraph difference lacks a coherent wide or halo CME front and shows only narrow bright features plus ordinary streamer streaks, so the proton-storm chance stays near the roughly 1-in-20 rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 72831.7,
+  "peakUtc": "2024-10-18T23:29:00Z",
+  "class": "M4.7",
+  "sep": 0,
+  "screen": 0.0125,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410302029": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "modest bright front east of the LASCO occulter",
+   "no large-scale coronal dimming in AIA 193",
+   "no disk-sweeping EUV wave"
+  ],
+  "reason": "LASCO shows only a limited eastern bright front, not a halo or partial-halo CME, and AIA difference lacks large dimming or a wave. Without a fast wide CME, the storm chance stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 46939.4,
+  "peakUtc": "2024-10-30T20:53:00Z",
+  "class": "M7.1",
+  "sep": 0,
+  "screen": 0.0282,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202410312112": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "no large-scale coronal dimming",
+   "no sweeping EUV wave"
+  ],
+  "reason": "The eastern flare shows only localized brightening, with no dimming or EUV wave, and LASCO shows only a narrow western streamer-like feature rather than a wide or halo CME, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 50262.8,
+  "peakUtc": "2024-10-31T21:20:00Z",
+  "class": "X1.9",
+  "sep": 0,
+  "screen": 0.0208,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202410281613": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright eastern-limb flare in AIA 131",
+   "Narrow bright jet-like outflow just east of the LASCO C2 occulter",
+   "No large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "No coherent wide-angle or halo front in the LASCO difference"
+  ],
+  "reason": "Only a narrow east-limb jet/CME is seen, with no halo or partial-halo front and no clear dimming or EUV wave, and an E65 source is poorly connected to Earth, so the storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 74022.0,
+  "peakUtc": "2024-10-28T16:28:00Z",
+  "class": "M4.1",
+  "sep": 0,
+  "screen": 0.0088,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411010946": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "western-limb flare brightening only; no large coronal dimming or sweeping EUV wave"
+  ],
+  "reason": "LASCO panels have no data, and the AIA 193 difference shows only the expected flare brightening without clear dimming or a wide wave. With no evidence of a fast, wide CME, this modest M1.0 flare should stay near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 36717.0,
+  "peakUtc": "2024-11-01T10:14:00Z",
+  "class": "M1.0",
+  "sep": 0,
+  "screen": 0.0114,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202410260632": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "Bright X-class flare on the eastern disk in AIA 131",
+   "No large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "LASCO brightening is a narrow west-side feature opposite the E60 flare, not a wide expanding front"
+  ],
+  "reason": "By +75 min a fast wide CME would be obvious in LASCO, but no coherent wide front is present and the only bright feature is on the west limb, opposite this eastern flare. With no wide-CME evidence and poor Earth connectivity at E60, the probability stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 98805.7,
+  "peakUtc": "2024-10-26T07:17:00Z",
+  "class": "X1.8",
+  "sep": 1,
+  "screen": 0.336,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202410260557": {
+  "probability": 7,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright eastern-limb flare kernel in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "bright sectoral outflow in LASCO C2 rather than a ring around the occulter"
+  ],
+  "reason": "A CME is present, but it is a one-sided non-halo outflow from an eastern E56 source and the EUV difference shows no wide dimming or wave, so Earth proton-storm likelihood stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 106707.0,
+  "peakUtc": "2024-10-26T06:23:00Z",
+  "class": "M9.4",
+  "sep": 0,
+  "screen": 0.0463,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202411051358": {
+  "probability": 1,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "compact bright eastern flare kernel in AIA 131",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 unavailable"
+  ],
+  "reason": "No coronagraph coverage and no clear wide dimming or EUV wave, so a fast wide CME is not established. An eastern M2.8 without that evidence stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 28311.0,
+  "peakUtc": "2024-11-05T14:19:00Z",
+  "class": "M2.8",
+  "sep": 0,
+  "screen": 0.0139,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411050635": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright east-limb flare in AIA 131",
+   "coherent bright outflow on the east side of the LASCO C2 occulter"
+  ],
+  "reason": "A CME is present but it is a narrow east-limb outflow, not a halo or wide front, and no large coronal dimming or EUV wave is evident. An E77 source with only a narrow CME is poorly connected to Earth, so the storm chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 36703.7,
+  "peakUtc": "2024-11-05T06:54:00Z",
+  "class": "M2.6",
+  "sep": 0,
+  "screen": 0.009,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202411051505": {
+  "probability": 3,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "western-limb flare brightening only",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "Both LASCO C2 panels are unavailable and the AIA difference shows only the expected flare brightening, with no wide dimming or wave front, so there is no evidence of a fast, wide CME and the probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 51276.4,
+  "peakUtc": "2024-11-05T15:26:00Z",
+  "class": "M4.1",
+  "sep": 0,
+  "screen": 0.0326,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411060746": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "Bright flare kernel in AIA 131 on the eastern disk, consistent with E14 S6",
+   "AIA 193 difference shows mottled coronal structure but no large dark dimming region or sweeping bright wave front",
+   "LASCO C2 difference shows only radial streaks and a localized western brightening, not a coherent wide expanding front"
+  ],
+  "reason": "No halo or partial-halo CME and no clear coronal dimming or EUV wave are present; the coronagraph difference matches ordinary streamer drift and noise, so the probability stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 62954.4,
+  "peakUtc": "2024-11-06T08:04:00Z",
+  "class": "M2.9",
+  "sep": 0,
+  "screen": 0.0115,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411070352": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "localized flare brightening in AIA 131 near central-east disk",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "Both LASCO C2 panels are missing, so no fast wide CME can be confirmed, and the AIA difference shows only ordinary flare brightening. With no wide-CME evidence the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 37589.2,
+  "peakUtc": "2024-11-07T04:20:00Z",
+  "class": "M2.4",
+  "sep": 0,
+  "screen": 0.0155,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411061324": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright flare core in AIA 131",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only radial streamer streaks and noise, not a coherent front"
+  ],
+  "reason": "By 75 minutes no wide, partial-halo, or halo CME is visible, only ordinary streamer drift, so there is no evidence of the fast wide eruption that drives proton storms and the probability stays near the few-percent base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 52380.4,
+  "peakUtc": "2024-11-06T13:40:00Z",
+  "class": "X2.3",
+  "sep": 0,
+  "screen": 0.0302,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411062342": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "eastern flare brightening in AIA 131",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "narrow eastward bright feature in LASCO, not a wide front"
+  ],
+  "reason": "LASCO shows only a narrow eastward outflow plus ordinary streamer streaks, with no halo or partial-halo front and no large on-disk dimming. An eastern M1.6 with no wide fast CME stays near the base rate for a >=10 pfu proton storm.",
+  "model": "grok-4.7",
+  "latencyMs": 44698.9,
+  "peakUtc": "2024-11-07T00:04:00Z",
+  "class": "M1.6",
+  "sep": 0,
+  "screen": 0.01,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411061427": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "eastern-limb AIA 131 brightening only",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only streamer streaks and noise, not a coherent expanding front"
+  ],
+  "reason": "No wide or fast CME is visible, and an E70 source is poorly connected to Earth, so this stays near the ~1-in-80 base rate rather than the screener\u2019s 1-in-20 flag rate.",
+  "model": "grok-4.7",
+  "latencyMs": 63143.1,
+  "peakUtc": "2024-11-06T14:38:00Z",
+  "class": "M5.2",
+  "sep": 0,
+  "screen": 0.0123,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411231749": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "M1.1 brightening on the eastern limb in AIA 131",
+   "No large dark coronal dimming or disk-sweeping EUV wave in the AIA 193 difference",
+   "Eastward outflow in LASCO C2 confined to one flank of the occulter"
+  ],
+  "reason": "A CME is visible about 75 min after peak, but it is a narrow east-limb outflow rather than a halo or wide partial halo, and there is no clear coronal-dimming signature. Without a fast, wide Earth-directed CME, the proton-storm chance stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 35375.0,
+  "peakUtc": "2024-11-23T18:11:00Z",
+  "class": "M1.1",
+  "sep": 0,
+  "screen": 0.0103,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202411181845": {
+  "probability": 15,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "eastern-limb flare brightening in AIA 131",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "coherent bright wide CME front east of the LASCO occulter"
+  ],
+  "reason": "LASCO shows a coherent, bright, wide eastern partial-halo CME, which lifts the odds above the M-class base rate, but the E68 source is poorly connected to Earth and EUV dimming/wave evidence is weak, so a >=10 pfu storm remains uncommon.",
+  "model": "grok-4.7",
+  "latencyMs": 53701.0,
+  "peakUtc": "2024-11-18T19:15:00Z",
+  "class": "M2.0",
+  "sep": 0,
+  "screen": 0.0155,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202411201912": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-limb brightening in AIA 131",
+   "west-side LASCO C2 ejection with a bright leading edge in the difference image",
+   "no large coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "A west-limb CME is present, but it is confined to the western flank and is not a halo or partial halo, and AIA 193 shows no clear dimming or wave. Without a fast, wide CME, the chance of a >=10 pfu storm stays near the base rate for this M1.1.",
+  "model": "grok-4.7",
+  "latencyMs": 62676.3,
+  "peakUtc": "2024-11-20T19:48:00Z",
+  "class": "M1.1",
+  "sep": 0,
+  "screen": 0.0246,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202411250724": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large coronal dimming or EUV wave in AIA 193 difference"
+  ],
+  "reason": "LASCO C2 difference shows only streamer streaks and localized noise, with no coherent bright front spanning a wide angle, so there is no evidence of a fast wide CME and the probability stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 48423.2,
+  "peakUtc": "2024-11-25T07:42:00Z",
+  "class": "M9.3",
+  "sep": 0,
+  "screen": 0.0192,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202411101151": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact AIA 131 flare brightening near E25",
+   "localized bright feature east of the LASCO occulter",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "The LASCO C2 difference shows only a localized eastern brightening plus ordinary streamer streaks, not a coherent wide or halo front, and AIA 193 shows no large dimming or wave. A narrow ejection from an eastern (E25) source has poor Earth connectivity, so the probability stays near the ~1-in-20 flagged-flare rate.",
+  "model": "grok-4.7",
+  "latencyMs": 114990.6,
+  "peakUtc": "2024-11-10T12:06:00Z",
+  "class": "M9.3",
+  "sep": 0,
+  "screen": 0.0136,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202411222126": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large coronal dimming or EUV wave in the AIA 193 difference",
+   "localized east/south LASCO brightening that is not a wide expanding front"
+  ],
+  "reason": "This gradual M1.0 at E77 has only a narrow east-limb LASCO feature and no dimming, wave, or halo/partial-halo front. Without a fast, wide CME and with poor Earth connectivity, the storm chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 90170.9,
+  "peakUtc": "2024-11-22T22:15:00Z",
+  "class": "M1.0",
+  "sep": 0,
+  "screen": 0.0195,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411251606": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright coherent radial feature in LASCO C2 difference off the east/southeast limb",
+   "no large-scale coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "The coronagraph difference shows only a narrow bright feature near the eastern limb, not a halo or partial-halo front, and the disk difference lacks widespread dimming or a wave. An eastern M1 flare with a narrow CME rarely produces a >=10 pfu proton storm, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 55903.8,
+  "peakUtc": "2024-11-25T16:36:00Z",
+  "class": "M1.0",
+  "sep": 0,
+  "screen": 0.0096,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202411252024": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "compact southwest AIA 131 flare core at peak",
+   "AIA 193 difference shows only the flare brightening, with no large dark coronal dimming or sweeping EUV wave",
+   "LASCO C2 difference has streaky streamer drift and noise but no coherent wide bright front"
+  ],
+  "reason": "No wide or halo CME is visible about 75 minutes after peak, and on-disk signatures lack large-scale dimming, so the chance of a >=10 pfu proton storm stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 54161.0,
+  "peakUtc": "2024-11-25T20:54:00Z",
+  "class": "M1.9",
+  "sep": 0,
+  "screen": 0.0158,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202412072153": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only a localized western brightening in LASCO, consistent with a streamer or narrow jet"
+  ],
+  "reason": "No coherent wide or halo CME front is present, and the EUV difference lacks dimming or a wave, so nothing raises this above the flagged base rate. The E14 source is also poorly connected for an Earth proton event.",
+  "model": "grok-4.7",
+  "latencyMs": 60856.9,
+  "peakUtc": "2024-12-07T22:15:00Z",
+  "class": "M3.2",
+  "sep": 0,
+  "screen": 0.0104,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202412252359": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "flare brightening in AIA 131 on the eastern disk",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO shows only a localized western brightening opposite the E23 source, not a coherent expanding front"
+  ],
+  "reason": "No clear wide or halo CME is associated with this eastern flare; the coronagraph features look like a narrow western streamer change rather than a fast, broad eruption. Without wide-CME evidence the storm chance stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 48223.6,
+  "peakUtc": "2024-12-26T00:30:00Z",
+  "class": "M3.0",
+  "sep": 0,
+  "screen": 0.0173,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202412111532": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only narrow streaks and a south-directed disturbance, not a wide front"
+  ],
+  "reason": "No coherent bright, wide-angle or halo CME front is present in the LASCO difference, and the on-disk difference shows no clear dimming or wave, so this stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 50826.5,
+  "peakUtc": "2024-12-11T15:49:00Z",
+  "class": "M6.6",
+  "sep": 0,
+  "screen": 0.0214,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202412260252": {
+  "probability": 4,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "eastern flare brightening in AIA 131",
+   "no large-scale coronal dimming in AIA 193 difference",
+   "no sweeping EUV wave front",
+   "only a narrow western feature in LASCO, not a wide front"
+  ],
+  "reason": "LASCO C2 at +75 min shows only a narrow western streamer-like feature with no halo or wide expanding front, and the AIA 193 difference lacks large-scale dimming or a wave. Without a fast, wide CME the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 64856.1,
+  "peakUtc": "2024-12-26T03:15:00Z",
+  "class": "M7.3",
+  "sep": 0,
+  "screen": 0.027,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202412290512": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "narrow west-side LASCO brightening near the flare longitude",
+   "no large-scale AIA 193 coronal dimming",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "LASCO shows only a localized west-limb brightening, not a coherent wide or halo front, and the disk difference image lacks large dimming or a wave. Without a fast, wide CME the >=10 pfu risk stays near the base rate despite the western source.",
+  "model": "grok-4.7",
+  "latencyMs": 64099.6,
+  "peakUtc": "2024-12-29T05:26:00Z",
+  "class": "M3.1",
+  "sep": 0,
+  "screen": 0.011,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202412080850": {
+  "probability": 40,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright flare on the western limb in AIA 131",
+   "wide bright CME west of the LASCO C2 occulter at +75 min",
+   "coherent bright expanding front in the LASCO C2 difference spanning a large western angle"
+  ],
+  "reason": "The W57 X2.2 flare is magnetically well connected and drove a wide, bright western CME already in the LASCO C2 field by +75 min. That partial-halo front lifts the >=10 pfu risk well above the base rate, but it is not a full halo and the speed looks only moderate.",
+  "model": "grok-4.7",
+  "latencyMs": 107181.1,
+  "peakUtc": "2024-12-08T09:06:00Z",
+  "class": "X2.2",
+  "sep": 0,
+  "screen": 0.0352,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202412290708": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright western ejecta in LASCO C2",
+   "no clear large-scale coronal dimming or EUV wave in AIA 193 difference"
+  ],
+  "reason": "LASCO shows a coherent but narrow western outflow, not a wide or halo CME, and AIA difference lacks large dimming or a sweeping wave. Without a fast wide CME, the storm chance stays near the ~5% flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 48692.8,
+  "peakUtc": "2024-12-29T07:18:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0203,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202412291827": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "western-disk flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only radial streaks and streamer changes"
+  ],
+  "reason": "No coherent bright expanding front, partial halo, or halo is present in the LASCO difference, and the EUV difference lacks wide dimming or a wave. Without wide-CME evidence the probability stays near the flagged-flare base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 54537.7,
+  "peakUtc": "2024-12-29T18:41:00Z",
+  "class": "M3.3",
+  "sep": 0,
+  "screen": 0.0106,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202412312109": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Western-limb brightening in AIA 131 consistent with the W69 flare",
+   "No large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO shows only localized west-limb brightening, not a wide expanding front"
+  ],
+  "reason": "A confined western outflow is present, but there is no halo or partial-halo front and no clear disk dimming or wave. Without a fast, wide CME, the proton-storm chance stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 29218.8,
+  "peakUtc": "2024-12-31T21:51:00Z",
+  "class": "M2.0",
+  "sep": 0,
+  "screen": 0.0344,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202412300401": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright X-class flare on the western disk in AIA 131",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "localized bright western feature beside the LASCO occulter, not a wide front"
+  ],
+  "reason": "The W50 X1.5 flare is magnetically favorable, but LASCO shows only a confined western brightening rather than a coherent wide or halo CME, and AIA 193 lacks large-scale dimming or a wave. Without a fast, wide CME, the storm chance stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 57912.6,
+  "peakUtc": "2024-12-30T04:14:00Z",
+  "class": "X1.5",
+  "sep": 0,
+  "screen": 0.0267,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202412312202": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb M2.7 brightening at W68",
+   "no large coronal dimming or EUV wave in AIA 193 difference",
+   "no coherent wide expanding front in LASCO C2"
+  ],
+  "reason": "Western location is magnetically favorable, but LASCO shows only streamer streaks and noise with no fast, wide CME at +75 min. Without that driver the storm probability stays at the flagged base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 34734.1,
+  "peakUtc": "2024-12-31T22:19:00Z",
+  "class": "M2.7",
+  "sep": 0,
+  "screen": 0.0165,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202501032232": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright flare source on the eastern disk in AIA 131",
+   "No clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "Localized bright feature east of the LASCO occulter, no ring around it"
+  ],
+  "reason": "The coronagraph difference shows only a confined east-side brightening rather than a coherent wide or halo front, and the E54 source is poorly connected to Earth, so without clear wide-CME evidence the probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 55971.7,
+  "peakUtc": "2025-01-03T22:41:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0106,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202501050908": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "eastern flare brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "narrow bright front northeast of the LASCO occulter"
+  ],
+  "reason": "LASCO shows only a narrow ejection, not a wide or halo CME, and the E38 source is poorly connected to Earth, so the storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 27342.8,
+  "peakUtc": "2025-01-05T09:36:00Z",
+  "class": "M4.1",
+  "sep": 0,
+  "screen": 0.0205,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202501050214": {
+  "probability": 1,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "eastern M4.1 flare kernel in AIA 131",
+   "no large coronal dimming or EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only streamer-like streaks and noise, not a coherent wide front"
+  ],
+  "reason": "No wide or halo CME is visible by +75 min, and there is no clear dimming or wave, so this stays near the ~1-in-80 base rate. The eastern source further lowers the chance of an Earth-directed proton storm.",
+  "model": "grok-4.7",
+  "latencyMs": 34510.2,
+  "peakUtc": "2025-01-05T02:39:00Z",
+  "class": "M4.1",
+  "sep": 0,
+  "screen": 0.0182,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202501031129": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright X-class flare on the eastern limb in AIA 131",
+   "No large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference, only localized structure near the east limb",
+   "Bright outward feature confined to the eastern sector in the LASCO C2 difference; west-limb black/white streaks look like streamer drift, not a wide front"
+  ],
+  "reason": "An eastern ejection is present but it is narrow and sector-confined, with no halo or partial-halo front and no widespread dimming or EUV wave. An E58 source is also poorly magnetically connected to Earth, so this stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 79375.7,
+  "peakUtc": "2025-01-03T11:39:00Z",
+  "class": "X1.2",
+  "sep": 0,
+  "screen": 0.0113,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202501040458": {
+  "probability": 3,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright eastern-disk flare in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO brightening confined to the west side, opposite the eastern source"
+  ],
+  "reason": "The coronagraph feature is localized and on the wrong limb for an E48 source, with no halo or partial-halo front and no clear disk dimming or wave, so this lacks the wide fast CME signature of proton storms and stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 55231.0,
+  "peakUtc": "2025-01-04T05:18:00Z",
+  "class": "M7.6",
+  "sep": 0,
+  "screen": 0.0178,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202501270752": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no large dark coronal dimming in AIA 193",
+   "no sweeping EUV wave front",
+   "LASCO shows only streamer streaks and a localized west-limb brightening"
+  ],
+  "reason": "The LASCO C2 difference lacks a coherent bright expanding front or halo/partial-halo ring, and AIA 193 shows no clear large-scale dimming or wave. Without wide-CME evidence the storm probability stays near the flagged base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 23099.9,
+  "peakUtc": "2025-01-27T08:12:00Z",
+  "class": "M2.6",
+  "sep": 0,
+  "screen": 0.0175,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202501072235": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "narrow southward LASCO C2 feature",
+   "no large coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only a narrow southward ejection, not a wide or halo front, and AIA 193 lacks clear dimming or a sweeping wave, so this stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 43418.1,
+  "peakUtc": "2025-01-07T23:05:00Z",
+  "class": "M1.1",
+  "sep": 0,
+  "screen": 0.0138,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202501041234": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "compact bright flare on the eastern disk",
+   "only localized darkening near the flare site in AIA 193",
+   "no large-scale coronal dimming or sweeping EUV wave"
+  ],
+  "reason": "The LASCO C2 difference shows only streaky streamer noise and no coherent bright front spanning a wide angle, so there is no clear fast wide CME. With an eastern E47 source and no wide-CME evidence, the proton-storm probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 81481.6,
+  "peakUtc": "2025-01-04T12:48:00Z",
+  "class": "X1.8",
+  "sep": 0,
+  "screen": 0.0249,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202501211008": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "compact southeast AIA 131 flare brightening",
+   "only localized dark/bright patch near the flare in AIA 193 difference, no large-scale coronal dimming or sweeping EUV wave"
+  ],
+  "reason": "LASCO C2 is missing and the AIA 193 difference shows no large dimming or wave front, so there is no evidence of a fast, wide CME. Probability stays near the roughly 1-in-20 rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 43668.5,
+  "peakUtc": "2025-01-21T10:39:00Z",
+  "class": "M3.3",
+  "sep": 0,
+  "screen": 0.0222,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202502022309": {
+  "probability": 4,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "No clear large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "LASCO shows only a limited southern feature and streamer-like streaks, not a wide expanding front"
+  ],
+  "reason": "At +75 min there is no coherent halo or partial-halo front in LASCO, only a narrow southern feature and ordinary streamer changes, so this stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 29625.7,
+  "peakUtc": "2025-02-02T23:24:00Z",
+  "class": "M4.1",
+  "sep": 0,
+  "screen": 0.0087,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202502061047": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact bright LASCO feature north of the occulter",
+   "no large coronal dimming",
+   "no sweeping EUV wave"
+  ],
+  "reason": "A localized bright ejection is visible in LASCO, but it does not form a wide or halo front, and AIA shows no large dimming or wave. Without a fast wide CME, the storm chance stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 26751.6,
+  "peakUtc": "2025-02-06T11:04:00Z",
+  "class": "M7.6",
+  "sep": 0,
+  "screen": 0.017,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202501311340": {
+  "probability": 18,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright eastern flare core in AIA 131",
+   "dark coronal dimming and disk-wide disturbance in the AIA 193 difference",
+   "bright coherent CME front east of the LASCO C2 occulter"
+  ],
+  "reason": "LASCO difference shows a bright, wide eastern CME front rather than a narrow jet, with EUV dimming on the disk, but the E41 source and the lack of a halo ring around the occulter mean the shock is only moderately likely to connect to Earth.",
+  "model": "grok-4.7",
+  "latencyMs": 68044.2,
+  "peakUtc": "2025-01-31T14:06:00Z",
+  "class": "M6.6",
+  "sep": 0,
+  "screen": 0.0306,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202502041254": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "compact western-hemisphere flare brightening only",
+   "no large coronal dimming or sweeping EUV wave in AIA 193",
+   "LASCO difference shows only narrow streamer streaks and noise"
+  ],
+  "reason": "By 75 minutes LASCO C2 shows no coherent bright expanding front, halo, or partial halo, only streamer drift and streaks, and the disk difference lacks wide dimming. Without a fast wide CME, this flagged M3.2 stays near the low base rate for a >=10 pfu proton storm.",
+  "model": "grok-4.7",
+  "latencyMs": 48305.8,
+  "peakUtc": "2025-02-04T13:13:00Z",
+  "class": "M3.2",
+  "sep": 0,
+  "screen": 0.0101,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202502070859": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-disk flare brightening in AIA 131/193",
+   "no large coronal dimming or sweeping EUV wave in the 193 difference",
+   "LASCO C2 difference shows only narrow streaks and streamer noise, not a wide front"
+  ],
+  "reason": "No coherent wide or halo CME is visible 75 min after peak, and the disk difference lacks large dimming or a wave. Without that driver the storm chance stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 37173.2,
+  "peakUtc": "2025-02-07T09:21:00Z",
+  "class": "M7.5",
+  "sep": 0,
+  "screen": 0.0349,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202502080857": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western M2.0 flare brightening near W41",
+   "localized bright front west of the LASCO occulter",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "A narrow western CME-like front is present, but it does not span a wide angle or form a partial halo, and there is no clear large-scale dimming or wave. Without a fast, wide CME the proton-storm chance stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 36204.0,
+  "peakUtc": "2025-02-08T09:27:00Z",
+  "class": "M2.0",
+  "sep": 0,
+  "screen": 0.0167,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202502230200": {
+  "probability": 30,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "western-limb flare brightening in AIA 131",
+   "coherent bright western CME front in LASCO C2 and the C2 difference"
+  ],
+  "reason": "A wide, bright western partial-halo CME is already well out in LASCO C2 by +75 min, and the western limb source is favorably connected, but the flare is only M4.8 and the CME is not a full halo, so the storm risk is elevated well above the base rate but not high.",
+  "model": "grok-4.7",
+  "latencyMs": 40014.7,
+  "peakUtc": "2025-02-23T02:13:00Z",
+  "class": "M4.8",
+  "sep": 0,
+  "screen": 0.0118,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202502242150": {
+  "probability": 32,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright flare on the western limb in AIA 131",
+   "wide coherent bright CME front west of the occulter in LASCO C2",
+   "dark leading-edge cavity in the C2 difference spanning a large western angle"
+  ],
+  "reason": "A bright, wide partial-halo CME is already in the LASCO C2 field by +75 min and originates from the well-connected western limb, which raises the odds well above the flagged-flare base rate. The moderate M3.8 class and slow 72-minute rise keep the probability from being high.",
+  "model": "grok-4.7",
+  "latencyMs": 31971.9,
+  "peakUtc": "2025-02-24T23:02:00Z",
+  "class": "M3.8",
+  "sep": 1,
+  "screen": 0.2369,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202502231922": {
+  "probability": 50,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright western-limb flare in AIA 131",
+   "dark patch of coronal dimming at the west limb in the AIA 193 difference",
+   "bright coherent wide front in the LASCO C2 difference"
+  ],
+  "reason": "The X1.9 flare on the western limb is accompanied by a bright, wide partial-halo CME in LASCO C2, a fast well-connected eruption of the type that commonly drives >=10 pfu proton storms.",
+  "model": "grok-4.7",
+  "latencyMs": 42412.2,
+  "peakUtc": "2025-02-23T19:27:00Z",
+  "class": "X1.9",
+  "sep": 0,
+  "screen": 0.0131,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202502251120": {
+  "probability": 25,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "Western-limb flare brightening in AIA 131",
+   "Localized dark dimming beside the flare in the AIA 193 difference",
+   "Bright coherent west-limb front in the LASCO C2 difference"
+  ],
+  "reason": "A bright, coherent CME front spans a wide angle off the west limb rather than a narrow jet, and the W55 source is reasonably well connected, so the storm odds rise well above the ~1-in-80 base rate. It is not a full halo and the flare is only M3.5, so a >=10 pfu storm is still the minority outcome.",
+  "model": "grok-4.7",
+  "latencyMs": 31070.8,
+  "peakUtc": "2025-02-25T11:59:00Z",
+  "class": "M3.5",
+  "sep": 0,
+  "screen": 0.0527,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202503292238": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large-scale coronal dimming in AIA 193 difference",
+   "no sweeping EUV wave"
+  ],
+  "reason": "LASCO C2 and its difference show only narrow streamer deflections and noise streaks, with no coherent wide or halo front from the east-limb flare site. Without wide-CME evidence the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 33904.1,
+  "peakUtc": "2025-03-29T23:00:00Z",
+  "class": "M1.8",
+  "sep": 0,
+  "screen": 0.0192,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202503281457": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening only",
+   "no large coronal dimming or EUV wave",
+   "no coherent wide CME front"
+  ],
+  "reason": "AIA 193 shows no clear dimming or sweeping wave, and the LASCO difference has only streamer-like streaks and a narrow northward feature rather than a halo or partial-halo front. Without wide-CME evidence, the probability stays near the flagged-flare base rate of about 5%.",
+  "model": "grok-4.7",
+  "latencyMs": 44735.0,
+  "peakUtc": "2025-03-28T15:20:00Z",
+  "class": "X1.1",
+  "sep": 1,
+  "screen": 0.0354,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202503300119": {
+  "probability": 1,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131 only",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only north-south streamer drift and radial noise streaks"
+  ],
+  "reason": "At +75 min LASCO shows no coherent bright expanding front, halo, or partial halo\u2014only drifting streamers and noise\u2014and the disk difference lacks dimming or a wave. Without wide-CME evidence the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 34417.5,
+  "peakUtc": "2025-03-30T01:48:00Z",
+  "class": "M1.5",
+  "sep": 0,
+  "screen": 0.0103,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202504201137": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO C2 and its difference show only localized streamer-like streaks and noise, not a coherent wide or halo front, and the flare is on the poorly connected east limb. Without a fast wide CME, the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 24427.8,
+  "peakUtc": "2025-04-20T12:11:00Z",
+  "class": "M1.0",
+  "sep": 0,
+  "screen": 0.0169,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202504182309": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright eastern-limb flare in AIA 131",
+   "localized darkening at the east limb in the AIA 193 difference",
+   "coherent bright outflow in the southeast LASCO C2 difference"
+  ],
+  "reason": "A CME is visible off the southeast limb, but it is confined to one sector and is not a halo or partial halo. Combined with the far-eastern (E70) source, which is poorly connected to Earth, the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 40169.3,
+  "peakUtc": "2025-04-18T23:50:00Z",
+  "class": "M4.3",
+  "sep": 0,
+  "screen": 0.0297,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202504140636": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright west-limb flare in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO shows only polar streamer streaks and a localized west-limb brightening, not a wide expanding front"
+  ],
+  "reason": "At +75 min there is no coherent halo or partial-halo front in LASCO, only streamer-difference streaks and a narrow west-side feature, and AIA shows no clear dimming or wave. Without a fast wide CME the proton-storm chance stays near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 46282.9,
+  "peakUtc": "2025-04-14T06:50:00Z",
+  "class": "M4.2",
+  "sep": 0,
+  "screen": 0.0132,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202505131525": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "Bright west-limb flare in AIA 131",
+   "No large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only localized, disconnected brightenings and streamer-like streaks rather than a coherent expanding front"
+  ],
+  "reason": "Despite a strong west-limb flare, the AIA difference lacks clear dimming or a wave and the LASCO difference shows no coherent wide or halo CME front, only narrow streamer-like changes, so the probability stays near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 44846.2,
+  "peakUtc": "2025-05-13T15:38:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0214,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202505140804": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright X-class flare on the eastern limb in AIA 131",
+   "Only localized darkening near the east limb in the AIA 193 difference, no widespread coronal dimming or sweeping EUV wave"
+  ],
+  "reason": "LASCO C2 shows only a narrow southward outflow, not a coherent wide or halo front, and the flare at E59 is poorly magnetically connected to Earth, so the probability stays near the low base rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 39557.4,
+  "peakUtc": "2025-05-14T08:19:00Z",
+  "class": "X2.4",
+  "sep": 0,
+  "screen": 0.029,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202505141104": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare on the eastern disk in AIA 131",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "eastern-limb outflow plus narrow radial streaks in LASCO C2, consistent with a limb ejection and streamer changes rather than a wide front"
+  ],
+  "reason": "LASCO shows only a confined eastern-limb outflow and narrow streaks, not a coherent wide halo or partial-halo front, and AIA shows no clear dimming or wave. Without a fast, wide CME the storm probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 58240.3,
+  "peakUtc": "2025-05-14T11:19:00Z",
+  "class": "M7.5",
+  "sep": 0,
+  "screen": 0.0121,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202505250140": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright X1.1 flare on the western disk in AIA 131",
+   "No large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "Only a narrow bright westward feature in the LASCO C2 difference, with ordinary streamer streaks"
+  ],
+  "reason": "The coronagraph shows only a narrow westward brightening, not a coherent wide or halo front, and EUV imagery lacks clear dimming or a wave, so this stays near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 51410.2,
+  "peakUtc": "2025-05-25T01:52:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0137,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202505251618": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-limb flare brightening at W55",
+   "no clear large-scale coronal dimming or EUV wave",
+   "narrow west-limb LASCO outflow only"
+  ],
+  "reason": "LASCO C2 and its difference show only a confined west-limb feature, not a coherent wide or halo front, and AIA 193 difference lacks large dimming or a sweeping wave. Without a fast wide CME, the proton-storm probability stays near the flagged base rate despite the western location.",
+  "model": "grok-4.7",
+  "latencyMs": 45790.2,
+  "peakUtc": "2025-05-25T16:30:00Z",
+  "class": "M8.9",
+  "sep": 0,
+  "screen": 0.0096,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202506021059": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright western feature in LASCO C2",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows a coherent but angularly narrow western outflow, not a halo or wide partial-halo front, and the disk difference lacks widespread dimming or a sweeping wave. Narrow ejecta rarely drive >=10 pfu proton storms, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 48501.3,
+  "peakUtc": "2025-06-02T11:18:00Z",
+  "class": "M3.3",
+  "sep": 0,
+  "screen": 0.009,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202505302331": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized dark coronal dimming adjacent to the flare in the AIA 193 difference",
+   "confined bright west-limb feature in LASCO C2, not a wide front"
+  ],
+  "reason": "The 193 difference shows only localized dimming near the flare, and the LASCO C2 difference has no coherent wide or halo front\u2014only a confined west-limb feature plus ordinary streamer streaks. Without a fast, wide CME, the chance stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 53648.4,
+  "peakUtc": "2025-05-31T00:05:00Z",
+  "class": "M8.1",
+  "sep": 1,
+  "screen": 0.0515,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202505140305": {
+  "probability": 15,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright flare on the eastern limb in AIA 131",
+   "coronal dimming along the eastern limb in the AIA 193 difference",
+   "bright CME outflow to the south and east in LASCO C2"
+  ],
+  "reason": "LASCO shows a real, fairly wide CME directed mainly south and east, but the E64 source is poorly magnetically connected to Earth and there is no clear Earth-directed halo, so the storm probability is only modestly above the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 120208.6,
+  "peakUtc": "2025-05-14T03:25:00Z",
+  "class": "M5.2",
+  "sep": 0,
+  "screen": 0.012,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202506160917": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare core in AIA 131 near disk center",
+   "localized dark patch in AIA 193 difference consistent with limited coronal dimming"
+  ],
+  "reason": "LASCO C2 difference shows only narrow bright fronts to the north and west, not a coherent wide or halo front around the occulter, and the EUV dimming is localized, so the chance stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 36084.1,
+  "peakUtc": "2025-06-16T09:38:00Z",
+  "class": "M6.3",
+  "sep": 0,
+  "screen": 0.0156,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202506151745": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "compact AIA 131 flare kernel in the northeast disk",
+   "only a localized dark patch in the AIA 193 difference, no large-scale dimming or sweeping wave front",
+   "LASCO C2 difference shows only a narrow northern spike and streamer-like streaks"
+  ],
+  "reason": "No coherent wide or halo CME front is present in the LASCO difference, and the EUV difference lacks large dimming or a wave. Without wide-CME evidence the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 44728.3,
+  "peakUtc": "2025-06-15T18:07:00Z",
+  "class": "M8.4",
+  "sep": 0,
+  "screen": 0.0272,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202506192337": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright western-disk flare in AIA 131",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 shows only streamer streaks and noise, not a coherent expanding front"
+  ],
+  "reason": "No wide or halo CME is visible by +75 min, and coronal dimming/wave signatures are absent, so this stays near the flagged-flare base rate despite the western X-class flare.",
+  "model": "grok-4.7",
+  "latencyMs": 25870.9,
+  "peakUtc": "2025-06-19T23:50:00Z",
+  "class": "X1.8",
+  "sep": 0,
+  "screen": 0.0202,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202506172138": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "flare-site brightening in AIA 193 difference",
+   "no large-scale coronal dimming or sweeping EUV wave",
+   "only a limited western LASCO feature, not a wide front"
+  ],
+  "reason": "LASCO C2 difference shows ordinary radial streamer streaks plus only a confined western feature, with no coherent halo or partial-halo front, and AIA 193 lacks clear large-scale dimming, so the probability stays near the ~5% flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 54610.9,
+  "peakUtc": "2025-06-17T21:49:00Z",
+  "class": "X1.2",
+  "sep": 0,
+  "screen": 0.0108,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202507080342": {
+  "probability": 4,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "only localized darkening at the east limb in the AIA 193 difference, no disk-wide dimming or sweeping wave"
+  ],
+  "reason": "LASCO shows only a bright eastern-side feature, not a coherent wide or halo front, and the source is on the poorly connected east limb, so this stays near the screener base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 40954.8,
+  "peakUtc": "2025-07-08T04:17:00Z",
+  "class": "M2.4",
+  "sep": 0,
+  "screen": 0.0323,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202508080329": {
+  "probability": 20,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "coherent bright/dark radial front in LASCO C2 difference spanning the southern sector",
+   "disk restructuring and possible dimming in the AIA 193 difference near the western flare site"
+  ],
+  "reason": "The LASCO difference shows a real, wide southern CME front rather than a narrow jet, and the W45 source is magnetically well connected to Earth, but it is only a partial halo from a moderate M2.8 flare with unknown speed, so the storm odds are elevated well above the base rate but not high.",
+  "model": "grok-4.7",
+  "latencyMs": 26593.3,
+  "peakUtc": "2025-08-08T03:53:00Z",
+  "class": "M2.8",
+  "sep": 0,
+  "screen": 0.011,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202508071040": {
+  "probability": 7,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized darkening near the western flare site in the AIA 193 difference",
+   "bright west and southwest outflow in the LASCO C2 difference"
+  ],
+  "reason": "A CME is present on the west/southwest flank, but it is a localized front rather than a coherent wide or halo expansion, and the on-disk dimming is limited. Without clear wide-CME evidence the probability stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 45320.7,
+  "peakUtc": "2025-08-07T11:31:00Z",
+  "class": "M3.9",
+  "sep": 0,
+  "screen": 0.0701,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202508221756": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "bright eastern-limb flare in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO C2 is missing, so no fast wide CME can be confirmed, and the disk difference shows only the flare brightening. With an eastern-limb source and no clear eruption evidence, the chance stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 22950.3,
+  "peakUtc": "2025-08-22T18:51:00Z",
+  "class": "M1.7",
+  "sep": 0,
+  "screen": 0.0557,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202508100246": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb AIA 131 flare brightening at W69",
+   "localized bright/dark LASCO feature on the west side",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only a narrow west-limb outflow, not a coherent wide or halo front, and the disk difference lacks large-scale dimming or a wave. Without clear wide fast-CME evidence the storm chance stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 49888.0,
+  "peakUtc": "2025-08-10T03:12:00Z",
+  "class": "M1.7",
+  "sep": 0,
+  "screen": 0.0108,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202508111518": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "localized western brightening and radial streaks in LASCO C2 rather than a coherent wide front"
+  ],
+  "reason": "The LASCO difference shows only localized west-limb brightening and streaky streamer-like changes, not a coherent halo or wide partial-halo front, and AIA 193 lacks clear large dimming or a sweeping wave. Without wide-CME evidence the probability stays near the flagged base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 51565.7,
+  "peakUtc": "2025-08-11T15:36:00Z",
+  "class": "M1.6",
+  "sep": 0,
+  "screen": 0.0116,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202508250501": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb flare brightening only",
+   "no large coronal dimming",
+   "no EUV wave across the disk"
+  ],
+  "reason": "LASCO C2 difference shows only streamer drift and narrow streaks, not a coherent wide or halo CME, and the E78 source is poorly connected to Earth, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 26376.2,
+  "peakUtc": "2025-08-25T05:24:00Z",
+  "class": "M4.5",
+  "sep": 0,
+  "screen": 0.0172,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202508190351": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "localized bright front east of the LASCO occulter"
+  ],
+  "reason": "LASCO shows only a one-sided, limited-width bright front off the east limb, with no halo or partial-halo ring and no coronal dimming or EUV wave in AIA 193. Without a fast, wide CME, the proton-storm chance stays near the roughly 1-in-20 base rate for a flagged M-class flare.",
+  "model": "grok-4.7",
+  "latencyMs": 61524.0,
+  "peakUtc": "2025-08-19T04:39:00Z",
+  "class": "M1.1",
+  "sep": 0,
+  "screen": 0.0264,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202508261339": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "eastern-limb flare brightening in AIA 131",
+   "coherent bright southern front in LASCO C2",
+   "no clear large-scale coronal dimming or EUV wave in AIA 193"
+  ],
+  "reason": "LASCO shows a bright but sector-confined southern front, not a halo or partial-halo ring, and on-disk images lack wide dimming or a sweeping wave. Narrow CMEs rarely drive proton storms, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 46071.4,
+  "peakUtc": "2025-08-26T14:07:00Z",
+  "class": "M1.0",
+  "sep": 0,
+  "screen": 0.0164,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202510091211": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "narrow bright outflow west of the LASCO occulter"
+  ],
+  "reason": "LASCO shows only a narrow west-limb bright feature, not a wide or halo front, and AIA 193 lacks large-scale dimming or a sweeping wave, so the chance stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 30873.2,
+  "peakUtc": "2025-10-09T12:31:00Z",
+  "class": "M2.0",
+  "sep": 0,
+  "screen": 0.0089,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202510130459": {
+  "probability": 6,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact M1.9 flare brightening on disk in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only localized bright and dark streaks in LASCO C2, consistent with streamer drift and a narrow outflow"
+  ],
+  "reason": "No coherent wide or halo CME front is visible 75 minutes after peak, only narrow coronagraph features that rarely drive proton storms. With the western-hemisphere location but no clear fast wide eruption, the probability stays near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 28271.0,
+  "peakUtc": "2025-10-13T05:26:00Z",
+  "class": "M1.9",
+  "sep": 0,
+  "screen": 0.0102,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202510150349": {
+  "probability": 6,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact western flare brightening in AIA 131",
+   "localized bright feature in the northwest LASCO C2 difference, aligned with the flare site",
+   "no clear large-scale coronal dimming or disk-wide EUV wave in the AIA 193 difference"
+  ],
+  "reason": "A bright feature is present in the northwest coronagraph difference, but it is localized rather than a coherent wide or halo front, and on-disk dimming/wave evidence is not clear. Without a fast, wide CME the storm probability stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 21377.2,
+  "peakUtc": "2025-10-15T04:15:00Z",
+  "class": "M4.8",
+  "sep": 0,
+  "screen": 0.0305,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202509301202": {
+  "probability": 25,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "Bright flare kernel in the southwest quadrant of AIA 131, consistent with the W32 S10 source",
+   "Patchy dark regions in the AIA 193 difference near the flare site, suggestive but not definitive of coronal dimming",
+   "Coherent bright expanding front in LASCO C2 southwest, far wider than a jet or streamer deflection"
+  ],
+  "reason": "A wide, coherent CME front is already expanding southwest in LASCO by +75 min from a magnetically well-connected W32 flare, the usual proton-storm configuration, so the probability is well above the ~5% flagged base rate. It is not a full halo and the flare is only M1.7 with speed only moderately constrained, so the estimate stays moderate.",
+  "model": "grok-4.7",
+  "latencyMs": 59530.2,
+  "peakUtc": "2025-09-30T12:27:00Z",
+  "class": "M1.7",
+  "sep": 0,
+  "screen": 0.0114,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202508301911": {
+  "probability": 4,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "flare brightening near disk center in AIA 131",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only streamer deflections and radial noise streaks, no coherent expanding front"
+  ],
+  "reason": "No fast, wide CME is evident: the coronagraph difference at +75 min shows only drifting streamers and streaks rather than a halo or partial-halo front, and the EUV difference lacks dimming or a wave. Without wide-CME evidence the probability stays near the low base rate for this modest eastern M-class flare.",
+  "model": "grok-4.7",
+  "latencyMs": 75586.3,
+  "peakUtc": "2025-08-30T20:02:00Z",
+  "class": "M2.7",
+  "sep": 0,
+  "screen": 0.0491,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511030840": {
+  "probability": 25,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "Bright EUV flare at the eastern limb in AIA 131",
+   "Dark patch of coronal dimming adjacent to the east-limb flare site in the AIA 193 difference",
+   "Bright, coherent, wide CME front on the east side of the LASCO C2 difference by +75 min"
+  ],
+  "reason": "The LASCO C2 difference shows a bright, coherent, wide eastern CME front rather than a narrow jet, which is the usual proton-storm driver and lifts this above the flagged base rate. However the source is far east at E79 with only an M1.6 class, so Earth magnetic connectivity is poor and the probability stays moderate.",
+  "model": "grok-4.7",
+  "latencyMs": 28712.0,
+  "peakUtc": "2025-11-03T09:25:00Z",
+  "class": "M1.6",
+  "sep": 0,
+  "screen": 0.0201,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202510152155": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "western-disk flare brightening in AIA 131",
+   "only localized darkening near the flare in the AIA 193 difference, no sweeping wave",
+   "LASCO C2 difference shows streamer-like streaks rather than a coherent wide front"
+  ],
+  "reason": "No clear fast, wide CME or halo front is present in the coronagraph difference, only ambiguous narrow streaks, so the probability stays near the roughly 1-in-20 flagged-flare base rate despite the western location.",
+  "model": "grok-4.7",
+  "latencyMs": 41339.4,
+  "peakUtc": "2025-10-15T22:28:00Z",
+  "class": "M2.7",
+  "sep": 0,
+  "screen": 0.0323,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511030938": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "East-limb flare brightening in AIA 131 consistent with E74",
+   "No large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only a localized northeast brightening, not a wide expanding front"
+  ],
+  "reason": "There is no clear wide or halo CME, only a possible narrow northeast outflow, and the source is far east at E74, so the proton-storm chance stays near the flagged-flare base rate of about 5%.",
+  "model": "grok-4.7",
+  "latencyMs": 44109.7,
+  "peakUtc": "2025-11-03T10:11:00Z",
+  "class": "M5.0",
+  "sep": 0,
+  "screen": 0.0463,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511042145": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright east-limb flare in AIA 131",
+   "Narrow bright southeast outflow in LASCO C2",
+   "No large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "The source is far east (E73), poorly connected to Earth, and LASCO shows only a narrow southeast outflow rather than a wide or halo front, with no disk-wide dimming. Without clear wide-CME evidence the storm likelihood stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 24350.3,
+  "peakUtc": "2025-11-04T22:01:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0185,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202511040131": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright eastern-limb flare in AIA 131 consistent with E66 location",
+   "AIA 193 difference shows no clear large-scale coronal dimming or sweeping EUV wave",
+   "LASCO shows only a localized southern brightening, not a coherent wide expanding front"
+  ],
+  "reason": "No clear wide or halo CME is present; the LASCO feature is localized and the EUV difference lacks a broad dimming or wave, so the odds stay near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 43046.7,
+  "peakUtc": "2025-11-04T01:48:00Z",
+  "class": "M3.5",
+  "sep": 0,
+  "screen": 0.01,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511041715": {
+  "probability": 4,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "eastern-limb flare brightening only",
+   "no large-scale coronal dimming",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "AIA 193 shows no widespread dimming or wave, and the LASCO C2 difference has only streamer streaks and noise rather than a coherent wide bright front. With no fast, wide CME signature, the storm chance stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 41457.7,
+  "peakUtc": "2025-11-04T17:34:00Z",
+  "class": "X1.7",
+  "sep": 0,
+  "screen": 0.0416,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511051036": {
+  "probability": 4,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "Bright eastern-limb flare in AIA 131, consistent with E47",
+   "No large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "Only narrow radial streaks in LASCO C2, not a wide expanding front"
+  ],
+  "reason": "LASCO shows only narrow jet-like or streamer features rather than a halo or partial-halo CME, and the source is in the eastern hemisphere where Earth is poorly magnetically connected. Without clear wide-CME evidence the probability stays near the low base rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 39800.7,
+  "peakUtc": "2025-11-05T11:19:00Z",
+  "class": "M7.4",
+  "sep": 0,
+  "screen": 0.0696,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511052152": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "Bright flare emission on the eastern disk in AIA 131, consistent with the E36 source",
+   "No large dark coronal dimming region or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only a localized northern brightening plus dark radial streaks typical of streamer drift and noise"
+  ],
+  "reason": "No coherent wide or halo CME front is visible, and the source is in the eastern hemisphere with no clear dimming or wave, so this lacks the usual driver of a proton storm. The probability therefore stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 36839.4,
+  "peakUtc": "2025-11-05T22:07:00Z",
+  "class": "M8.6",
+  "sep": 0,
+  "screen": 0.0115,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202511070631": {
+  "probability": 1,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "eastern-disk flare brightening",
+   "no large coronal dimming",
+   "no sweeping EUV wave",
+   "LASCO features are narrow streamer-like streaks"
+  ],
+  "reason": "No large dimming, EUV wave, or coherent wide/halo CME front is visible; the LASCO brightenings are narrow and streamer-like, so the storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 40712.6,
+  "peakUtc": "2025-11-07T07:16:00Z",
+  "class": "M1.7",
+  "sep": 0,
+  "screen": 0.0197,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202511140711": {
+  "probability": 40,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "Bright western-limb flare in AIA 131 at W68",
+   "Coherent bright western ejecta in LASCO C2 at +75 min",
+   "Wide bright front on the west in the C2 difference, not a full ring"
+  ],
+  "reason": "A wide western partial-halo CME is clearly present from a magnetically well-connected W68 source, which lifts the odds well above the ~5% flagged-flare base rate. A single coronagraph frame cannot confirm the high speed usually required for a >=10 pfu storm, so the probability stays moderate rather than high.",
+  "model": "grok-4.7",
+  "latencyMs": 40745.8,
+  "peakUtc": "2025-11-14T07:39:00Z",
+  "class": "M1.8",
+  "sep": 0,
+  "screen": 0.0108,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511160749": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no large coronal dimming or EUV wave in AIA 193 difference",
+   "no coherent wide expanding front in LASCO C2"
+  ],
+  "reason": "The M3.1 flare is on the west limb, but AIA shows only the flare brightening with no dimming or wave, and LASCO C2 at +75 min shows only streamer streaks rather than a fast wide CME. Without a wide CME the storm probability stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 26149.1,
+  "peakUtc": "2025-11-16T08:17:00Z",
+  "class": "M3.1",
+  "sep": 0,
+  "screen": 0.0247,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511100855": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "on-disk X1.2 brightening at W17 N23",
+   "no large coronal dimming or EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only sectoral west-northwest brightening and streamer-like streaks, not a wide front"
+  ],
+  "reason": "No coherent halo or partial-halo CME front is visible by +75 min, and the disk difference lacks large dimming or a wave, so this lacks the usual proton-storm driver and the probability stays near the ~5% flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 65307.2,
+  "peakUtc": "2025-11-10T09:19:00Z",
+  "class": "X1.2",
+  "sep": 1,
+  "screen": 0.0405,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511090701": {
+  "probability": 3,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare core in the northern hemisphere near central meridian",
+   "localized bright feature north of the LASCO occulter",
+   "no large-scale AIA 193 dimming or sweeping wave front",
+   "no coherent wide-angle front around the occulter"
+  ],
+  "reason": "LASCO shows only a localized northern bright feature and ordinary streamer streaks, not a fast wide halo or partial-halo CME, and AIA 193 lacks widespread dimming or a wave. Without clear wide-CME evidence the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 73856.1,
+  "peakUtc": "2025-11-09T07:35:00Z",
+  "class": "X1.7",
+  "sep": 0,
+  "screen": 0.1131,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202511140744": {
+  "probability": 35,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "coherent bright front on the western side of the LASCO C2 difference spanning a wide angle",
+   "possible localized coronal dimming near the west limb in the AIA 193 difference"
+  ],
+  "reason": "The X4.0 flare at magnetically well-connected W71 shows a coherent bright western front in the LASCO C2 difference consistent with a wide partial-halo CME, which lifts the storm probability well above the base rate, though the front does not encircle the occulter as a full halo.",
+  "model": "grok-4.7",
+  "latencyMs": 52775.7,
+  "peakUtc": "2025-11-14T08:30:00Z",
+  "class": "X4.0",
+  "sep": 1,
+  "screen": 0.2911,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511110949": {
+  "probability": 30,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "extensive dark coronal dimming across the central-western disk in the AIA 193 difference",
+   "broad coherent bright CME emission in LASCO C2 and its difference image, beyond ordinary streamer streaks"
+  ],
+  "reason": "The X5.1 flare at W28 has large coronal dimming and a wide asymmetric CME spanning a large position angle, consistent with a partial halo rather than a narrow jet. That raises the >=10 pfu risk well above the base rate, but the front is not a clear full halo, so the probability stays moderate.",
+  "model": "grok-4.7",
+  "latencyMs": 75596.0,
+  "peakUtc": "2025-11-11T10:04:00Z",
+  "class": "X5.1",
+  "sep": 1,
+  "screen": 0.0663,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202512010227": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "east-limb X-class flare brightening in AIA 131",
+   "localized east-side brightening in LASCO C2 difference, no disk-wide dimming or wave in AIA 193"
+  ],
+  "reason": "No coherent wide or halo CME front is visible in the LASCO difference, and the AIA 193 difference shows no large coronal dimming or sweeping wave. With the source at E70 and only ambiguous limb brightening, the storm chance stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 17245.7,
+  "peakUtc": "2025-12-01T02:49:00Z",
+  "class": "X1.9",
+  "sep": 0,
+  "screen": 0.0557,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202511291536": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "eastern-limb flare brightening in AIA 131",
+   "localized eastward ejection in LASCO C2"
+  ],
+  "reason": "LASCO shows only a narrow eastward ejection from an E69 source, with no halo or partial-halo front and no large EUV dimming or wave, so the usual wide fast CME driver is absent and the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 53559.6,
+  "peakUtc": "2025-11-29T16:07:00Z",
+  "class": "M2.8",
+  "sep": 0,
+  "screen": 0.0177,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202512282201": {
+  "probability": 8,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright western-hemisphere flare at the stated W30 site",
+   "localized dark patches near the flare in the AIA 193 difference, no disk-wide wave",
+   "bright west-limb outflow in the LASCO C2 difference"
+  ],
+  "reason": "LASCO shows a coherent but laterally confined bright outflow off the west limb, not a halo or wide partial-halo front. Without clear wide-CME evidence, a W30 source only modestly lifts the odds above the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 29453.7,
+  "peakUtc": "2025-12-28T22:39:00Z",
+  "class": "M4.2",
+  "sep": 0,
+  "screen": 0.0488,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202512090037": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "flare brightening in AIA 131 only",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only streaky streamer drift and noise, no coherent expanding front"
+  ],
+  "reason": "No wide, fast CME is evident: the coronagraph difference lacks any halo or partial-halo front and the disk difference shows no dimming or wave, so the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 55931.7,
+  "peakUtc": "2025-12-09T00:58:00Z",
+  "class": "M2.0",
+  "sep": 0,
+  "screen": 0.0095,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202512040236": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact brightening just east of the LASCO occulter",
+   "patchy darkening near the eastern flare site in the AIA 193 difference"
+  ],
+  "reason": "No coherent wide or halo CME front is visible at +75 min, only a localized eastern brightening plus ordinary streamer streaks and limited on-disk darkening, so the chance stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 82997.8,
+  "peakUtc": "2025-12-04T02:50:00Z",
+  "class": "M6.0",
+  "sep": 0,
+  "screen": 0.0095,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202512311311": {
+  "probability": 4,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright flare kernel in the northeast quadrant consistent with E17 N23",
+   "no large-scale coronal dimming in the AIA 193 difference",
+   "no sweeping EUV wave front",
+   "no coherent wide bright front in the LASCO C2 difference"
+  ],
+  "reason": "At +75 min a fast wide CME would already be in the LASCO C2 field, but the difference image shows only streamer changes and a narrow linear streak, and AIA 193 shows no large dimming or wave. Without a wide CME from this eastern (E17) source, the probability stays near the ~5% flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 66748.5,
+  "peakUtc": "2025-12-31T13:51:00Z",
+  "class": "M7.1",
+  "sep": 0,
+  "screen": 0.0465,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202512080449": {
+  "probability": 3,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "AIA 131 flare core on the western disk",
+   "no clear large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only localized brightenings and radial streak noise, not a wide front"
+  ],
+  "reason": "The western X1.1 flare is favorably located, but there is no clear wide or halo CME: EUV difference lacks large dimming or a wave, and the coronagraph excesses are narrow and not a coherent expanding front, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 84655.0,
+  "peakUtc": "2025-12-08T05:01:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0114,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202601112153": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "east-limb AIA 131 flare brightening",
+   "no large coronal dimming",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "LASCO C2 shows only streamer drift, a saturated-object streak, and no coherent wide or halo front, so this slow-rising M3.3 lacks the fast wide CME that drives proton storms and stays near the 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 47727.0,
+  "peakUtc": "2026-01-11T23:14:00Z",
+  "class": "M3.3",
+  "sep": 0,
+  "screen": 0.1787,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602011152": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright eastern flare core in AIA 131",
+   "no large dark dimming region or disk-sweeping wave front in the AIA 193 difference",
+   "only a localized southeast bright wedge in LASCO C2, with streaky streamer noise elsewhere"
+  ],
+  "reason": "LASCO shows only a confined southeast brightening rather than a coherent wide or halo front, and the EUV difference lacks clear dimming or a wave. Without a fast wide CME, and with an eastern source, the storm odds stay near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 39204.0,
+  "peakUtc": "2026-02-01T12:12:00Z",
+  "class": "M6.7",
+  "sep": 0,
+  "screen": 0.0224,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202601181727": {
+  "probability": 8,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized coronal dimming next to the flare core in the AIA 193 difference",
+   "bright X-class flare kernels in AIA 131"
+  ],
+  "reason": "LASCO C2 shows only a one-sided eastern outflow rather than a coherent wide or halo front, and the E20 source is poorly connected to Earth. Without a fast, wide CME the storm risk stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 70568.0,
+  "panel": "jan2026_202601181727.jpg",
+  "peakUtc": "2026-01-18T18:09:00Z",
+  "class": "X1.9",
+  "sep": 1,
+  "screen": 0.1715,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602011225": {
+  "probability": 3,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "eastern-disk flare brightening in AIA 131",
+   "narrow bright radial feature in LASCO C2 difference, lower-left sector only",
+   "no large coherent coronal dimming or sweeping EUV wave in AIA 193"
+  ],
+  "reason": "LASCO shows only a narrow bright ejection rather than a wide or halo front, and AIA 193 lacks clear dimming or a wave. With a poorly connected E37 source, the proton-storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 55536.5,
+  "peakUtc": "2026-02-01T12:33:00Z",
+  "class": "X1.0",
+  "sep": 0,
+  "screen": 0.0125,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202602020739": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized flare brightening only in the AIA 193 difference",
+   "no large coronal dimming",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "LASCO shows only a confined bright feature on the west side of the occulter, not a coherent wide or halo front, and the eastern (E26) source shows no dimming or wave. Without a clear fast, wide CME the storm probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 43604.6,
+  "peakUtc": "2026-02-02T08:14:00Z",
+  "class": "X1.6",
+  "sep": 0,
+  "screen": 0.1423,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602020031": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright eastern-disk flare in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO difference shows only narrow streaks and streamer-like changes, not a coherent wide front"
+  ],
+  "reason": "No halo or wide CME front and no clear on-disk dimming/wave are visible, and the E29 source is poorly connected to Earth, so this stays near the low base rate rather than a storm-producing eruption.",
+  "model": "grok-4.7",
+  "latencyMs": 56849.1,
+  "peakUtc": "2026-02-02T00:36:00Z",
+  "class": "X2.8",
+  "sep": 0,
+  "screen": 0.0168,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202602022052": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "disk flare brightening in AIA 131",
+   "no large coronal dimming in AIA 193 difference",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "LASCO C2 difference shows only streamer drifts and noise streaks, with no coherent bright front spanning a wide angle, and the west-limb brightening does not match an eastern source. Without a fast wide CME, the storm probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 42314.9,
+  "peakUtc": "2026-02-02T21:08:00Z",
+  "class": "M3.3",
+  "sep": 0,
+  "screen": 0.0104,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202602012344": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "eastern-limb flare brightening only",
+   "no clear large-scale coronal dimming or sweeping EUV wave"
+  ],
+  "reason": "The X8.1 flare sits at the eastern limb, poorly connected to Earth, and by +75 min LASCO shows no coherent wide or halo CME on that side\u2014only a localized western brightening inconsistent with this source. Without a fast, wide CME the proton-storm probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 86287.7,
+  "peakUtc": "2026-02-01T23:57:00Z",
+  "class": "X8.1",
+  "sep": 0,
+  "screen": 0.1644,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602031358": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "X1.5 flare brightening on disk in AIA 131",
+   "no large-scale coronal dimming in AIA 193 difference",
+   "no sweeping EUV wave front",
+   "LASCO C2 difference shows only radial streamer streaks and noise"
+  ],
+  "reason": "By 75 minutes no coherent bright expanding front, partial halo, or halo is visible around the LASCO occulter, and the on-disk difference lacks widespread dimming or a wave. Without a fast wide CME, the storm probability stays near the few-percent base rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 35786.6,
+  "peakUtc": "2026-02-03T14:08:00Z",
+  "class": "X1.5",
+  "sep": 0,
+  "screen": 0.0105,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602030643": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "compact AIA 131 brightening at the eastern disk flare site only",
+   "no large dark coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 and difference show streamer drift and radial streaks only, no coherent wide front"
+  ],
+  "reason": "By 75 minutes there is no wide or fast CME, and the EUV difference lacks large-scale dimming or a wave, so the chance stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 44927.9,
+  "peakUtc": "2026-02-03T07:01:00Z",
+  "class": "M7.2",
+  "sep": 0,
+  "screen": 0.013,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202602030941": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "localized flare brightening in AIA 131",
+   "no large-scale coronal dimming in AIA 193 difference",
+   "no EUV wave front"
+  ],
+  "reason": "LASCO C2 difference shows only narrow streaks and streamer changes, not a coherent wide or halo CME front, and the AIA 193 difference lacks large dimming or a sweeping wave. With no wide-CME evidence and an eastern (E14) source, the probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 46312.5,
+  "peakUtc": "2026-02-03T10:12:00Z",
+  "class": "M3.6",
+  "sep": 0,
+  "screen": 0.0254,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202602021941": {
+  "probability": 4,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "only sectoral west-limb LASCO brightening, poorly aligned with the E22 source"
+  ],
+  "reason": "LASCO shows only localized west-limb streaks and streamer-like changes, not a coherent bright front spanning a wide angle or a halo around the occulter. With no clear fast wide CME from this eastern M2.9 flare, the storm probability stays near the low base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 95339.5,
+  "peakUtc": "2026-02-02T20:05:00Z",
+  "class": "M2.9",
+  "sep": 0,
+  "screen": 0.0169,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602032256": {
+  "probability": 3,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "no large-scale coronal dimming in AIA 193",
+   "no EUV wave front across the disk",
+   "only localized west-limb brightening in LASCO"
+  ],
+  "reason": "The E6 source is near disk center, so a fast wide Earth-directed CME should appear as a halo by +75 min, but LASCO shows only a localized west-limb feature rather than a coherent wide front. With no clear dimming or EUV wave, probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 33853.1,
+  "peakUtc": "2026-02-03T23:09:00Z",
+  "class": "M3.4",
+  "sep": 0,
+  "screen": 0.0098,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202602031445": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "no large coronal dimming in AIA 193 difference",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "LASCO C2 at +75 min shows only streamer drift and radial noise streaks, with no coherent wide or halo CME front, and the source is poorly connected at E14. Without a fast wide CME the chance of a >=10 pfu proton storm stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 50255.0,
+  "peakUtc": "2026-02-03T14:56:00Z",
+  "class": "M7.2",
+  "sep": 0,
+  "screen": 0.0126,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202602041202": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized dark coronal dimming near the flare site in the AIA 193 difference",
+   "confined west-limb brightening in LASCO C2, not a coherent wide front"
+  ],
+  "reason": "The 193 difference shows only localized dimming and no disk-wide wave, and the LASCO difference lacks a coherent halo or partial-halo front around the occulter. Without clear wide-CME evidence the probability stays near the ~5% flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 32765.4,
+  "peakUtc": "2026-02-04T12:13:00Z",
+  "class": "X4.2",
+  "sep": 0,
+  "screen": 0.0414,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602050355": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "no large coronal dimming in the AIA 193 difference",
+   "no sweeping EUV wave front",
+   "only localized west/southwest LASCO brightening, not a ring around the occulter"
+  ],
+  "reason": "From this near-disk-center M2.5 flare, a storm-driving CME should appear as a wide or halo front; LASCO shows only confined west-limb brightening and AIA shows no dimming or wave, so the probability stays near the flagged base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 57311.5,
+  "peakUtc": "2026-02-05T04:21:00Z",
+  "class": "M2.5",
+  "sep": 0,
+  "screen": 0.0164,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602111247": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "limb flare brightening in AIA 131",
+   "no large coronal dimming or EUV wave in the AIA 193 difference",
+   "only localized LASCO brightenings and streamer-like streaks"
+  ],
+  "reason": "No coherent wide-angle or halo CME front is visible, and the LASCO changes look like streamers or a narrow ejection, which rarely drive proton storms, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 68313.7,
+  "peakUtc": "2026-02-11T13:12:00Z",
+  "class": "M1.4",
+  "sep": 0,
+  "screen": 0.0114,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202604240051": {
+  "probability": 25,
+  "cmeVisible": "yes",
+  "cmeExtent": "partial halo",
+  "eruptionSigns": [
+   "bright west-limb flare in AIA 131 consistent with W77",
+   "coherent bright CME front in LASCO C2 to the northwest",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "The well-connected western X2.4 flare has a real, fairly wide northwest CME in LASCO, which raises the odds above the base rate, but it is not a clear full halo and disk dimming is weak, so a >=10 pfu storm is possible rather than likely.",
+  "model": "grok-4.7",
+  "latencyMs": 53614.2,
+  "peakUtc": "2026-04-24T01:07:00Z",
+  "class": "X2.4",
+  "sep": 0,
+  "screen": 0.0348,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202604241234": {
+  "probability": 1,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "localized eastern-disk brightening in AIA 131",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "only narrow radial streaks in the LASCO difference, consistent with streamer drift and noise"
+  ],
+  "reason": "No clear wide or halo CME front, EUV wave, or large-scale dimming is visible, so this remains a typical M-class flare without the usual proton-storm driver and the probability stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 21687.6,
+  "peakUtc": "2026-04-24T13:01:00Z",
+  "class": "M1.7",
+  "sep": 0,
+  "screen": 0.0109,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202604240801": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "X2.5 flare at the west limb",
+   "narrow bright radial feature in LASCO C2",
+   "no large-scale coronal dimming or EUV wave"
+  ],
+  "reason": "The X2.5 flare sits on the west limb, but the LASCO difference shows only a narrow bright radial feature rather than a coherent wide or halo CME front, so the storm probability stays near the screened base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 45058.7,
+  "peakUtc": "2026-04-24T08:13:00Z",
+  "class": "X2.5",
+  "sep": 0,
+  "screen": 0.0448,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202604021724": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized bright feature on the west side of the LASCO C2 occulter",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only a localized west-limb brightening, not a coherent wide or halo front, and AIA 193 lacks clear dimming or a wave. Without wide-CME evidence the probability stays near the roughly 1-in-20 rate for flagged flares.",
+  "model": "grok-4.7",
+  "latencyMs": 80244.3,
+  "peakUtc": "2026-04-02T18:15:00Z",
+  "class": "M3.5",
+  "sep": 0,
+  "screen": 0.0322,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202603300247": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright southeast flare at E42 S23 in AIA 131",
+   "only localized dark dimming beside the flare in the AIA 193 difference, no disk-wide EUV wave",
+   "coherent bright front off the east limb in LASCO C2"
+  ],
+  "reason": "LASCO shows a real CME, but its bright front is confined to the east limb and does not form a wide halo or partial-halo ring, and the eastern source is poorly connected to Earth. Without a clear wide, Earth-directed CME, the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 103212.5,
+  "peakUtc": "2026-03-30T03:19:00Z",
+  "class": "X1.4",
+  "sep": 0,
+  "screen": 0.0787,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202602160403": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb flare brightening in AIA 131",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "localized LASCO C2 brightenings and streamer changes without a coherent wide front"
+  ],
+  "reason": "LASCO shows only localized ejecta and streamer deflections rather than a coherent wide or halo CME front, and the EUV difference lacks clear dimming or a wave, so the probability stays near the flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 112802.7,
+  "peakUtc": "2026-02-16T04:35:00Z",
+  "class": "M2.4",
+  "sep": 0,
+  "screen": 0.0262,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202605071420": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "east-limb M-class brightening in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO difference shows only localized east-side brightening and streaky streamer noise, not a coherent wide front"
+  ],
+  "reason": "No clear fast, wide, or halo CME is present, and the source is at E84 where Earth connectivity is poor, so the chance of a >=10 pfu proton storm stays near the ~1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 27240.3,
+  "peakUtc": "2026-05-07T15:14:00Z",
+  "class": "M2.6",
+  "sep": 0,
+  "screen": 0.0435,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202605221003": {
+  "probability": 8,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening",
+   "localized coronal dimming at the west limb",
+   "narrow CME outflow to the northwest in LASCO"
+  ],
+  "reason": "A west-limb M2.3 has localized dimming and a real but narrow, non-halo CME, with no coherent wide expanding front. Without a fast wide CME the proton-storm chance stays near the low flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 54524.1,
+  "peakUtc": "2026-05-22T10:29:00Z",
+  "class": "M2.3",
+  "sep": 0,
+  "screen": 0.0214,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202606292113": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "narrow bright southward outflow in LASCO C2, with only streaky streamer noise elsewhere"
+  ],
+  "reason": "LASCO shows only a narrow southern feature, not a coherent wide or halo front, and the EUV difference lacks widespread dimming or a wave, so the storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 42847.0,
+  "peakUtc": "2026-06-29T21:40:00Z",
+  "class": "M1.4",
+  "sep": 0,
+  "screen": 0.0087,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202606031119": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "localized bright western-limb outflow in LASCO C2",
+   "no large-scale coronal dimming in AIA 193 difference",
+   "no EUV wave front across the disk"
+  ],
+  "reason": "LASCO shows only a localized western feature, not a coherent wide or halo front, and the AIA difference lacks clear dimming or a sweeping wave. Without wide-CME evidence the probability stays near the flagged-flare base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 53699.1,
+  "peakUtc": "2026-06-03T11:28:00Z",
+  "class": "X1.0",
+  "sep": 0,
+  "screen": 0.0091,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202604241754": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "west-limb flare brightening",
+   "localized western coronagraph brightening"
+  ],
+  "reason": "LASCO shows only a confined western brightening rather than a coherent wide or halo front, and the AIA 193 difference shows no clear large coronal dimming or sweeping wave, so the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 96794.2,
+  "peakUtc": "2026-04-24T18:15:00Z",
+  "class": "M6.4",
+  "sep": 0,
+  "screen": 0.0401,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202605101319": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "bright flare kernel on the eastern disk in AIA 131",
+   "no large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "LASCO C2 difference shows only narrow radial streaks, no coherent wide front"
+  ],
+  "reason": "No clear fast, wide CME is present\u2014only narrow streamer-like streaks\u2014and the E63 source is poorly magnetically connected to Earth, so the probability stays near the low flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 89438.1,
+  "peakUtc": "2026-05-10T13:39:00Z",
+  "class": "M5.7",
+  "sep": 0,
+  "screen": 0.013,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202606300039": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "western-hemisphere flare brightening in AIA 131",
+   "narrow bright southern outflow in LASCO C2",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO shows only a narrow southern bright feature, not a coherent wide or halo front, and narrow jets rarely drive proton storms. Without wide-CME evidence the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 26508.0,
+  "peakUtc": "2026-06-30T01:16:00Z",
+  "class": "M1.3",
+  "sep": 0,
+  "screen": 0.0161,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202606030122": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact bright flare near disk center in AIA 131",
+   "no clear large-scale coronal dimming or EUV wave in the AIA 193 difference",
+   "localized southwest LASCO brightening without a front around the occulter"
+  ],
+  "reason": "By 75 minutes LASCO shows only a narrow southwest feature, not a halo or partial halo, so this near-central flare lacks a fast wide Earth-directed CME. Without that driver the proton-storm probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 76825.7,
+  "peakUtc": "2026-06-03T01:36:00Z",
+  "class": "M9.3",
+  "sep": 0,
+  "screen": 0.0152,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202606301237": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact western-disk flare brightening",
+   "no large coronal dimming or sweeping wave front",
+   "narrow southward LASCO feature only"
+  ],
+  "reason": "LASCO at +75 min shows only a narrow southward jet-like feature, not a coherent wide or halo front, and the AIA difference lacks large-scale dimming or a wave. Without wide-CME evidence the storm chance stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 37376.5,
+  "peakUtc": "2026-06-30T12:57:00Z",
+  "class": "M5.8",
+  "sep": 0,
+  "screen": 0.0291,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202607011844": {
+  "probability": 2,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "compact western-hemisphere flare brightening in AIA 131",
+   "no large dark coronal dimming or disk-sweeping wave in the AIA 193 difference",
+   "LASCO C2 shows only localized streamer or jet-like streaks, not a coherent wide front"
+  ],
+  "reason": "No halo or partial-halo CME is visible, and the coronagraph difference is consistent with streamer drift and a narrow jet rather than a fast wide eruption. Without that driver, the storm chance stays near the roughly 1-in-80 base rate for an M-class flare.",
+  "model": "grok-4.7",
+  "latencyMs": 35614.2,
+  "peakUtc": "2026-07-01T19:43:00Z",
+  "class": "M3.5",
+  "sep": 0,
+  "screen": 0.0706,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202606302034": {
+  "probability": 5,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "On-disk X1.1 flare kernel near W18 N17 in AIA 131",
+   "Only localized darkening at the flare site in the AIA 193 difference, no large-scale coronal dimming or sweeping EUV wave",
+   "Narrow southward jet-like feature and confined northern brightening in LASCO, no coherent wide front"
+  ],
+  "reason": "At +75 min LASCO shows only a narrow jet and confined brightening rather than a fast halo or partial-halo CME, and the disk difference lacks widespread dimming or a wave, so the probability stays near the roughly 1-in-20 flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 86444.6,
+  "peakUtc": "2026-06-30T20:50:00Z",
+  "class": "X1.1",
+  "sep": 0,
+  "screen": 0.0215,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202607012257": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "compact AIA 131 flare brightening in the southwest",
+   "no large-scale coronal dimming in the AIA 193 difference",
+   "no EUV wave front sweeping the disk",
+   "LASCO C2 shows only localized brightenings and jet-like streaks"
+  ],
+  "reason": "Disk imagery lacks dimming or a wave, and the coronagraph shows no coherent wide or halo front, only narrow features that rarely drive proton storms, so the probability stays near the screened base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 152168.0,
+  "peakUtc": "2026-07-01T23:09:00Z",
+  "class": "M8.5",
+  "sep": 0,
+  "screen": 0.012,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202607301553": {
+  "probability": 6,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "west-limb flare brightening only; no large coronal dimming or sweeping EUV wave in AIA 193 difference"
+  ],
+  "reason": "LASCO C2 panels have no data, and the EUV difference shows only the expected flare brightening at the west limb without a wide dimming or wave front, so there is no clear fast wide-CME evidence and the probability stays near the flagged base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 130572.7,
+  "peakUtc": "2026-07-30T17:00:00Z",
+  "class": "M1.9",
+  "sep": 1,
+  "screen": 0.0638,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202608210909": {
+  "probability": 5,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "west-limb flare brightening only",
+   "no large coronal dimming or sweeping EUV wave in the AIA 193 difference"
+  ],
+  "reason": "LASCO C2 has no data and the EUV difference shows only localized flare brightening, with no wide dimming or wave. Without clear wide-CME evidence the probability stays near the flagged-flare base rate of about 1 in 20.",
+  "model": "grok-4.7",
+  "latencyMs": 146939.8,
+  "peakUtc": "2026-08-21T09:57:00Z",
+  "class": "M1.6",
+  "sep": 0,
+  "screen": 0.0433,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202608201132": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "unknown",
+  "eruptionSigns": [
+   "bright east-limb flare in AIA 131",
+   "no large-scale coronal dimming in AIA 193 difference",
+   "no sweeping EUV wave front"
+  ],
+  "reason": "Both LASCO panels have no data, and the AIA 193 difference shows no clear wide dimming or wave, so a fast, wide CME is not established. An E75 source is also poorly connected to Earth, so the probability stays near the roughly 1-in-80 base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 155633.0,
+  "peakUtc": "2026-08-20T11:42:00Z",
+  "class": "M8.1",
+  "sep": 0,
+  "screen": 0.0112,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202607020137": {
+  "probability": 3,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "bright M-class flare on the western disk in AIA 131",
+   "localized bright/dark structure near the active region in the AIA 193 difference, without a disk-spanning dimming or EUV wave",
+   "LASCO C2 shows only streamer streaks and narrow radial features, not a coherent expanding front"
+  ],
+  "reason": "No wide or halo CME is visible 75 minutes after peak, and the EUV difference lacks large-scale dimming or a sweeping wave. Without that driver, an M4.2 flare remains near the roughly 1-in-80 base rate despite a western source.",
+  "model": "grok-4.7",
+  "latencyMs": 62508.4,
+  "peakUtc": "2026-07-02T01:56:00Z",
+  "class": "M4.2",
+  "sep": 0,
+  "screen": 0.0129,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202607050521": {
+  "probability": 5,
+  "cmeVisible": "no",
+  "cmeExtent": "none",
+  "eruptionSigns": [
+   "west-limb flare brightening in AIA 131",
+   "no coherent coronal dimming or EUV wave in the AIA 193 difference",
+   "LASCO difference shows only narrow radial streaks and streamer drift, not a wide expanding front"
+  ],
+  "reason": "No clear wide or halo CME is visible; the LASCO features are narrow streaks typical of streamer noise, so the probability stays near the roughly 1-in-20 flagged-flare base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 122523.6,
+  "peakUtc": "2026-07-05T05:39:00Z",
+  "class": "M2.7",
+  "sep": 0,
+  "screen": 0.0157,
+  "verdict": "confirm",
+  "threshold": 4
+ },
+ "202608241851": {
+  "probability": 2,
+  "cmeVisible": "yes",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "bright flare kernel near disk center in AIA 131",
+   "no clear large-scale coronal dimming or sweeping EUV wave in the AIA 193 difference",
+   "narrow southern jet and localized streamer brightening in LASCO C2"
+  ],
+  "reason": "LASCO C2 at +75 min shows only a narrow southern jet and ordinary streamer streaks, not a coherent wide or halo front, and AIA 193 lacks clear large-scale dimming, so the chance stays near the M-class base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 151757.5,
+  "peakUtc": "2026-08-24T19:36:00Z",
+  "class": "M1.7",
+  "sep": 0,
+  "screen": 0.0207,
+  "verdict": "reject",
+  "threshold": 4
+ },
+ "202607042029": {
+  "probability": 2,
+  "cmeVisible": "unclear",
+  "cmeExtent": "narrow",
+  "eruptionSigns": [
+   "eastern-limb flare brightening in AIA 131 consistent with E55",
+   "only localized darkening near the eastern limb in the AIA 193 difference, no disk-wide dimming or wave front"
+  ],
+  "reason": "LASCO shows only confined eastern brightening and streak-like streamer changes, not a coherent wide or halo front, and the eastern source is poorly connected to Earth, so the probability stays near the base rate.",
+  "model": "grok-4.7",
+  "latencyMs": 156973.2,
+  "peakUtc": "2026-07-04T20:41:00Z",
+  "class": "X1.2",
+  "sep": 0,
+  "screen": 0.012,
+  "verdict": "reject",
+  "threshold": 4
+ }
+}

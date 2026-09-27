@@ -168,7 +168,12 @@ def choose(options: list[dict], current: str) -> dict:
 def explain(service: dict, host: str, chosen: dict, options: list[dict], ambient: Ambient | None) -> str:
     stay = next(option for option in options if option["id"] == "stay")
     idle = next(option for option in options if option["id"] == "no-action")
-    source = "" if ambient is None else f" Ambient radiation {ambient.value:.2f}, measured by {ambient.source} over the pole."
+    if ambient is None:
+        source = ""
+    elif "forecast" in ambient.source:
+        source = f" No protons measured yet; planning assumes polar-cap radiation {ambient.value:.2f} from the {ambient.source}."
+    else:
+        source = f" Ambient radiation {ambient.value:.2f}, measured by {ambient.source} over the pole."
     if chosen["id"].startswith("move:"):
         return (
             f"{host} is forecast to be exposed for {stay['downtime'] * 5} minutes in the next orbit.{source} "

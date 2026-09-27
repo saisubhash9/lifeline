@@ -14,7 +14,7 @@ sys.path.insert(0, str(HERE))
 from tts import speak  # noqa: E402
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
-TEMPO = 1.15
+TEMPO = 1.1
 FPS = 30
 DUR = json.loads((HERE / "durations.json").read_text())
 TIMELINE = json.loads((HERE / "timeline.json").read_text())
@@ -86,7 +86,7 @@ def walkthrough(out):
     if not answer_wav.exists():
         asyncio.run(speak(answer["text"], str(answer_wav), voice="eve"))
     answer_len = wav_seconds(answer_wav)
-    next_start = next(item["t"] for item in TIMELINE if item["key"] == "w7")
+    next_start = next(item["t"] for item in TIMELINE if not item["key"].startswith("_") and item["t"] > answer["t"])
     window = mapped(next_start) - mapped(answer["t"]) - 0.3
     answer_tempo = min(1.25, max(1.0, answer_len / window)) if window > 0 else 1.0
     print(f"answer {answer_len:.1f}s in window {window:.1f}s -> tempo {answer_tempo:.2f}")

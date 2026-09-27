@@ -1,0 +1,5 @@
+# Offline model study and cascade verification (scripts/compare_models.py, train_screener.py, verify_warnings.py).
+# The app itself does not need these.
+scikit-learn>=1.5
+matplotlib>=3.8
+pillow>=10

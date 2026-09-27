@@ -1,0 +1,98 @@
+{
+ "name": "Flare screener (stage 1 of the early-warning cascade)",
+ "target": ">=10 pfu proton event (NOAA SEP list) whose parent is this flare",
+ "model": "L2 logistic regression, C=0.01, class-balanced, prior-corrected intercept",
+ "features": [
+  "log_peak",
+  "log_fluence",
+  "log_rise_min",
+  "log_background",
+  "connected",
+  "has_location",
+  "abs_lat"
+ ],
+ "featureNotes": {
+  "log_peak": "log10 peak XRS-B flux (W/m2)",
+  "log_fluence": "log10 XRS-B flux integrated from flare start to peak (J/m2)",
+  "log_rise_min": "log10 rise time in minutes",
+  "log_background": "log10 pre-flare background flux",
+  "connected": "exp(-((lon-60)/40)^2): magnetic connectivity of the source to Earth",
+  "has_location": "1 if GOES-18 located the flare",
+  "abs_lat": "|heliographic latitude| / 90"
+ },
+ "mean": [
+  -4.657066058394162,
+  -1.9033521897810215,
+  1.074814720194645,
+  -5.4355390510948896,
+  0.34465018243543966,
+  0.8917274939172749,
+  0.16711908623952426
+ ],
+ "std": [
+  0.3289396938180846,
+  0.3807959360711389,
+  0.2649337182679601,
+  0.3583624861843229,
+  0.3961979278471602,
+  0.3107242676542822,
+  0.0898537610142502
+ ],
+ "coef": [
+  -5.560613076891245,
+  0.17015609535081866,
+  0.6767433660346173,
+  0.658871728222008,
+  0.10790387154159688,
+  0.10861826634721485,
+  -0.16470420219963064,
+  -0.07483420683383155
+ ],
+ "threshold": 0.00866,
+ "recallTarget": 0.9,
+ "onsetDelayHours": {
+  "west": [
+   0.73,
+   1.29,
+   23.71
+  ],
+  "east": [
+   2.76,
+   6.7,
+   45.45
+  ],
+  "all": [
+   0.84,
+   4.48,
+   41.1
+  ]
+ },
+ "split": {
+  "train": "2022-06-17 to 2024-07-01",
+  "test": "2024-07-01 to 2026-09-25"
+ },
+ "metrics": {
+  "trainFlares": 822,
+  "trainStorms": 13,
+  "testFlares": 1082,
+  "testStorms": 11,
+  "testAuc": 0.987,
+  "stage1": {
+   "tp": 11,
+   "fp": 205,
+   "fn": 0,
+   "tn": 866,
+   "pod": 1.0,
+   "far": 0.949,
+   "tss": 0.809,
+   "hss": 0.079,
+   "warnings": 216,
+   "warningsPerMonth": 8.1
+  },
+  "medianLeadHours": 4.48
+ },
+ "sources": [
+  "GOES-18 xrsf-l2-flsum and xrsf-l2-flloc (NOAA NCEI)",
+  "NOAA Solar Proton Events Affecting the Earth Environment"
+ ]
+}
