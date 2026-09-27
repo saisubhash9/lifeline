@@ -354,12 +354,12 @@ Without a key, the Grok controls are disabled and the deterministic analyst runs
 
 ### Deploy to Vercel
 The repo is ready for Vercel's Python runtime:
-- [`api/index.py`](api/index.py) exposes the FastAPI app.
-- [`vercel.json`](vercel.json) routes every path to it and bundles `backend/`, `web/`, and `data/`.
+- [`pyproject.toml`](pyproject.toml) points Vercel's FastAPI support at `backend.app:app`.
+- [`vercel.json`](vercel.json) sets the function timeout and bundles `web/` and `data/`.
 - [`.vercelignore`](.vercelignore) keeps video, docs, archive, scripts, and tests out of the bundle, which comes to about 10 MB.
 
 Steps:
-1. On vercel.com: **Add New → Project → Import** the `lifeline` GitHub repo. No framework preset or build command is needed.
+1. On vercel.com: **Add New → Project → Import** the `lifeline` GitHub repo. Vercel detects FastAPI; no build command is needed.
 2. **Settings → Environment Variables:** add `XAI_API_KEY` (and optionally `XAI_MODEL`, `XAI_VISION_MODEL`), then redeploy.
 3. Every push to `main` redeploys.
 

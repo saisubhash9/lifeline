@@ -1,11 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
-    "api/index.py": {
+    "backend/app.py": {
       "maxDuration": 60,
       "memory": 1024,
-      "includeFiles": "{backend/**,web/**,data/**}"
+      "includeFiles": "{web/**,data/**}"
     }
-  },
-  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }]
+  }
 }
