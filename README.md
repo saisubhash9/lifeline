@@ -334,9 +334,9 @@ Ground-dependent and hubs-only per-storm numbers are in the dashboard's evaluati
 Requirements: Python 3.11+ (developed on 3.14) and an xAI API key for the Grok features. Everything else works without a key.
 
 ```bash
-git clone <this repo> && cd GT_hack
+git clone https://github.com/saisubhash9/lifeline.git && cd lifeline
 python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+.venv/bin/pip install -r requirements-dev.txt
 cp .env.example .env          # then set XAI_API_KEY=...
 .venv/bin/uvicorn backend.app:app --host 127.0.0.1 --port 8010
 ```
@@ -351,6 +351,22 @@ Open **http://127.0.0.1:8010**. The Milton week loads by default. The first load
 | `XAI_MODEL` | No (default `grok-4`) | Chat model for the analyst and the debrief. |
 
 Without a key, the Grok controls are disabled and the deterministic analyst runs everything.
+
+### Deploy to Vercel
+The repo is ready for Vercel's Python runtime:
+- [`api/index.py`](api/index.py) exposes the FastAPI app.
+- [`vercel.json`](vercel.json) routes every path to it and bundles `backend/`, `web/`, and `data/`.
+- [`.vercelignore`](.vercelignore) keeps video, docs, archive, scripts, and tests out of the bundle, which comes to about 10 MB.
+
+Steps:
+1. On vercel.com: **Add New → Project → Import** the `lifeline` GitHub repo. No framework preset or build command is needed.
+2. **Settings → Environment Variables:** add `XAI_API_KEY` (and optionally `XAI_MODEL`, `XAI_VISION_MODEL`), then redeploy.
+3. Every push to `main` redeploys.
+
+**Serverless notes:**
+- The default five-seed evaluation is precomputed in `data/models/evaluation_default.json`. After changing the simulator, regenerate it with `scripts/precompute_eval.py`. Other settings compute on demand (about 15 s, within the 60 s limit).
+- Replay responses are always gzip-compressed (about 0.3 MB instead of 8–10 MB), so they stay under the 4.5 MB response limit.
+- With a key set, every visitor can trigger Grok calls on that account, so set a spend limit in the xAI console.
 
 ## Using the dashboard
 

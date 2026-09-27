@@ -1,0 +1,4 @@
+# Tests and local development.
+-r requirements.txt
+pytest>=8.0
+httpx>=0.27

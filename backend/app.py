@@ -28,7 +28,7 @@ load_env()
 
 from fastapi import FastAPI, HTTPException  # noqa: E402
 from fastapi.middleware.gzip import GZipMiddleware  # noqa: E402
-from fastapi.responses import FileResponse  # noqa: E402
+from fastapi.responses import FileResponse, Response  # noqa: E402
 from fastapi.staticfiles import StaticFiles  # noqa: E402
 from pydantic import BaseModel, Field  # noqa: E402
 
@@ -42,8 +42,10 @@ WEB = ROOT / "web"
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
-    """Precompute the default replay and evaluation so the first page load is fast."""
-    threading.Thread(target=lambda: (_cached_run("oct2024", 7, 1, 0.0), _cached_eval(1, 0.0)), daemon=True).start()
+    """Precompute the default replay locally so the first page load is fast (skipped on Vercel,
+    where background threads do not outlive a request)."""
+    if not os.environ.get("VERCEL"):
+        threading.Thread(target=lambda: (_cached_run("oct2024", 7, 1, 0.0), _cached_eval(1, 0.0)), daemon=True).start()
     yield
 
 
@@ -78,8 +80,15 @@ def _cached_run(window: str, seed: int, latency: int, loss: float) -> dict:
     return simulate(Scenario(window, seed, latency, loss))
 
 
+DEFAULT_EVAL = ROOT / "data" / "models" / "evaluation_default.json"
+
+
 @lru_cache(maxsize=8)
 def _cached_eval(latency: int, loss: float) -> dict:
+    # The default settings are precomputed (scripts/precompute_eval.py) so a cold serverless
+    # start answers instantly; other settings are computed on demand (about 15 s).
+    if (latency, loss) == (1, 0.0) and DEFAULT_EVAL.exists():
+        return json.loads(DEFAULT_EVAL.read_text())
     rows = evaluate(seeds=5, latency=latency, loss=loss)
     return {"rows": rows, "headline": headline(rows), "seeds": 5, "strategies": STRATEGY_NAMES}
 
@@ -94,18 +103,27 @@ def events() -> dict:
     return {"events": [describe(name) for name in window_ids()], "grok": grok.available()}
 
 
+def _gzip_json(payload: dict) -> Response:
+    """A replay is 8-10 MB of JSON (about 0.3 MB gzipped). Always compress it so the response
+    stays far below serverless body limits (4.5 MB on Vercel) whatever the request headers say."""
+    import gzip
+
+    body = gzip.compress(json.dumps(payload, separators=(",", ":")).encode(), compresslevel=6)
+    return Response(body, media_type="application/json", headers={"Content-Encoding": "gzip", "Vary": "Accept-Encoding"})
+
+
 @app.post("/api/run")
-def run(body: RunRequest) -> dict:
+def run(body: RunRequest) -> Response:
     scenario = _scenario(body)
     if body.grok and grok.available():
         result = simulate(scenario, advisor=grok.analyst_choice)
         result["grok"] = True
-        return result
+        return _gzip_json(result)
     result = dict(_cached_run(scenario.window, scenario.seed, scenario.latency, scenario.loss))
     result["grok"] = False
     if body.grok:
         result["warning"] = "No XAI_API_KEY is set, so the deterministic analyst decided."
-    return result
+    return _gzip_json(result)
 
 
 @app.post("/api/evaluate")

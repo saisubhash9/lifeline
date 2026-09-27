@@ -1,0 +1,10 @@
+.venv
+.env
+.pytest_cache
+**/__pycache__
+archive
+docs
+video
+tests
+scripts
+data/flares/training.csv
