@@ -16,7 +16,7 @@ import urllib.request
 import certifi
 
 API = "https://api.x.ai/v1"
-MODEL = os.environ.get("XAI_MODEL", "grok-4")
+MODEL = os.environ.get("XAI_MODEL") or "grok-4"
 VOICE_MODEL = "grok-voice-latest"
 _SSL = ssl.create_default_context(cafile=certifi.where())
 
@@ -41,7 +41,7 @@ def _chat(system: str, user: dict, timeout: float = 45) -> tuple[str, float]:
     payload = _post(
         "/chat/completions",
         {
-            "model": os.environ.get("XAI_MODEL", MODEL),
+            "model": (os.environ.get("XAI_MODEL") or MODEL),
             "temperature": 0,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": json.dumps(user)}],
         },
@@ -111,7 +111,7 @@ def debrief(facts: dict) -> dict | None:
     except (urllib.error.URLError, TimeoutError, KeyError, ValueError) as error:
         last_error = _describe(error)
         return None
-    return {"text": text, "latencyMs": latency, "model": os.environ.get("XAI_MODEL", MODEL)} if text else None
+    return {"text": text, "latencyMs": latency, "model": (os.environ.get("XAI_MODEL") or MODEL)} if text else None
 
 
 def voice_session(seconds: int = 600) -> dict | None:
@@ -168,7 +168,7 @@ def sun_watch(images: list[tuple[str, str]], when_utc: str) -> dict | None:
     content = [{"type": "input_image", "image_url": _image_uri(path), "detail": "high"} for _label, path in images]
     labels = ", ".join(label for label, _path in images)
     content.append({"type": "input_text", "text": f"Images ({labels}) taken at {when_utc}. {SUN_PROMPT}"})
-    model_name = os.environ.get("XAI_VISION_MODEL", "grok-4.7")
+    model_name = os.environ.get("XAI_VISION_MODEL") or "grok-4.7"
     started = time.perf_counter()
     try:
         payload = _post("/responses", {"model": model_name, "input": [{"role": "user", "content": content}]}, timeout=180)
@@ -219,7 +219,7 @@ def verify_warning(image_path, facts: dict) -> dict | None:
     """Stage 2: Grok vision checks a screened flare for eruption and CME signatures."""
     if not available():
         return None
-    model_name = os.environ.get("XAI_VISION_MODEL", "grok-4.7")
+    model_name = os.environ.get("XAI_VISION_MODEL") or "grok-4.7"
     content = [
         {"type": "input_image", "image_url": _image_uri(image_path), "detail": "high"},
         {"type": "input_text", "text": f"Triggering data: {json.dumps(facts)}\n{VERIFY_PROMPT}"},
