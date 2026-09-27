@@ -222,5 +222,5 @@ def run_debrief(body: RunRequest) -> dict:
     facts = debrief_facts(result)
     report = grok.debrief(facts)
     if report is None:
-        return {"text": None, "warning": "Grok did not return a debrief.", "facts": facts}
+        return {"text": None, "warning": f"Grok did not return a debrief ({grok.last_error or 'empty reply'}).", "facts": facts}
     return {**report, "facts": facts}

@@ -93,12 +93,23 @@ DEBRIEF_PROMPT = (
 )
 
 
+last_error: str | None = None
+
+
+def _describe(error: Exception) -> str:
+    if isinstance(error, urllib.error.HTTPError):
+        return f"HTTP {error.code}: {error.read()[:200].decode(errors='replace')}"
+    return f"{type(error).__name__}: {error}"
+
+
 def debrief(facts: dict) -> dict | None:
+    global last_error
     if not available():
         return None
     try:
         text, latency = _chat(DEBRIEF_PROMPT, facts)
-    except (urllib.error.URLError, TimeoutError, KeyError, ValueError):
+    except (urllib.error.URLError, TimeoutError, KeyError, ValueError) as error:
+        last_error = _describe(error)
         return None
     return {"text": text, "latencyMs": latency, "model": os.environ.get("XAI_MODEL", MODEL)} if text else None
 
